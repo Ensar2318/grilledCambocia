@@ -79,9 +79,9 @@ $(".card-checkout-wrap .close-btn").click(function(e) {
 
 $(document).scroll(function() {
     if (window.pageYOffset <= 200) {
-        $(".mobile-cart").slideUp();
+        $(".mobile-cart").addClass("hide");
     } else {
-        $(".mobile-cart").slideDown();
+        $(".mobile-cart").removeClass("hide");
 
     }
 });

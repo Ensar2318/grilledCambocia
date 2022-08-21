@@ -289,8 +289,13 @@ header {
     bottom: 0;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     z-index: 99;
+    transition: 0.3s;
     @include media-down("lg") {
         display: flex;
+        &.hide{
+            opacity: 0;
+            visibility: hidden;
+        }
     }
     .card-count {
         display: flex;

@@ -1265,10 +1265,15 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   bottom: 0;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   z-index: 99;
+  transition: 0.3s;
 }
 @media (max-width: 991px) {
   .mobile-cart {
     display: flex;
+  }
+  .mobile-cart.hide {
+    opacity: 0;
+    visibility: hidden;
   }
 }
 .mobile-cart .card-count {
