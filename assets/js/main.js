@@ -64,18 +64,19 @@ swiperCard();
 window.addEventListener("resize", swiperCard);
 // only mobile work swiper
 
-// Mobil kısımda kart açma
+// Mobil kısımda kart açma ve body yi blocklama
 $(".mobile-cart").click(function(e) {
     e.preventDefault();
     $(".mobile-card-checkout").addClass("active");
     $("body").addClass("mobile-block");
 });
+
 $(".card-checkout-wrap .close-btn").click(function(e) {
     e.preventDefault();
     $(".mobile-card-checkout").removeClass("active");
     $("body").removeClass("mobile-block");
 });
-// Mobil kısımda kart açma
+// Mobil kısımda kart açma ve body yi blocklama
 
 $(document).scroll(function() {
     if (window.pageYOffset <= 200) {
@@ -86,6 +87,62 @@ $(document).scroll(function() {
     }
 });
 
+
+
+
+const cartnoitem = `<div class="no-item">
+<div class="bag-circle"><span class="icon-bag"></span></div>
+<p>Wahlen Sie leckere Gerichte <br> aus der Karte.</p>
+</div>`;
+
+const carditem = `       <div class="card-item">
+<div class="title">
+    <div class="text-head">
+        <h5>Special Hamburger</h5> <small>Burgerking</small></div>
+    <a href="javascript:;">Not Ekle</a>
+    <a href="javascript:;">Düzenle</a> <span class="icon-trash"></span>
+</div>
+<div class="footer">
+    <h3><small>€</small> 9.54</h3>
+    <div class="counter-single-item">
+        <span class="icon-minus"></span>
+        <span class="number">1</span>
+        <span class="icon-plus"></span>
+    </div>
+</div>
+</div>`;
+
+$(".card-checkout-wrap").on("click", ".icon-trash", function() {
+    let cardcount;
+    $(".card-checkout-wrap .icon-trash").each(function(index, element) {
+        // element == this
+        cardcount = index;
+    });
+    $(this).parent().parent().remove();
+
+    if (cardcount == 0) {
+        $(".card-checkout-wrap .card-content").append(cartnoitem);
+    }
+
+});
+
+$(".menu-card-wrap .fiat .price").click(function(e) {
+    e.preventDefault();
+    $(".card-checkout-wrap .card-content .no-item").remove();
+    $(".card-checkout-wrap .card-content").append(carditem);
+    
+
+});
+
+$(".menu-card-wrap .menu-add-btn").click(function(e) {
+    e.preventDefault();
+
+    if (!$(this).hasClass("detail")) {
+        $(".card-checkout-wrap .card-content .no-item").remove();
+        $(".card-checkout-wrap .card-content").append(carditem);
+    }
+
+});
 
 //#####Swiper Örneği######
 
