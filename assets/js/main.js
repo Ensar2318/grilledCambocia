@@ -78,7 +78,7 @@ $(".card-checkout-wrap .close-btn").click(function(e) {
 // Mobil kısımda kart açma
 
 $(document).scroll(function() {
-    if (window.pageYOffset <= 150) {
+    if (window.pageYOffset <= 200) {
         $(".mobile-cart").slideUp();
     } else {
         $(".mobile-cart").slideDown();
