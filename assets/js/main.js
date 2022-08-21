@@ -65,18 +65,26 @@ window.addEventListener("resize", swiperCard);
 // only mobile work swiper
 
 // Mobil kısımda kart açma
-$(".mobile-cart").click(function (e) { 
+$(".mobile-cart").click(function(e) {
     e.preventDefault();
     $(".mobile-card-checkout").addClass("active");
     $("body").addClass("mobile-block");
 });
-$(".card-checkout-wrap .close-btn").click(function (e) { 
+$(".card-checkout-wrap .close-btn").click(function(e) {
     e.preventDefault();
     $(".mobile-card-checkout").removeClass("active");
     $("body").removeClass("mobile-block");
 });
 // Mobil kısımda kart açma
 
+$(document).scroll(function() {
+    if (window.pageYOffset <= 100) {
+        $(".mobile-cart").slideUp();
+    } else {
+        $(".mobile-cart").slideDown();
+
+    }
+});
 
 
 //#####Swiper Örneği######
