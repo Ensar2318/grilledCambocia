@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: inherit;
+    font-family: inherit;
+}
+
+html, body {
+    height: 100%;
+}
+
+a,
+a:link,
+a:link::after {
+    text-decoration: unset;
+}
+
+input,
+textarea {
+    outline: none;
+    border: none;
+    background: none;
+    resize: none;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    outline: none;
+    border: none;
+    background: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+body {
+    font-size: 100%;
+    line-height: 1;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}

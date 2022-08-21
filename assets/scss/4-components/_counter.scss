@@ -1,0 +1,76 @@
+.fiat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    .count {
+        border-radius: 23px;
+        background-color: $primary;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100px;
+        height: 38px;
+        .number {
+            font: 900 16px $avenir;
+            color: $white;
+        }
+        .icon-minus,
+        .icon-plus {
+            font-size: 12px;
+            cursor: pointer;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            color: $white;
+        }
+        .icon-minus {
+            padding-left: 15px;
+        }
+        .icon-plus {
+            padding-right: 15px;
+        }
+    }
+    .price {
+        font: 900 16px $avenir;
+        color: $white;
+        background-color: $black;
+        height: 37px;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 200px;
+        border-radius: 23px;
+    }
+}
+
+
+.counter-single-item {
+    border-radius: 23px;
+    background-color: $primary;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75px;
+    height: 32px;
+    .number {
+        font: 900 16px $avenir;
+        color: $white;
+    }
+    .icon-minus,
+    .icon-plus {
+        font-size: 10px;
+        cursor: pointer;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        color: $white;
+    }
+    .icon-minus {
+        padding-left: 15px;
+    }
+    .icon-plus {
+        padding-right: 15px;
+    }
+}

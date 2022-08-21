@@ -1,0 +1,35 @@
+// Bootstrap 5.1 breakpoints
+
+$breakpoints: (
+    "xs": 0,
+    "sm": 576px,
+    "md": 768px,
+    "lg": 992px,
+    "xl": 1200px,
+    "xxl": 1400px,
+    "xxxl": 1600px,
+);
+
+@mixin media-up($breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}
+
+@mixin media-down($breakpoint) {
+    @media (max-width: map-get($breakpoints, $breakpoint) - 1px) {
+        @content;
+    }
+}
+
+@mixin media-up-down($breakpointUp, $breakpointDown) {
+    @media (min-width: (map-get($breakpoints, $breakpointUp))) and (max-width: map-get($breakpoints, $breakpointDown) - 1px) {
+        @content;
+    }
+}
+
+@mixin media-down-custom($preakpoint) {
+    @media (max-width: $breakpoint) {
+        @content;
+    }
+}

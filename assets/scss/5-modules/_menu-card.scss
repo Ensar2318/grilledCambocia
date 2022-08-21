@@ -1,0 +1,164 @@
+.menu-container {
+    padding-bottom: 32px;
+}
+.menu-card-wrap {
+    & + .menu-card-wrap {
+        margin-top: 40px;
+    }
+    .menu-card {
+        border-radius: 20px;
+        border: solid 1px #f7f6f6;
+        background-color: $white;
+        position: relative;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+        .menu-add-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            position: absolute;
+            right: 7px;
+            top: 7px;
+            background-color: $primary;
+            color: $white;
+            border-radius: 36px;
+            cursor: pointer;
+            transition: $transition;
+            &:hover {
+                background-color: $primary-hover;
+            }
+            &.detail {
+                &.active {
+                    transform: rotate(45deg);
+                }
+            }
+        }
+        .info {
+            padding: 18px;
+            display: flex;
+            align-items: center;
+            h4 {
+                padding-right: 21px;
+                font: 800 16px $avenir;
+                color: $black;
+            }
+            h5 {
+                font: 900 14px $avenir;
+                color: $gray;
+            }
+        }
+        .content {
+            padding: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 140px;
+            h2 {
+                font: 900 22px $avenir;
+                color: $black;
+                small {
+                    font: 900 14px $avenir;
+                    color: $primary;
+                    padding-right: 4px;
+                }
+            }
+            img {
+                padding-right: 30px;
+            }
+        }
+        .footer {
+            padding: 18px;
+            border-top: solid 1px $light-300;
+            p {
+                font: 500 14px $avenir;
+                color: $black;
+                &.zurich {
+                    font-family: $zurich;
+                }
+            }
+        }
+    }
+    .detail-wrap {
+        overflow: hidden;
+        background-color: $primary-100;
+        margin-top: -20px;
+        transition: max-height $transition ease-out;
+        border-radius: 20px;
+        max-height: 0px;
+        .details {
+            margin-top: 28px;
+            padding: 18px;
+            position: relative;
+            h5 {
+                font: 800 14px $avenir;
+                color: $black;
+                margin-bottom: 10px;
+            }
+            .form-group {
+                margin-bottom: 16px;
+            }
+            select {
+                width: 100%;
+                padding: 13px 18px;
+                border-radius: 10px;
+                border: none;
+                font: 400 14px $avenir;
+                color: $gray-400;
+                outline: none;
+                cursor: pointer;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                text-indent: 1px;
+                text-overflow: "";
+                background: url(/assets/img/icon-img/Arrow-down.png) no-repeat right $white;
+                background-position: 98.5%;
+            }
+            .checkbox {
+                display: inline-flex;
+                align-items: center;
+                position: relative;
+
+                p {
+                    padding-left: 20px;
+                    cursor: pointer;
+                }
+                input {
+                    opacity: 0;
+                }
+                .checkmark {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                    height: 22px;
+                    width: 22px;
+                    background-color: $white;
+                    border: solid 1px#EBEBEB;
+                    border-radius: 6px;
+                    transition: $transition;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .icon-tick {
+                        font-size: 10px;
+                        color: $white;
+                    }
+                }
+                input:checked ~ .checkmark {
+                    background-color: $primary;
+                    border: solid 1px $primary;
+                }
+            }
+        }
+    }
+}
+.main-section{
+    position: relative;
+    padding-bottom: 40px;
+    @include media-down("lg"){
+        padding-bottom: 100px;
+    }
+}

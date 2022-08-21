@@ -1,0 +1,214 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?32ubx9');
+  src:  url('fonts/icomoon.eot?32ubx9#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?32ubx9') format('truetype'),
+    url('fonts/icomoon.woff?32ubx9') format('woff'),
+    url('fonts/icomoon.svg?32ubx9#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bag-clock .path1:before {
+  content: "\e900";
+  color: rgb(245, 71, 72);
+}
+.icon-bag-clock .path2:before {
+  content: "\e901";
+  margin-left: -1.12109375em;
+  color: rgb(245, 71, 72);
+}
+.icon-bag-clock .path3:before {
+  content: "\e902";
+  margin-left: -1.12109375em;
+  color: rgb(255, 255, 255);
+}
+.icon-bag-clock .path4:before {
+  content: "\e903";
+  margin-left: -1.12109375em;
+  color: rgb(255, 255, 255);
+}
+.icon-bag-clock .path5:before {
+  content: "\e904";
+  margin-left: -1.12109375em;
+  color: rgb(245, 71, 72);
+}
+.icon-bag-clock .path6:before {
+  content: "\e905";
+  margin-left: -1.12109375em;
+  color: rgb(245, 71, 72);
+}
+.icon-succes-paper .path1:before {
+  content: "\e906";
+  color: rgb(225, 225, 227);
+}
+.icon-succes-paper .path2:before {
+  content: "\e907";
+  margin-left: -0.9892578125em;
+  color: rgb(176, 177, 179);
+}
+.icon-succes-paper .path3:before {
+  content: "\e908";
+  margin-left: -0.9892578125em;
+  color: rgb(177, 178, 180);
+}
+.icon-succes-paper .path4:before {
+  content: "\e909";
+  margin-left: -0.9892578125em;
+  color: rgb(225, 225, 227);
+}
+.icon-succes-paper .path5:before {
+  content: "\e90a";
+  margin-left: -0.9892578125em;
+  color: rgb(225, 225, 227);
+}
+.icon-succes-paper .path6:before {
+  content: "\e90b";
+  margin-left: -0.9892578125em;
+  color: rgb(176, 177, 179);
+}
+.icon-succes-paper .path7:before {
+  content: "\e90c";
+  margin-left: -0.9892578125em;
+  color: rgb(176, 177, 179);
+}
+.icon-succes-paper .path8:before {
+  content: "\e90d";
+  margin-left: -0.9892578125em;
+  color: rgb(255, 255, 255);
+}
+.icon-succes-paper .path9:before {
+  content: "\e90e";
+  margin-left: -0.9892578125em;
+  color: rgb(74, 183, 108);
+}
+.icon-succes-card .path1:before {
+  content: "\e90f";
+  color: rgb(245, 71, 72);
+}
+.icon-succes-card .path2:before {
+  content: "\e910";
+  margin-left: -1.416015625em;
+  color: rgb(236, 107, 31);
+}
+.icon-succes-card .path3:before {
+  content: "\e911";
+  margin-left: -1.416015625em;
+  color: rgb(245, 71, 72);
+}
+.icon-succes-card .path4:before {
+  content: "\e912";
+  margin-left: -1.416015625em;
+  color: rgb(255, 255, 255);
+}
+.icon-succes-card .path5:before {
+  content: "\e913";
+  margin-left: -1.416015625em;
+  color: rgb(74, 183, 108);
+}
+.icon-megaphone:before {
+  content: "\e914";
+}
+.icon-megaphone-big:before {
+  content: "\e915";
+}
+.icon-motor:before {
+  content: "\e916";
+}
+.icon-notification:before {
+  content: "\e917";
+}
+.icon-phone:before {
+  content: "\e918";
+}
+.icon-plus:before {
+  content: "\e919";
+}
+.icon-plus-flat:before {
+  content: "\e91a";
+}
+.icon-search:before {
+  content: "\e91b";
+}
+.icon-shut-eye:before {
+  content: "\e91c";
+}
+.icon-star-flat:before {
+  content: "\e91d";
+}
+.icon-star-radio:before {
+  content: "\e91e";
+}
+.icon-store:before {
+  content: "\e91f";
+}
+.icon-tick:before {
+  content: "\e920";
+}
+.icon-trash:before {
+  content: "\e921";
+}
+.icon-user:before {
+  content: "\e922";
+}
+.icon-minus:before {
+  content: "\e923";
+}
+.icon-apple:before {
+  content: "\e924";
+}
+.icon-Arrow-icon-left:before {
+  content: "\e925";
+}
+.icon-Arrow-icon-right:before {
+  content: "\e926";
+}
+.icon-bag:before {
+  content: "\e927";
+}
+.icon-clock:before {
+  content: "\e928";
+}
+.icon-credit-card:before {
+  content: "\e929";
+}
+.icon-cros:before {
+  content: "\e92a";
+}
+.icon-default-key:before {
+  content: "\e92b";
+}
+.icon-exit:before {
+  content: "\e92c";
+}
+.icon-gear:before {
+  content: "\e92d";
+}
+.icon-headphone:before {
+  content: "\e92e";
+}
+.icon-key-input:before {
+  content: "\e92f";
+}
+.icon-mail:before {
+  content: "\e930";
+}
+.icon-map-pin:before {
+  content: "\e931";
+}

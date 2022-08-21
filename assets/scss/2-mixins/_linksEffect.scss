@@ -1,0 +1,14 @@
+@mixin linkHover($color, $hover, $transition) {
+    color: $color;
+    transition: $transition;
+    &:hover {
+        color: $hover;
+    }
+}
+
+@mixin notTransitionLinkHover($color, $hover) {
+    color: $color;
+    &:hover {
+        color: $hover;
+    }
+}

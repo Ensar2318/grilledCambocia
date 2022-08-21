@@ -1,0 +1,54 @@
+/* Colors */
+
+$colors: (
+    "primary": #f54748,
+    "primary-100": #433033,
+    "primary-200": #49373a,
+    "secondary": #d9bc84,
+    "secondary-100": #856a3b,
+    "creme": #faf2e2,
+    "creme-soft": #f5f2e9,
+    "body-bg": white,
+    "light": #f8f8f8,
+    "gray": #f0f0f0,
+    "gray-100": #f7f7f7,
+    "gray-200": #f8f8f8,
+    "gray-300": #efefef,
+    "gray-500": #e9e8e4,
+    "white": white,
+);
+
+$primary: #f54748;
+$primary-hover: #fd7777;
+$primary-100: #f8f5f2;
+$primary-ghost: #fdeaea;
+
+$box-shadow: rgb(149 157 165 / 20%) 0 0 9px 4px;
+
+$secondary: #304564;
+
+$gray: #999999;
+$gray-100: #c1c1c1;
+$gray-200: #7c7c7c;
+$gray-300: #868686;
+$gray-400: #9a9a9a;
+
+$light: #f0f0f0;
+$light-100: #dddddd;
+$light-200: #f2f2f2;
+$light-300: #f4f4f4;
+$light-400: #f5f5f5;
+$light-500: #f8f8f8;
+
+$white: #ffffff;
+
+$black: #1f272e;
+$black-zero: #000000;
+
+$yellow: #ffba38;
+
+$transition: 0.6s;
+
+// fonts
+$avenir: "avenir";
+$zurich: "zurich";

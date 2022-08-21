@@ -1,0 +1,34 @@
+@font-face {
+    font-family: $avenir;
+    src: url(../fonts/AvenirMedium.ttf) format("TrueType");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: $avenir;
+    src: url(../fonts/AvenirBlack.ttf) format("TrueType");
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: $avenir;
+    src: url(../fonts/AvenirHeavy.ttf) format("TrueType");
+    font-weight: 900;
+}
+@font-face {
+    font-family: $zurich;
+    src: url(../fonts/zurich.ttf) format("TrueType");
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+body {
+    color: $black;
+    font: 500 14px $avenir;
+}

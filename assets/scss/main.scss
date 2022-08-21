@@ -1,0 +1,37 @@
+// Base
+@import '1-base/reset';
+@import '1-base/variables';
+@import '1-base/responsive';
+@import '1-base/settings';
+@import '1-base/typography';
+@import '1-base/helpers';
+
+// Mixins
+@import '2-mixins/linksEffect';
+
+// Layout
+@import '3-layout/global';
+@import '3-layout/header';
+@import '3-layout/footer';
+@import '3-layout/bottom-menu';
+
+// Components
+@import '4-components/buttons';
+@import '4-components/counter';
+
+// Modules
+@import '5-modules/page-title';
+@import '5-modules/user-modals';
+@import '5-modules/menu-card';
+@import '5-modules/index-card-checkout';
+@import '5-modules/checkout-form';
+
+// Pages
+@import '6-pages/index';
+@import '6-pages/checkout';
+// Performance
+@import '7-performance/performance';
+
+.morphext .animated {
+    display: inline-block;
+}

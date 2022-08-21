@@ -1,0 +1,169 @@
+.check-out-page-card {
+    background-color: $white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 20px;
+    margin-top: -170px;
+    @include media-down("lg") {
+        margin-top: 0px;
+    }
+    .card-head {
+        text-align: center;
+        position: relative;
+
+        h4 {
+            padding: 15px 0 12px 0;
+            font: 900 18px $avenir;
+        }
+    }
+    .card-content {
+        height: 405px;
+        position: relative;
+        padding: 10px 20px;
+        overflow: auto;
+        &::-webkit-scrollbar {
+            background: none;
+            width: 8px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: $gray-100;
+            border-radius: 20px;
+        }
+
+        .no-item {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            .bag-circle {
+                width: 97px;
+                height: 97px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $light-200;
+                border-radius: 97px;
+                font-size: 40px;
+                color: $gray-100;
+                margin-bottom: 12px;
+            }
+            p {
+                font: 500 16px $avenir;
+                color: $gray-200;
+            }
+        }
+        .card-item {
+            box-shadow: $box-shadow;
+            padding: 17px 17px 10px 17px;
+            border-radius: 23px;
+            margin-bottom: 20px;
+            .title {
+                display: flex;
+                .text-head {
+                    margin-right: auto;
+                    h5 {
+                        font: 900 15px $avenir;
+                        color: $black;
+                    }
+                    small {
+                        font: 500 11px $avenir;
+                        color: $gray-100;
+                    }
+                }
+                a {
+                    font: 500 14px $avenir;
+                    color: $primary;
+                    margin-right: 17px;
+                    transition: $transition;
+                    &:hover {
+                        color: $primary-hover;
+                    }
+                    @include media-down("xxxl") {
+                        margin-right: 4px;
+                    }
+                }
+                span {
+                    font-size: 17px;
+                    margin-top: 2px;
+                    color: $primary;
+                    cursor: pointer;
+                }
+            }
+            .footer {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                small {
+                    font: 900 12px $avenir;
+                    color: $primary;
+                    margin-right: -4px;
+                }
+                h3 {
+                    font: 900 22px $avenir;
+                    color: $black;
+                }
+            }
+        }
+    }
+    .card-promo {
+        padding: 20px;
+        h5 {
+            font: 900 16px $avenir;
+            color: $black-zero;
+            margin-bottom: 8px;
+        }
+        h4 {
+            font: 900 14px $avenir;
+            color: #939393;
+            margin-bottom: 4px;
+        }
+        input {
+            height: 50px;
+            padding: 0 20px;
+            font: 500 14px $avenir;
+            color: $black-zero;
+            background-color: $light-400;
+            border-radius: 9px;
+            width: 100%;
+            margin-bottom: 15px;
+            &::placeholder {
+                color: #9a9a9a;
+            }
+        }
+        p {
+            font: 500 14px $avenir;
+            color: #939393;
+        }
+    }
+    .card-price {
+        padding: 19px;
+        .text-group {
+            display: flex;
+            justify-content: space-between;
+            &:not(:last-child) {
+                margin-bottom: 4px;
+            }
+            .text {
+                font: 900 16px $avenir;
+                color: $gray-200;
+            }
+            .price {
+                font: 900 18px $avenir;
+                color: $black-zero;
+            }
+        }
+    }
+    .card-footer {
+        padding: 20px 18px 18px 18px;
+        p {
+            text-align: center;
+            font: 500 10px $avenir;
+            color: $gray-200;
+            margin-bottom: 32px;
+        }
+    }
+}

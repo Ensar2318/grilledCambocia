@@ -1,0 +1,334 @@
+header {
+    .banner-image {
+        width: 100%;
+    }
+    .header-content {
+        height: 230px;
+        .logo {
+            margin-top: -189px;
+        }
+        .content {
+            padding-top: 26px;
+            margin-left: 18px;
+            h5 {
+                font: 800 18px $avenir;
+                color: $black;
+                margin-bottom: 3px;
+            }
+            .stars {
+                margin-bottom: 4px;
+                .icon-star-radio {
+                    color: $yellow;
+                    font-size: 12px;
+                }
+            }
+            h6 {
+                font: 500 14px $avenir;
+                color: $primary;
+                margin-bottom: 14px;
+            }
+            p {
+                font: 500 14px $avenir;
+                color: $black;
+                margin-bottom: 14px;
+            }
+        }
+        .icon-menus {
+            display: flex;
+
+            a {
+                border: solid 1px #f7f6f6;
+                width: 42px;
+                height: 42px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 8px;
+                color: $primary;
+                transition: $transition;
+                position: relative;
+                margin-left: 20px;
+                &:hover {
+                    background-color: rgba(245, 71, 71, 0.15);
+                }
+                span {
+                    font-size: 23px;
+                }
+                .badge {
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    background-color: $primary;
+                    border-radius: 16px;
+                    border: solid 2px $white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: $white;
+                    top: 0;
+                    right: 0;
+                    font: 900 11px $avenir;
+                }
+            }
+            .dropdown {
+                position: relative;
+                &:hover {
+                    .dropdown-content {
+                        opacity: 1;
+                        visibility: visible;
+                        top: calc(100% + 10px);
+                    }
+                }
+                .dropdown-content {
+                    position: absolute;
+                    top: calc(100% + 50px);
+                    right: 0;
+                    z-index: 999;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: $transition;
+                    .dropdown-card {
+                        border-radius: 10px;
+                        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                        background-color: $white;
+                        width: 430px;
+                        @include media-down("md") {
+                            width: 300px;
+                        }
+                        .head {
+                            display: flex;
+                            align-items: center;
+                            padding: 24px 28px;
+                            span {
+                                font-size: 18px;
+                                margin-right: 8px;
+                            }
+                            p {
+                                font: 900 16px $avenir;
+                                color: $secondary;
+                            }
+                        }
+                        .messages {
+                            max-height: 450px;
+                            overflow: auto;
+                            @include media-down("md") {
+                                max-height: 230px;
+                            }
+                            .message {
+                                padding: 22px 60px 22px 25px;
+                                border-top: solid 1px $light;
+                                position: relative;
+                                &.active {
+                                    background-color: rgba(242, 181, 181, 0.1);
+                                    border-color: rgba(242, 181, 181, 0.1);
+                                    .notification-dot {
+                                        width: 8px;
+                                        height: 8px;
+                                        background-color: #f54748;
+                                        border-radius: 8px;
+                                        right: 20px;
+                                        top: 50%;
+                                        transform: translateY(-50%);
+                                    }
+                                    .message-detail {
+                                        .icon {
+                                            span {
+                                                background-color: $primary-ghost;
+                                                color: #f5474794;
+                                            }
+                                        }
+                                    }
+                                }
+                                .notification-dot {
+                                    position: absolute;
+                                }
+                                .message-detail {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    .icon {
+                                        margin-right: 11px;
+                                        span {
+                                            width: 38px;
+                                            height: 38px;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            border-radius: 38px;
+                                            background-color: $light-500;
+                                            color: rgba(48, 69, 100, 0.5);
+                                            font-size: 18px;
+                                        }
+                                    }
+                                    p {
+                                        font: 500 14px $avenir;
+                                        color: $secondary;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include media-down("lg") {
+        .banner-image {
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .header-content {
+            height: auto;
+            text-align: center;
+            .content {
+                padding-top: 6px;
+            }
+            .logo {
+                width: 200px;
+                margin-top: -100px;
+            }
+            .icon-menus {
+                margin-bottom: 40px;
+            }
+        }
+        .icon-menus {
+            .dropdown {
+                .dropdown-content {
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+
+.navbar-container {
+    height: 82px;
+    .navbar-wrap {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        .navbar {
+            top: 0;
+            position: sticky;
+            z-index: 99;
+            height: 82px;
+            background-color: $light-500;
+            display: flex;
+            align-items: center;
+            .nav {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                .swiper {
+                    margin: 0;
+                    @include media-down("md") {
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    .swiper-slide {
+                        width: auto;
+                        @include media-down("md") {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                        }
+                    }
+                }
+                .search {
+                    display: flex;
+                    align-items: center;
+                    color: #f54748;
+                    font-size: 24px;
+                    cursor: pointer;
+                    margin-right: 6px;
+                }
+                li {
+                    .nav-link {
+                        display: block;
+                        padding: 10px 20px;
+                        background-color: $light;
+                        font: 800 14px $avenir;
+                        color: $black;
+                        border-radius: 12px;
+                        margin: 0 6px;
+                        transition: $transition;
+                        @include media-down("md") {
+                            text-align: center;
+                            min-width: 80px;
+                        }
+                        &.active {
+                            background-color: $primary;
+                            color: $white;
+                        }
+                        &:hover {
+                            background-color: $primary;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mobile-cart {
+    display: none;
+    justify-content: space-between;
+    padding: 0 25px;
+    height: 68px;
+    align-items: center;
+    background-color: $white;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    z-index: 99;
+    @include media-down("lg") {
+        display: flex;
+    }
+    .card-count {
+        display: flex;
+        align-items: center;
+        span {
+            color: $primary;
+            font-size: 24px;
+            font-weight: 800;
+        }
+        p {
+            font: 900 18px $avenir;
+            color: $black;
+        }
+    }
+    .title {
+        font: 900 18px $avenir;
+        color: $primary;
+    }
+    .price {
+        font: 900 18px $avenir;
+        color: $black;
+    }
+}
+
+
+.checkout-header{
+    background-color: #FAFAFA;
+    height: 210px;
+    display: flex;
+    align-items: end;
+    .logo-content{
+        display: flex;
+        align-items: center;
+        padding-bottom: 30px;
+        h4{
+            padding-left: 20px;
+            font: 800 18px $avenir;
+            color: $black;
+        }
+    }
+}

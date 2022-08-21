@@ -1,0 +1,18 @@
+.checkout-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 52px;
+    background-color: $light;
+    border-radius: 17px;
+    font: 900 16px $avenir;
+    color: $gray-300;
+    transition: $transition;
+    &.active{
+        background-color: $primary;
+        color: $white;
+        &:hover{
+            background-color: $primary-hover;
+        }
+    }
+}

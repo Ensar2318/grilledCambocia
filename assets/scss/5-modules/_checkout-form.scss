@@ -1,0 +1,60 @@
+.checkout-form {
+    padding: 50px 0;
+    h2 {
+        font: 900 28px $avenir;
+        color: $black-zero;
+        margin-bottom: 25px;
+    }
+    .form-group {
+        margin-bottom: 45px;
+        h4 {
+            font: 900 16px $avenir;
+            color: $black-zero;
+            margin-bottom: 15px;
+        }
+        label {
+            width: 100%;
+            font: 900 14px $avenir;
+            color: #939393;
+            margin-bottom: 5px;
+            display: block;
+        }
+        input,textarea {
+            width: 100%;
+            height: 50px;
+            border-radius: 9px;
+            background-color: $light-400;
+            padding: 0 20px;
+            font: 500 14px $avenir;
+            color: $black-zero;
+            &::placeholder {
+                font: 500 14px $avenir;
+                color: #9a9a9a;
+            }
+        }
+        p {
+            margin-top: 11px;
+            color: #ee2524;
+            font: 900 14px $avenir;
+        }
+        select {
+            width: 100%;
+            padding: 13px 18px;
+            border-radius: 10px;
+            border: none;
+            font: 400 14px $avenir;
+            color: $gray-400;
+            outline: none;
+            cursor: pointer;
+            text-indent: 1px;
+            text-overflow: "";
+            background-color: $light-400;
+           
+        }
+        textarea{
+            padding: 20px;
+            height: 88px;
+        }
+     
+    }
+}
