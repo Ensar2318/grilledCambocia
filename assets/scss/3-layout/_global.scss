@@ -1,6 +1,14 @@
-html{
+html {
     scroll-padding-top: 84px;
 }
-html,body{
-scroll-behavior: smooth;
+html,
+body {
+    scroll-behavior: smooth;
+}
+body {
+    @include media-down("lg") {
+        &.mobile-block {
+            overflow: hidden;
+        }
+    }
 }

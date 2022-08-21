@@ -967,8 +967,15 @@ html {
   scroll-padding-top: 84px;
 }
 
-html, body {
+html,
+body {
   scroll-behavior: smooth;
+}
+
+@media (max-width: 991px) {
+  body.mobile-block {
+    overflow: hidden;
+  }
 }
 
 header .banner-image {

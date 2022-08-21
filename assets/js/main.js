@@ -68,12 +68,12 @@ window.addEventListener("resize", swiperCard);
 $(".mobile-cart").click(function (e) { 
     e.preventDefault();
     $(".mobile-card-checkout").addClass("active");
-    $("body").css("overflow","hidden");
+    $("body").addClass("mobile-block");
 });
 $(".card-checkout-wrap .close-btn").click(function (e) { 
     e.preventDefault();
     $(".mobile-card-checkout").removeClass("active");
-    $("body").css("overflow","");
+    $("body").removeClass("mobile-block");
 });
 // Mobil kısımda kart açma
 
