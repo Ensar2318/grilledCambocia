@@ -4,6 +4,7 @@ $(document).ready(function() {
     $("#footer").load("footer.html");
 });
 
+// Menu item detail open js
 $(".menu-add-btn").click(function(e) {
     e.preventDefault();
 
@@ -16,7 +17,9 @@ $(".menu-add-btn").click(function(e) {
     $(this).toggleClass("active");
 
 });
+// Menu item detail open js
 
+// navbar link active js
 $(window).scroll(function() {
     let current = "";
     $(".banner-wrap").each(function(index, element) {
@@ -37,6 +40,8 @@ $(window).scroll(function() {
 
     });
 });
+// navbar link active js
+
 
 // only mobile work swiper
 var init = false;
@@ -59,6 +64,7 @@ swiperCard();
 window.addEventListener("resize", swiperCard);
 // only mobile work swiper
 
+// Mobil kısımda kart açma
 $(".mobile-cart").click(function (e) { 
     e.preventDefault();
     $(".mobile-card-checkout").addClass("active");
@@ -69,6 +75,8 @@ $(".card-checkout-wrap .close-btn").click(function (e) {
     $(".mobile-card-checkout").removeClass("active");
     $("body").css("overflow","");
 });
+// Mobil kısımda kart açma
+
 
 
 //#####Swiper Örneği######

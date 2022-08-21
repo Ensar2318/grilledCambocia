@@ -1612,6 +1612,11 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   position: sticky;
   top: 92px;
 }
+@media (max-height: 700px) {
+  .card-checkout-wrap {
+    overflow: auto;
+  }
+}
 @media (max-width: 991px) {
   .card-checkout-wrap {
     margin-top: 0;
@@ -1650,6 +1655,16 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   position: relative;
   padding: 10px 25px;
   overflow: auto;
+}
+@media (max-height: 700px) {
+  .card-checkout-wrap .card-content {
+    height: 180px;
+  }
+}
+@media (max-height: 620px) {
+  .card-checkout-wrap .card-content {
+    height: 120px;
+  }
 }
 .card-checkout-wrap .card-content::-webkit-scrollbar {
   background: none;

@@ -5,6 +5,9 @@
     border-radius: 20px;
     position: sticky;
     top: 92px;
+    @media(max-height:700px){
+        overflow: auto;
+    }
     @include media-down("lg") {
         margin-top: 0;
     }
@@ -41,6 +44,12 @@
         position: relative;
         padding: 10px 25px;
         overflow: auto;
+        @media(max-height:700px){
+            height: 180px;
+        }
+        @media(max-height:620px){
+            height: 120px;
+        }
         &::-webkit-scrollbar {
             background: none;
             width: 8px;
