@@ -1629,9 +1629,10 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   position: sticky;
   top: 92px;
 }
-@media (max-height: 700px) {
+@media (max-height: 600px) {
   .card-checkout-wrap {
     overflow: auto;
+    max-height: 450px;
   }
 }
 @media (max-width: 991px) {
@@ -1675,12 +1676,12 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 }
 @media (max-height: 700px) {
   .card-checkout-wrap .card-content {
-    height: 180px;
+    height: 200px;
   }
 }
-@media (max-height: 620px) {
+@media (max-height: 500px) {
   .card-checkout-wrap .card-content {
-    height: 120px;
+    height: 250px;
   }
 }
 .card-checkout-wrap .card-content::-webkit-scrollbar {
@@ -1759,6 +1760,11 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   color: #f54748;
   cursor: pointer;
 }
+@media (max-width: 991px) {
+  .card-checkout-wrap .card-content .card-item .title span {
+    padding-left: 20px;
+  }
+}
 .card-checkout-wrap .card-content .card-item .footer {
   display: flex;
   align-items: center;
@@ -1801,6 +1807,11 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   font: 500 10px "avenir";
   color: #7c7c7c;
   margin-bottom: 32px;
+}
+@media (max-height: 600px) {
+  .card-checkout-wrap .card-footer p {
+    display: none;
+  }
 }
 
 @media (max-width: 991px) {

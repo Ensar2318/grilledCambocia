@@ -144,6 +144,7 @@ $(".menu-card-wrap .menu-add-btn").click(function(e) {
 
 });
 
+
 //#####Swiper Örneği######
 
 // var announcementSwiper = new Swiper(".announcementSwiper", {

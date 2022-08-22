@@ -5,8 +5,9 @@
     border-radius: 20px;
     position: sticky;
     top: 92px;
-    @media(max-height:700px){
+    @media(max-height:600px){
         overflow: auto;
+        max-height: 450px;
     }
     @include media-down("lg") {
         margin-top: 0;
@@ -45,10 +46,10 @@
         padding: 10px 25px;
         overflow: auto;
         @media(max-height:700px){
-            height: 180px;
+            height: 200px;
         }
-        @media(max-height:620px){
-            height: 120px;
+        @media(max-height:500px){
+            height: 250px;
         }
         &::-webkit-scrollbar {
             background: none;
@@ -69,6 +70,7 @@
             top: 50%;
             transform: translate(-50%, -50%);
             width: 100%;
+         
             .bag-circle {
                 width: 97px;
                 height: 97px;
@@ -103,6 +105,7 @@
                     small {
                         font: 500 11px $avenir;
                         color: $gray-100;
+                      
                     }
                 }
                 a {
@@ -122,6 +125,9 @@
                     margin-top: 2px;
                     color: $primary;
                     cursor: pointer;
+                    @include media-down("lg"){
+                        padding-left: 20px;
+                    }
                 }
             }
             .footer {
@@ -167,6 +173,9 @@
             font: 500 10px $avenir;
             color: $gray-200;
             margin-bottom: 32px;
+            @media(max-height:600px){
+              display: none;
+            }
         }
     }
 }
