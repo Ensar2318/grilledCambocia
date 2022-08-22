@@ -180,6 +180,33 @@ $("body").click(function(e) {
     $(".icon-menus .dropdown").removeClass("active");
 });
 
+// Discount modal açılış 
+$(".discount-modal-btn").click(function (e) { 
+    e.preventDefault();
+    $("#discount-modal").css("display","flex");
+});
+// Discount modal açılış 
+
+
+// Settings modal açılış 
+$(".settings-modal-btn").click(function (e) { 
+    e.preventDefault();
+    $("#settings").css("display","flex");
+});
+// Settings modal açılış 
+
+
+$(".modal-wrap .close-btn").click(function (e) { 
+    e.preventDefault();
+    $(this).parent().parent().parent().css("display","none");
+});
+
+
+
+
+
+
+
 //#####Swiper Örneği######
 
 // var announcementSwiper = new Swiper(".announcementSwiper", {
