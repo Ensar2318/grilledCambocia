@@ -140,13 +140,12 @@ $(".menu-card-wrap .menu-add-btn").click(function(e) {
     if (!$(this).hasClass("detail")) {
         $(".card-checkout-wrap .card-content .no-item").remove();
         $(".card-checkout-wrap .card-content").append(carditem);
-    } else {
-        if ($(this).hasClass("active")) {
-            $('html,body').animate({
+    }
+    if ($(this).hasClass("active")) {
+        $('html,body').animate({
 
-                scrollTop: $(this).offset().top - 100,},200);
-        }
-
+            scrollTop: $(this).offset().top - 100,
+        }, 200);
     }
 
 });
