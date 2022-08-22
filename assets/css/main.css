@@ -2629,7 +2629,7 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   border-bottom-right-radius: 19px;
 }
 .modal-documentation .modal-body.documentation-detail {
-  max-height: 350px;
+  max-height: 250px;
 }
 .modal-documentation .modal-body .documentation-item {
   height: 52px;
