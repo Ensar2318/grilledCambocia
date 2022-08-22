@@ -1053,7 +1053,7 @@ header .header-content .icon-menus a .badge {
 header .header-content .icon-menus .dropdown {
   position: relative;
 }
-header .header-content .icon-menus .dropdown:hover .dropdown-content {
+header .header-content .icon-menus .dropdown.active .dropdown-content {
   opacity: 1;
   visibility: visible;
   top: calc(100% + 10px);

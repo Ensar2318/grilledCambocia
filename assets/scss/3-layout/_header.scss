@@ -72,7 +72,7 @@ header {
             }
             .dropdown {
                 position: relative;
-                &:hover {
+                &.active {
                     .dropdown-content {
                         opacity: 1;
                         visibility: visible;

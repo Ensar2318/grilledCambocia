@@ -134,6 +134,7 @@ $(".menu-card-wrap .fiat .price").click(function(e) {
 
 });
 
+// Menuleri ekleme işlemi ve animasyon aktif edilmesi
 $(".menu-card-wrap .menu-add-btn").click(function(e) {
     e.preventDefault();
 
@@ -142,19 +143,43 @@ $(".menu-card-wrap .menu-add-btn").click(function(e) {
         $(".card-checkout-wrap .card-content").append(carditem);
     }
     if ($(this).hasClass("active")) {
-        if ($(this).hasClass("detail")) {
-            $('html,body').animate({
-                scrollTop: $(this).offset().top,
-            }, 200);
+        if (window.innerHeight <= 768) {
+            if ($(this).hasClass("detail")) {
+                $('html,body').animate({
+                    scrollTop: $(this).offset().top,
+                }, 200);
+            } else {
+                $('html,body').animate({
+                    scrollTop: $(this).offset().top - 100,
+                }, 200);
+            }
         } else {
             $('html,body').animate({
-                scrollTop: $(this).offset().top-100,
+                scrollTop: $(this).offset().top - 100,
             }, 200);
         }
+
     }
 
 });
 
+// headerdaki icon menülerin click işlemi
+$(".icon-menus a").click(function(e) {
+    e.preventDefault();
+    if ($(this).parent().hasClass("dropdown")) {
+        $(this).parent().toggleClass("active");
+    }
+});
+// bu kısmı sadece tek tık hale getirme işlemi
+$(".icon-menus .dropdown").click(function (e) { 
+    e.stopPropagation();   
+});
+
+// Bodye tıklayınca closelama işlemleri
+$("body").click(function(e) {
+    e.preventDefault();
+    $(".icon-menus .dropdown").removeClass("active");
+});
 
 //#####Swiper Örneği######
 
