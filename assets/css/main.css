@@ -2425,20 +2425,30 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   background-color: #f8f8f8;
   padding: 0 19px;
 }
-.modal-my-adress .modal-body .add-adress-form .form-group .icon-input input {
+.modal-my-adress .modal-body .add-adress-form .form-group .icon-input.textarea {
+  height: 130px;
+  padding: 19px;
+}
+.modal-my-adress .modal-body .add-adress-form .form-group .icon-input input,
+.modal-my-adress .modal-body .add-adress-form .form-group .icon-input textarea {
   padding-left: 14px;
   width: 100%;
   font: 500 14px "avenir";
   color: #000000;
 }
-.modal-my-adress .modal-body .add-adress-form .form-group .icon-input input::-moz-placeholder {
+.modal-my-adress .modal-body .add-adress-form .form-group .icon-input input::-moz-placeholder, .modal-my-adress .modal-body .add-adress-form .form-group .icon-input textarea::-moz-placeholder {
   color: #9a9a9a;
 }
-.modal-my-adress .modal-body .add-adress-form .form-group .icon-input input:-ms-input-placeholder {
+.modal-my-adress .modal-body .add-adress-form .form-group .icon-input input:-ms-input-placeholder, .modal-my-adress .modal-body .add-adress-form .form-group .icon-input textarea:-ms-input-placeholder {
   color: #9a9a9a;
 }
-.modal-my-adress .modal-body .add-adress-form .form-group .icon-input input::placeholder {
+.modal-my-adress .modal-body .add-adress-form .form-group .icon-input input::placeholder,
+.modal-my-adress .modal-body .add-adress-form .form-group .icon-input textarea::placeholder {
   color: #9a9a9a;
+}
+.modal-my-adress .modal-body .add-adress-form .form-group .icon-input textarea {
+  height: 100%;
+  padding: 0;
 }
 .modal-my-adress .modal-body .add-adress-form .form-group .icon-input span {
   font-size: 16px;
@@ -2452,6 +2462,121 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   font: 900 16px "avenir";
   color: #ffffff;
   margin-top: 10px;
+}
+
+.notification-modal {
+  border-radius: 19px;
+  background-color: #ffffff;
+  width: 340px;
+  overflow: auto;
+  max-height: 100%;
+  padding: 22px;
+}
+.notification-modal .modal-head {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.notification-modal .modal-head h5 {
+  font: 900 24px "avenir";
+  color: #1f272e;
+}
+.notification-modal .modal-head small {
+  font: 500 14px "avenir";
+  color: #999999;
+}
+.notification-modal .modal-body {
+  background-color: #ffffff;
+  text-align: center;
+}
+.notification-modal .modal-body .notification-image {
+  margin: 40px 0;
+}
+.notification-modal .modal-body .okay-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: #f54748;
+  border-radius: 17px;
+  color: #ffffff;
+  font: 900 18px "avenir";
+}
+
+.modal-past-orders {
+  border-radius: 19px;
+  background-color: #ffffff;
+  width: 534px;
+  overflow: auto;
+  max-height: 100%;
+}
+.modal-past-orders .modal-head {
+  padding: 40px 18px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0 0 9px 4px;
+  background-color: #f4f4f4;
+}
+.modal-past-orders .modal-head p {
+  font: 900 18px "avenir";
+  color: #1f272e;
+  padding-top: 4px;
+}
+.modal-past-orders .modal-head .icon {
+  font-size: 24px;
+  color: #f54748;
+}
+.modal-past-orders .modal-body {
+  background-color: #ffffff;
+  min-height: 300px;
+  max-height: 300px;
+  overflow: auto;
+  padding: 45px;
+}
+.modal-past-orders .modal-body .order-item {
+  height: 80px;
+  border-radius: 18px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0 0 9px 4px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+.modal-past-orders .modal-body .order-item:not(:last-child) {
+  margin-bottom: 18px;
+}
+.modal-past-orders .modal-body .order-item .ficon {
+  font-size: 26px;
+  color: #f54748;
+  margin-right: 13px;
+}
+.modal-past-orders .modal-body .order-item h6 {
+  font: 900 14px "avenir";
+  color: #7c7c7c;
+  margin-bottom: -2px;
+}
+.modal-past-orders .modal-body .order-item h5 {
+  margin-top: -2px;
+  font: 900 15px "avenir";
+  color: #1f272e;
+}
+.modal-past-orders .modal-body .order-item h3 {
+  margin-left: auto;
+  font: 900 20px "avenir";
+  color: #1f272e;
+}
+.modal-past-orders .modal-body .order-item h3 .currency {
+  color: #f54748;
+  padding-right: 4px;
+}
+.modal-past-orders .modal-body .order-item .right {
+  color: #f54748;
+  margin-left: 10px;
+  font-size: 18px;
 }
 
 .default-modal {

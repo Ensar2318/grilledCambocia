@@ -770,6 +770,8 @@
     </section>
     <!-- menus END -->
 
+    <!-- !!!!!!!!!!!!!!!!Modalss!!!!!!!!!!!!! -->
+
     <!-- =========== discount modal Start  =========== -->
     <div class="modal-wrap" id="discount-modal" style="display: none;">
         <div class="modal-card">
@@ -1107,7 +1109,7 @@
     <!-- my adress modal END -->
 
     <!-- =========== add my adress modal Start  =========== -->
-    <div class="modal-wrap" id="add-my-adress-modal" >
+    <div class="modal-wrap" id="add-my-adress-modal" style="display: none;">
         <div class="modal-my-adress">
             <div class="modal-head">
                 <span class="icon-map-pin icon"></span>
@@ -1119,52 +1121,120 @@
             <div class="modal-body">
                 <form class="add-adress-form">
                     <div class="form-group">
-                        <label>Karta İsim Ver</label>
+                        <label>Adres Başlığı</label>
                         <div class="icon-input">
                             <span class="icon-apple"></span>
-                            <input type="text" placeholder="My Card">
+                            <input type="text" placeholder="Adres Başlığı (Ev Adresim, İş Adresim)">
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label>Kart Numarası</label>
-                        <div class="icon-input">
-                            <span class="icon-credit-card"></span>
-                            <input type="text" placeholder="My Card">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label>Kart Üzerindeki İsim</label>
-                        <div class="icon-input">
-                            <span class="icon-user"></span>
-                            <input type="text" placeholder="Ad Soyad">
-                        </div>
-                    </div>
+
                     <div class="form-group">
                         <div class="row">
-                            <div class="col-lg-6">
-                                <label>Son Tarih</label>
+                            <div class="col-lg-4">
+                                <label>Bina No</label>
                                 <div class="icon-input">
                                     <span class="icon-user"></span>
-                                    <input class="text-center" type="text" placeholder=".. / ..">
+                                    <input type="text" placeholder="Bina No">
                                 </div>
                             </div>
-                            <div class="col-lg-6">
-                                <label>Güvenlik Kodu</label>
+                            <div class="col-lg-4">
+                                <label>Kat</label>
                                 <div class="icon-input">
                                     <span class="icon-user"></span>
-                                    <input class="text-center" type="text" placeholder="...">
+                                    <input type="text" placeholder="Kat">
                                 </div>
                             </div>
+                            <div class="col-lg-4">
+                                <label>Daire No</label>
+                                <div class="icon-input">
+                                    <span class="icon-user"></span>
+                                    <input type="text" placeholder="Daire No">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Adres Detayı</label>
+                        <div class="icon-input textarea">
+                            <textarea></textarea>
                         </div>
                     </div>
                     <button class="save-adress-btn">
-                        Kartı Kaydet
+                        Adresimi Kaydet
                     </button>
                 </form>
             </div>
         </div>
     </div>
     <!-- add my adress modal END -->
+
+    <!-- =========== Success add adress notification  modal Start  =========== -->
+    <div class="modal-wrap" id="success-adress" style="display: none;">
+        <div class="notification-modal">
+            <div class="modal-head">
+                <h5>Tebrikler!</h5>
+                <small>Yeni adres eklendi.</small>
+            </div>
+            <div class="modal-body">
+                <img class="notification-image" src="assets/img/icon-img/map-success.svg">
+                <a class="okay-btn" href="javascript:;">Tamam</a>
+            </div>
+        </div>
+    </div>
+    <!-- Success add adress notification modal END -->
+
+    <!-- =========== my past orders modal Start  =========== -->
+    <div class="modal-wrap" id="">
+        <div class="modal-past-orders">
+            <div class="modal-head">
+                <span class="icon-store icon"></span>
+                <p>Geçmiş Siparişlerim</p>
+                <div class="close-btn gray"><span class="icon-plus"></span></div>
+                <div class="back-btn"><span class="icon-Arrow-icon-left"></span></div>
+
+            </div>
+            <div class="modal-body">
+                <div class="order-item">
+                    <span class="icon-headphone ficon"></span>
+                    <div class="d-flex flex-column">
+                        <h6>22 Tem 2020 19:16</h6>
+                        <h5>Kuzenimin Annesi</h5>
+                    </div>
+                    <h3><span class="currency">€</span>32.96</h3>
+                    <span class="right icon-Arrow-icon-right"></span>
+                </div>
+                <div class="order-item">
+                    <span class="icon-headphone ficon"></span>
+                    <div class="d-flex flex-column">
+                        <h6>22 Tem 2020 19:16</h6>
+                        <h5>Kuzenimin Annesi</h5>
+                    </div>
+                    <h3><span class="currency">€</span>32.96</h3>
+                    <span class="right icon-Arrow-icon-right"></span>
+                </div>
+                <div class="order-item">
+                    <span class="icon-headphone ficon"></span>
+                    <div class="d-flex flex-column">
+                        <h6>22 Tem 2020 19:16</h6>
+                        <h5>Kuzenimin Annesi</h5>
+                    </div>
+                    <h3><span class="currency">€</span>32.96</h3>
+                    <span class="right icon-Arrow-icon-right"></span>
+                </div>
+                <div class="order-item">
+                    <span class="icon-headphone ficon"></span>
+                    <div class="d-flex flex-column">
+                        <h6>22 Tem 2020 19:16</h6>
+                        <h5>Kuzenimin Annesi</h5>
+                    </div>
+                    <h3><span class="currency">€</span>32.96</h3>
+                    <span class="right icon-Arrow-icon-right"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- my past orders modal END -->
+
 
     <!-- =========== default modal Start  =========== -->
     <div class="modal-wrap" id="" style="display: none;">
