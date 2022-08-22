@@ -142,10 +142,15 @@ $(".menu-card-wrap .menu-add-btn").click(function(e) {
         $(".card-checkout-wrap .card-content").append(carditem);
     }
     if ($(this).hasClass("active")) {
-        $('html,body').animate({
-
-            scrollTop: $(this).offset().top - 100,
-        }, 200);
+        if ($(this).hasClass("detail")) {
+            $('html,body').animate({
+                scrollTop: $(this).offset().top,
+            }, 200);
+        } else {
+            $('html,body').animate({
+                scrollTop: $(this).offset().top-100,
+            }, 200);
+        }
     }
 
 });
