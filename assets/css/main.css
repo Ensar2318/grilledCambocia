@@ -2623,6 +2623,8 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   background-color: #ffffff;
   overflow: auto;
   padding: 35px;
+  border-bottom-left-radius: 19px;
+  border-bottom-right-radius: 19px;
 }
 .modal-documentation .modal-body.documentation-detail {
   max-height: 350px;
