@@ -1762,7 +1762,8 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 }
 @media (max-width: 991px) {
   .card-checkout-wrap .card-content .card-item .title span {
-    padding-left: 20px;
+    padding-left: 10px;
+    font-size: 22px;
   }
 }
 .card-checkout-wrap .card-content .card-item .footer {

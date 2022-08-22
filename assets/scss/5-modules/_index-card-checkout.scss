@@ -126,7 +126,8 @@
                     color: $primary;
                     cursor: pointer;
                     @include media-down("lg"){
-                        padding-left: 20px;
+                        padding-left: 10px;
+                        font-size: 22px;
                     }
                 }
             }
