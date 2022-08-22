@@ -195,7 +195,16 @@ $(".settings-modal-btn").click(function (e) {
 });
 // Settings modal açılış 
 
+// Settings modal açılış 
+$(".store-modal-btn").click(function (e) { 
+    e.preventDefault();
+    $("#store-modal").css("display","flex");
+});
+// Settings modal açılış 
 
+
+
+// Modal kapatmak için gereken kod
 $(".modal-wrap .close-btn").click(function (e) { 
     e.preventDefault();
     $(this).parent().parent().parent().css("display","none");
