@@ -1923,6 +1923,11 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
     padding: 30px 10px;
   }
 }
+@media (max-width: 767px) {
+  .modal-wrap {
+    padding: 30px 10px;
+  }
+}
 
 .modal-head .close-btn {
   width: 38px;
@@ -1950,8 +1955,8 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   color: #999999;
 }
 .modal-head .close-btn.gray-200 {
-  background-color: #E8E8E8;
-  color: #AFACAC;
+  background-color: #e8e8e8;
+  color: #afacac;
 }
 
 .modal-head .back-btn {
@@ -2088,7 +2093,7 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   border-radius: 19px;
   background-color: #ffffff;
   width: 534px;
-  overflow: auto;
+  overflow: hidden;
   max-height: 100%;
 }
 .modal-card-store .modal-head {
@@ -2587,7 +2592,7 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   border-radius: 19px;
   background-color: #ffffff;
   width: 534px;
-  overflow: auto;
+  overflow: hidden;
   max-height: 100%;
 }
 .modal-documentation .modal-head {
@@ -2597,6 +2602,8 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   position: relative;
   justify-content: center;
   align-items: center;
+  border-top-left-radius: 19px;
+  border-top-right-radius: 19px;
   background-color: #f4f4f4;
 }
 .modal-documentation .modal-head .title {

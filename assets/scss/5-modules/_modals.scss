@@ -18,6 +18,9 @@
     @media (max-height: 800px) {
         padding: 30px 10px;
     }
+    @include media-down("md") {
+        padding: 30px 10px;
+    }
 }
 .modal-head .close-btn {
     width: 38px;
@@ -43,9 +46,9 @@
         background-color: $light-400;
         color: $gray;
     }
-    &.gray-200{
-        background-color: #E8E8E8;
-        color: #AFACAC;
+    &.gray-200 {
+        background-color: #e8e8e8;
+        color: #afacac;
     }
 }
 .modal-head .back-btn {
@@ -185,7 +188,7 @@
     border-radius: 19px;
     background-color: $white;
     width: 534px;
-    overflow: auto;
+    overflow: hidden;
     max-height: 100%;
 
     .modal-head {
@@ -684,7 +687,7 @@
     border-radius: 19px;
     background-color: $white;
     width: 534px;
-    overflow: auto;
+    overflow: hidden;
     max-height: 100%;
 
     .modal-head {
@@ -694,14 +697,15 @@
         position: relative;
         justify-content: center;
         align-items: center;
-      
+        border-top-left-radius: 19px;
+        border-top-right-radius: 19px;
         background-color: $light-300;
         .title {
             font: 900 24px $avenir;
             color: $black;
             padding-top: 4px;
         }
-        .info{
+        .info {
             font: 900 16px $avenir;
             color: $gray;
         }
