@@ -9,6 +9,8 @@ body {
     @include media-down("lg") {
         &.mobile-block {
             overflow: hidden;
+            position: relative;
+            height: 100%;
         }
     }
 }

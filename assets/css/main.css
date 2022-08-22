@@ -975,6 +975,8 @@ body {
 @media (max-width: 991px) {
   body.mobile-block {
     overflow: hidden;
+    position: relative;
+    height: 100%;
   }
 }
 
