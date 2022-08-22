@@ -177,7 +177,6 @@ $(".icon-menus .dropdown").click(function (e) {
 
 // Bodye tıklayınca closelama işlemleri
 $("body").click(function(e) {
-    e.preventDefault();
     $(".icon-menus .dropdown").removeClass("active");
 });
 
