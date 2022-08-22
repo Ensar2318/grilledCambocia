@@ -170,7 +170,7 @@ $(".icon-menus a").click(function(e) {
         $(this).parent().toggleClass("active");
     }
 });
-// bu kısmı sadece tek tık hale getirme işlemi
+// dropdownlı kısımları eventpropogation hale getirme işlemi
 $(".icon-menus .dropdown").click(function (e) { 
     e.stopPropagation();   
 });

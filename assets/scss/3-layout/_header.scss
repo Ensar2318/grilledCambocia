@@ -72,11 +72,15 @@ header {
             }
             .dropdown {
                 position: relative;
+
                 &.active {
                     .dropdown-content {
                         opacity: 1;
                         visibility: visible;
                         top: calc(100% + 10px);
+                    }
+                    a {
+                        background-color: rgba(245, 71, 71, 0.15);
                     }
                 }
                 .dropdown-content {
@@ -292,7 +296,7 @@ header {
     transition: 0.3s;
     @include media-down("lg") {
         display: flex;
-        &.hide{
+        &.hide {
             opacity: 0;
             visibility: hidden;
         }
@@ -320,17 +324,16 @@ header {
     }
 }
 
-
-.checkout-header{
-    background-color: #FAFAFA;
+.checkout-header {
+    background-color: #fafafa;
     height: 210px;
     display: flex;
     align-items: end;
-    .logo-content{
+    .logo-content {
         display: flex;
         align-items: center;
         padding-bottom: 30px;
-        h4{
+        h4 {
             padding-left: 20px;
             font: 800 18px $avenir;
             color: $black;
