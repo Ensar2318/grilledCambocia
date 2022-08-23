@@ -811,12 +811,12 @@
                     <h6>Müşteri Desteği</h6>
                     <span class="right icon-Arrow-icon-right"></span>
                 </div>
-                <div class="link-item">
+                <div class="link-item" data-href-modal="#forget-your-password">
                     <span class="icon icon-default-key"></span>
                     <h6>Şifre Değişikliği</h6>
                     <span class="right icon-Arrow-icon-right"></span>
                 </div>
-                <div class="link-item">
+                <div class="link-item" data-href-modal="#update-information">
                     <span class="icon icon-user"></span>
                     <h6>Profil Bilgileri Düzenle</h6>
                     <span class="right icon-Arrow-icon-right"></span>
@@ -831,7 +831,7 @@
                     <h6>İletişim Tercihleri</h6>
                     <span class="right icon-Arrow-icon-right"></span>
                 </div>
-                <div class="link-item">
+                <div class="link-item" data-href-modal="#documentation-modal">
                     <span class="icon icon-megaphone-big"></span>
                     <h6>Dökümantasyon</h6>
                     <span class="right icon-Arrow-icon-right"></span>
@@ -1283,7 +1283,7 @@
                 <span class="icon-store small-icon text-primary"></span>
                 <h5>Dökümantasyon</h5>
                 <div class="close-btn gray"><span class="icon-plus"></span></div>
-                <div class="back-btn"><span class="icon-Arrow-icon-left"></span></div>
+                <div class="back-btn modal-click" data-href-modal="#settings"><span class="icon-Arrow-icon-left"></span></div>
 
             </div>
             <div class="modal-body p-4 body-overflow">
@@ -1455,7 +1455,7 @@
                 <span class="icon-user icon"></span>
                 <h5>Bilgilerini Güncelle</h5>
                 <div class="close-btn gray"><span class="icon-plus"></span></div>
-                <div class="back-btn"><span class="icon-Arrow-icon-left"></span></div>
+                <div class="back-btn modal-click" data-href-modal="#settings"><span class="icon-Arrow-icon-left"></span></div>
 
             </div>
             <div class="modal-body p-4 body-overflow">
@@ -1492,14 +1492,14 @@
     <!-- update your information modal END -->
 
     <!-- =========== forget your password modal Start  =========== -->
-    <div class="modal-wrap" id="forget-your-password" style="display: none;">
+    <div class="modal-wrap" id="forget-your-password" style="display: flex;">
         <div class="default-modal">
             <div class="modal-head">
                 <span class="icon-default-key icon"></span>
-                <h5>Neues Passwort erstellen</h5>
-                <p class="sub-title">Fast fertig! Sie können nun ein neues Passwort festlegen.</p>
+                <h5>Yeni Şifre Oluştur</h5>
+                <p class="sub-title">Neredeyse bitti! Artık yeni bir şifre belirleyebilirsiniz.</p>
                 <div class="close-btn gray"><span class="icon-plus"></span></div>
-                <div class="back-btn"><span class="icon-Arrow-icon-left"></span></div>
+                <div class="back-btn modal-click" data-href-modal="#settings"><span class="icon-Arrow-icon-left"></span></div>
 
             </div>
             <div class="modal-body p-4">
