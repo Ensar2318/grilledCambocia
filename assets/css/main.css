@@ -2726,7 +2726,7 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   border-radius: 19px;
   background-color: #fafafa;
   width: 534px;
-  overflow: auto;
+  overflow: hidden;
   max-height: 100%;
 }
 .default-modal .modal-head {
@@ -2784,6 +2784,14 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 }
 .default-modal .modal-body {
   background-color: #ffffff;
+}
+.default-modal .modal-body.body-overflow {
+  overflow: auto;
+}
+@media (max-height: 800px) {
+  .default-modal .modal-body.body-overflow {
+    height: 60vh;
+  }
 }
 .default-modal.documentation-detail {
   max-height: 350px;
@@ -2964,6 +2972,14 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   display: flex;
   list-style: none;
 }
+@media (max-width: 575px) {
+  .restourant-comments .modal-head ol {
+    flex-wrap: wrap;
+  }
+  .restourant-comments .modal-head ol li {
+    margin-top: 10px;
+  }
+}
 .restourant-comments .modal-head ol li {
   font: 900 12px "avenir";
   display: flex;
@@ -2993,12 +3009,28 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   border-color: #f54748;
   color: #ffffff;
 }
+@media (max-width: 575px) {
+  .restourant-comments .modal-head ol li {
+    font-size: 10px;
+    min-width: 35px;
+  }
+  .restourant-comments .modal-head ol li .icon-star {
+    font-size: 12px;
+    padding-right: 6px;
+    color: #ffba38;
+  }
+}
 .restourant-comments .modal-body {
   background-color: #ffffff;
 }
 .restourant-comments .modal-body .restourant-comment-wrap {
-  max-height: 550px;
   overflow: auto;
+  height: 60vh;
+}
+@media (max-height: 650px) {
+  .restourant-comments .modal-body .restourant-comment-wrap {
+    height: 40vh;
+  }
 }
 .restourant-comments .modal-body .restourant-comment-wrap .restourant-comment-item {
   background-color: #f5f5f5;

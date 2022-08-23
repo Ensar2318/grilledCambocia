@@ -637,7 +637,7 @@
     border-radius: 19px;
     background-color: #fafafa;
     width: 534px;
-    overflow: auto;
+    overflow: hidden;
     max-height: 100%;
 
     .modal-head {
@@ -695,6 +695,13 @@
 
     .modal-body {
         background-color: $white;
+        &.body-overflow {
+            overflow: auto;
+
+            @media (max-height: 800px) {
+                height: 60vh;
+            }
+        }
     }
 
     &.documentation-detail {
@@ -879,6 +886,12 @@
         ol {
             display: flex;
             list-style: none;
+            @include media-down("sm"){
+                flex-wrap: wrap;
+                li{
+                    margin-top: 10px;
+                }
+            }
             li {
                 font: 900 12px $avenir;
                 display: flex;
@@ -907,6 +920,15 @@
                     border-color: $primary;
                     color: $white;
                 }
+                @include media-down("sm"){
+                    font-size: 10px;
+                    min-width: 35px;
+                    .icon-star {
+                        font-size: 12px;
+                        padding-right: 6px;
+                        color: $yellow;
+                    }
+                }
             }
         }
     }
@@ -914,8 +936,11 @@
     .modal-body {
         background-color: $white;
         .restourant-comment-wrap {
-            max-height: 550px;
             overflow: auto;
+            height: 60vh;
+            @media (max-height: 650px) {
+                height: 40vh;
+            }
             .restourant-comment-item {
                 background-color: $light-400;
                 padding: 26px;
