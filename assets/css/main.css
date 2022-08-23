@@ -1542,6 +1542,51 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   padding-right: 15px;
 }
 
+.search-bar-wrap {
+  display: flex;
+  align-items: center;
+  margin-right: 6px;
+}
+.search-bar-wrap .search-bar {
+  font-size: 22px;
+  color: #f54748;
+  cursor: pointer;
+}
+.search-bar-wrap input {
+  background-color: #ffffff;
+  border-radius: 4px;
+  height: 38px;
+  margin-right: 6px;
+  padding: 0 20px;
+  display: none;
+  font: 500 16px "avenir";
+  color: #1f272e;
+}
+.search-bar-wrap input::-moz-placeholder {
+  font: 500 16px "avenir";
+  color: #9a9a9a;
+}
+.search-bar-wrap input:-ms-input-placeholder {
+  font: 500 16px "avenir";
+  color: #9a9a9a;
+}
+.search-bar-wrap input::placeholder {
+  font: 500 16px "avenir";
+  color: #9a9a9a;
+}
+.search-bar-wrap.active {
+  width: 50%;
+}
+@media (max-width: 575px) {
+  .search-bar-wrap.active {
+    width: 70%;
+  }
+}
+.search-bar-wrap.active input {
+  display: block;
+  width: 100%;
+}
+
 .form-group {
   margin-bottom: 14px;
 }
@@ -3006,6 +3051,20 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   color: #f54748;
   margin-left: 10px;
   font-size: 18px;
+}
+@media (max-width: 575px) {
+  .default-modal .order-wrap .order-item h6 {
+    font-size: 12px;
+  }
+  .default-modal .order-wrap .order-item h5 {
+    font-size: 13px;
+  }
+  .default-modal .order-wrap .order-item h3 {
+    font-size: 16px;
+  }
+  .default-modal .order-wrap .order-item .right {
+    font-size: 14px;
+  }
 }
 .default-modal .map-wrap .map {
   width: 100%;

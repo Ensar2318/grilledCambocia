@@ -134,7 +134,7 @@
     width: 534px;
     overflow: hidden;
     max-height: 100%;
-    @media(max-height:400px){
+    @media (max-height: 400px) {
         overflow: auto;
     }
     .modal-head {
@@ -230,13 +230,11 @@
         h5 {
             font: 900 24px $avenir;
             color: $black;
-          
         }
         .icon {
             color: $primary;
             font-size: 36px;
             padding-bottom: 6px;
-        
         }
     }
 
@@ -292,7 +290,7 @@
                     font: 900 14px $avenir;
                     color: $white;
                 }
-                @include media-down("sm"){
+                @include media-down("sm") {
                     p {
                         font-size: 10px;
                         text-align: center;
@@ -387,11 +385,10 @@
                 border-radius: 10px;
                 border: solid 1px $white;
                 padding: 4px 10px;
-                @include media-down("sm"){
+                @include media-down("sm") {
                     padding: 4px;
                     font-size: 12px;
                 }
-                
             }
             h4 {
                 font: 900 17px $avenir;
@@ -402,12 +399,11 @@
                 font: 900 18px $avenir;
                 color: $white;
             }
-            @include media-down("sm"){
-                p{
+            @include media-down("sm") {
+                p {
                     font-size: 14px;
-
                 }
-                h4{
+                h4 {
                     font-size: 14px;
                 }
             }
@@ -662,7 +658,7 @@
     width: 534px;
     overflow: hidden;
     max-height: 100%;
-    @media(max-height:400px){
+    @media (max-height: 400px) {
         overflow: auto;
     }
 
@@ -723,7 +719,7 @@
         background-color: $white;
         &.body-overflow {
             overflow: auto;
-         
+
             @media (max-height: 800px) {
                 height: 60vh;
             }
@@ -733,7 +729,7 @@
     &.documentation-detail {
         max-height: 350px;
     }
-    .document-detail-text{
+    .document-detail-text {
         height: 50vh;
     }
 
@@ -879,6 +875,20 @@
                 margin-left: 10px;
                 font-size: 18px;
             }
+            @include media-down("sm") {
+                h6 {
+                   font-size: 12px;
+                }
+                h5 {
+                    font-size: 13px;
+                }
+                h3 {
+                    font-size: 16px;
+                }
+                .right {
+                    font-size: 14px;
+                }
+            }
         }
     }
 
@@ -896,7 +906,7 @@
     width: 734px;
     overflow: hidden;
     max-height: 100%;
-    @media(max-height:400px){
+    @media (max-height: 400px) {
         overflow: auto;
     }
     .modal-head {
@@ -917,9 +927,9 @@
         ol {
             display: flex;
             list-style: none;
-            @include media-down("sm"){
+            @include media-down("sm") {
                 flex-wrap: wrap;
-                li{
+                li {
                     margin-top: 10px;
                 }
             }
@@ -951,7 +961,7 @@
                     border-color: $primary;
                     color: $white;
                 }
-                @include media-down("sm"){
+                @include media-down("sm") {
                     font-size: 10px;
                     min-width: 35px;
                     .icon-star {

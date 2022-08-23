@@ -1,0 +1,35 @@
+.search-bar-wrap {
+    display: flex;
+    align-items: center;
+    margin-right: 6px;
+
+    .search-bar {
+        font-size: 22px;
+        color: $primary;
+        cursor: pointer;
+    }
+    input {
+        background-color: $white;
+        border-radius: 4px;
+        height: 38px;
+        margin-right: 6px;
+        padding: 0 20px;
+        display: none;
+        font: 500 16px $avenir;
+        color: $black;
+        &::placeholder {
+            font: 500 16px $avenir;
+            color: $gray-400;
+        }
+    }
+    &.active {
+        width: 50%;
+        @include media-down("sm"){
+            width: 70%;
+        }
+        input {
+            display: block;
+            width: 100%;
+        }
+    }
+}
