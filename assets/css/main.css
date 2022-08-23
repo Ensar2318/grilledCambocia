@@ -2118,6 +2118,14 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   font: 500 41px "avenir";
   color: #f54748;
 }
+@media (max-width: 575px) {
+  .modal-card-settings .modal-head {
+    padding-bottom: 0px;
+  }
+  .modal-card-settings .modal-head h2 {
+    font-size: 30px;
+  }
+}
 .modal-card-settings .modal-body {
   background-color: #ffffff;
   padding: 20px 100px;

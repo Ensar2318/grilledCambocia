@@ -176,6 +176,12 @@
             font: 500 41px $avenir;
             color: $primary;
         }
+        @include media-down("sm") {
+            padding-bottom: 0px;
+            h2 {
+                font-size: 30px;
+            }
+        }
     }
 
     .modal-body {
@@ -184,10 +190,10 @@
         border-bottom-left-radius: 19px;
         border-bottom-right-radius: 19px;
         overflow: auto;
-        @media(max-height:800px){
+        @media (max-height: 800px) {
             max-height: 400px;
         }
-        @media(max-height:550px){
+        @media (max-height: 550px) {
             max-height: 300px;
         }
         @include media-down("sm") {
@@ -205,7 +211,7 @@
             margin-bottom: 12px;
             transition: $transition;
             cursor: pointer;
-         
+
             &:hover {
                 background-color: $light-400;
             }
@@ -224,13 +230,12 @@
             @include media-down("sm") {
                 height: 40px;
                 h6 {
-                    font: 900 12px $avenir;  
+                    font: 900 12px $avenir;
                 }
                 .icon {
                     color: $primary;
                     font-size: 20px;
                 }
-
             }
         }
     }
