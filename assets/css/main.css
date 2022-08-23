@@ -1339,6 +1339,35 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   background-color: #fd7777;
 }
 
+.btn-primary {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 17px;
+  font: 900 16px "avenir";
+  transition: 0.6s;
+  color: #ffffff;
+  background-color: #f54748;
+  position: relative;
+}
+.btn-primary .left-icon {
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  font-size: 20px;
+  transform: translateY(-50%);
+}
+.btn-primary:hover {
+  background-color: #fd7777;
+}
+@media (max-width: 575px) {
+  .btn-primary {
+    height: 40px;
+    font-size: 14px;
+  }
+}
+
 .fiat {
   display: flex;
   align-items: center;
@@ -2077,7 +2106,6 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   border-radius: 19px;
   background-color: #ffffff;
   width: 534px;
-  overflow: auto;
   max-height: 100%;
 }
 .modal-card-settings .modal-head {
@@ -2092,7 +2120,25 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 }
 .modal-card-settings .modal-body {
   background-color: #ffffff;
-  padding-bottom: 20px;
+  padding: 20px 100px;
+  border-bottom-left-radius: 19px;
+  border-bottom-right-radius: 19px;
+  overflow: auto;
+}
+@media (max-height: 800px) {
+  .modal-card-settings .modal-body {
+    max-height: 400px;
+  }
+}
+@media (max-height: 550px) {
+  .modal-card-settings .modal-body {
+    max-height: 300px;
+  }
+}
+@media (max-width: 575px) {
+  .modal-card-settings .modal-body {
+    padding: 20px;
+  }
 }
 .modal-card-settings .modal-body .link-item {
   height: 52px;
@@ -2100,7 +2146,6 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   box-shadow: rgba(149, 157, 165, 0.2) 0 0 9px 4px;
   border-radius: 18px;
   margin: auto;
-  max-width: 340px;
   display: flex;
   align-items: center;
   padding: 0 20px;
@@ -2123,26 +2168,17 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   font: 900 15px "avenir";
   padding-left: 19px;
 }
-.modal-card-settings .modal-body .logout-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 52px;
-  background-color: #f54748;
-  border-radius: 17px;
-  font: 900 16px "avenir";
-  color: #ffffff;
-  transition: 0.6s;
-  max-width: 340px;
-  margin: auto;
-  position: relative;
-}
-.modal-card-settings .modal-body .logout-btn span {
-  position: absolute;
-  left: 24px;
-  top: 50%;
-  font-size: 20px;
-  transform: translateY(-50%);
+@media (max-width: 575px) {
+  .modal-card-settings .modal-body .link-item {
+    height: 40px;
+  }
+  .modal-card-settings .modal-body .link-item h6 {
+    font: 900 12px "avenir";
+  }
+  .modal-card-settings .modal-body .link-item .icon {
+    color: #f54748;
+    font-size: 20px;
+  }
 }
 
 .modal-card-store {

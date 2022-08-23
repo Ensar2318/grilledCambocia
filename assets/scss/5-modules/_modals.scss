@@ -121,7 +121,7 @@
     &:hover {
         background-color: $primary-hover;
     }
-    &.primary{
+    &.primary {
         color: $white;
         background-color: $primary;
     }
@@ -165,7 +165,7 @@
     border-radius: 19px;
     background-color: $white;
     width: 534px;
-    overflow: auto;
+
     max-height: 100%;
     .modal-head {
         padding: 20px 18px;
@@ -180,20 +180,32 @@
 
     .modal-body {
         background-color: $white;
-        padding-bottom: 20px;
+        padding: 20px 100px;
+        border-bottom-left-radius: 19px;
+        border-bottom-right-radius: 19px;
+        overflow: auto;
+        @media(max-height:800px){
+            max-height: 400px;
+        }
+        @media(max-height:550px){
+            max-height: 300px;
+        }
+        @include media-down("sm") {
+            padding: 20px;
+        }
         .link-item {
             height: 52px;
             background-color: $white;
             box-shadow: $box-shadow;
             border-radius: 18px;
             margin: auto;
-            max-width: 340px;
             display: flex;
             align-items: center;
             padding: 0 20px;
             margin-bottom: 12px;
             transition: $transition;
             cursor: pointer;
+         
             &:hover {
                 background-color: $light-400;
             }
@@ -209,26 +221,16 @@
                 font: 900 15px $avenir;
                 padding-left: 19px;
             }
-        }
-        .logout-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 52px;
-            background-color: $primary;
-            border-radius: 17px;
-            font: 900 16px $avenir;
-            color: $white;
-            transition: $transition;
-            max-width: 340px;
-            margin: auto;
-            position: relative;
-            span {
-                position: absolute;
-                left: 24px;
-                top: 50%;
-                font-size: 20px;
-                transform: translateY(-50%);
+            @include media-down("sm") {
+                height: 40px;
+                h6 {
+                    font: 900 12px $avenir;  
+                }
+                .icon {
+                    color: $primary;
+                    font-size: 20px;
+                }
+
             }
         }
     }
@@ -950,14 +952,14 @@
                 border-radius: 9px;
                 height: 50px;
                 padding: 0 20px;
-                span{
+                span {
                     color: $ghost;
                 }
                 input {
                     width: 100%;
                     font: 500 14px $avenir;
                     padding-left: 10px;
-                    &::placeholder{
+                    &::placeholder {
                         color: $gray-400;
                     }
                 }
@@ -999,7 +1001,7 @@
         justify-content: center;
         align-items: center;
         border-bottom: solid 1px $light;
-        h6{
+        h6 {
             font: 900 18px $avenir;
         }
     }
@@ -1007,7 +1009,7 @@
     .modal-body {
         background-color: $white;
         padding-bottom: 20px;
-        .product-img{
+        .product-img {
             text-align: center;
             margin-top: 40px;
         }
