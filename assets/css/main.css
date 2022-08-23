@@ -1351,6 +1351,9 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   background-color: #f54748;
   position: relative;
 }
+.btn-primary.w100 {
+  width: 100%;
+}
 .btn-primary .left-icon {
   position: absolute;
   left: 24px;
@@ -1366,6 +1369,52 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
     height: 40px;
     font-size: 14px;
   }
+}
+
+.btn-inside-icon {
+  width: 100%;
+  height: 44px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0 0 9px 4px;
+  border-radius: 10px;
+  color: #1f272e;
+  transition: 0.6s;
+  font: 900 14px "avenir";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.btn-inside-icon span {
+  position: absolute;
+  left: 10px;
+}
+.btn-inside-icon:hover {
+  background-color: #f0f0f0;
+}
+
+.add-adress-btn {
+  box-shadow: rgba(149, 157, 165, 0.2) 0 0 9px 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  height: 60px;
+  font: 900 15px "avenir";
+  margin: 0 20px;
+  color: #f54748;
+  position: relative;
+}
+.add-adress-btn span {
+  position: absolute;
+  right: 15px;
+}
+
+.edit-adress-btn {
+  font: 900 15px "avenir";
+  color: #ffffff;
+  border-radius: 10px;
+  border: solid 1px #ffffff;
+  padding: 4px 10px;
 }
 
 .fiat {
@@ -2032,40 +2081,78 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   margin-left: 6px;
 }
 
-.btn-inside-icon {
+.form-group {
+  margin-bottom: 14px;
+}
+.form-group label {
   width: 100%;
-  height: 44px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0 0 9px 4px;
-  border-radius: 10px;
-  color: #1f272e;
-  transition: 0.6s;
+  margin-bottom: 8px;
+  display: block;
   font: 900 14px "avenir";
+  color: #9a9a9a;
+}
+.form-group .icon-input {
   display: flex;
+  height: 50px;
   align-items: center;
-  justify-content: center;
-  position: relative;
+  border-radius: 9px;
+  background-color: #f8f8f8;
+  padding: 0 19px;
 }
-.btn-inside-icon span {
-  position: absolute;
-  left: 10px;
+.form-group .icon-input.textarea {
+  height: 130px;
+  padding: 19px;
 }
-.btn-inside-icon:hover {
-  background-color: #f0f0f0;
+.form-group .icon-input input,
+.form-group .icon-input textarea {
+  padding-left: 14px;
+  width: 100%;
+  font: 500 14px "avenir";
+  color: #000000;
+}
+.form-group .icon-input input::-moz-placeholder, .form-group .icon-input textarea::-moz-placeholder {
+  color: #9a9a9a;
+}
+.form-group .icon-input input:-ms-input-placeholder, .form-group .icon-input textarea:-ms-input-placeholder {
+  color: #9a9a9a;
+}
+.form-group .icon-input input::placeholder,
+.form-group .icon-input textarea::placeholder {
+  color: #9a9a9a;
+}
+.form-group .icon-input textarea {
+  height: 100%;
+  padding: 0;
+}
+.form-group .icon-input span {
+  font-size: 16px;
+  color: #DDDDDD;
+}
+.form-group .icon-input-line {
+  display: flex;
+  height: 35px;
+  align-items: center;
+  border-radius: 9px;
+  border-bottom: solid 1px #f0f0f0;
+}
+.form-group .icon-input-line input {
+  width: 100%;
+  font: 500 14px "avenir";
+  color: #000000;
+}
+.form-group .icon-input-line input::-moz-placeholder {
+  color: #9a9a9a;
+}
+.form-group .icon-input-line input:-ms-input-placeholder {
+  color: #9a9a9a;
+}
+.form-group .icon-input-line input::placeholder {
+  color: #9a9a9a;
 }
 
-.btn-default {
-  width: 100%;
-  height: 50px;
-  border-radius: 17px;
-  font: 900 16px "avenir";
-  transition: 0.6s;
-}
-.btn-default:hover {
-  background-color: #fd7777;
-}
-.btn-default.primary {
-  color: #ffffff;
-  background-color: #f54748;
+.modal-body {
+  border-bottom-left-radius: 19px;
+  border-bottom-right-radius: 19px;
 }
 
 .modal-card {
@@ -2130,8 +2217,6 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 .modal-card-settings .modal-body {
   background-color: #ffffff;
   padding: 20px 100px;
-  border-bottom-left-radius: 19px;
-  border-bottom-right-radius: 19px;
   overflow: auto;
 }
 @media (max-height: 800px) {
@@ -2310,8 +2395,6 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 }
 .modal-payment-methods .modal-body {
   background-color: #ffffff;
-  border-bottom-left-radius: 19px;
-  border-bottom-right-radius: 19px;
 }
 .modal-payment-methods .modal-body .add-payment-metod {
   box-shadow: rgba(149, 157, 165, 0.2) 0 0 9px 4px;
@@ -2373,52 +2456,6 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 .modal-payment-methods .modal-body .add-payment-form {
   padding: 30px;
 }
-.modal-payment-methods .modal-body .add-payment-form .form-group {
-  margin-bottom: 14px;
-}
-.modal-payment-methods .modal-body .add-payment-form .form-group label {
-  width: 100%;
-  margin-bottom: 8px;
-  display: block;
-  font: 900 14px "avenir";
-  color: #9a9a9a;
-}
-.modal-payment-methods .modal-body .add-payment-form .form-group .icon-input {
-  display: flex;
-  height: 50px;
-  align-items: center;
-  border-radius: 9px;
-  background-color: #f8f8f8;
-  padding: 0 19px;
-}
-.modal-payment-methods .modal-body .add-payment-form .form-group .icon-input input {
-  padding-left: 14px;
-  width: 100%;
-  font: 500 14px "avenir";
-  color: #000000;
-}
-.modal-payment-methods .modal-body .add-payment-form .form-group .icon-input input::-moz-placeholder {
-  color: #9a9a9a;
-}
-.modal-payment-methods .modal-body .add-payment-form .form-group .icon-input input:-ms-input-placeholder {
-  color: #9a9a9a;
-}
-.modal-payment-methods .modal-body .add-payment-form .form-group .icon-input input::placeholder {
-  color: #9a9a9a;
-}
-.modal-payment-methods .modal-body .add-payment-form .form-group .icon-input span {
-  font-size: 16px;
-  color: #9a9a9a;
-}
-.modal-payment-methods .modal-body .add-payment-form .save-card {
-  height: 50px;
-  background-color: #f54748;
-  width: 100%;
-  border-radius: 17px;
-  font: 900 16px "avenir";
-  color: #ffffff;
-  margin-top: 10px;
-}
 
 .modal-my-adress {
   border-radius: 19px;
@@ -2446,22 +2483,6 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 }
 .modal-my-adress .modal-body {
   background-color: #ffffff;
-}
-.modal-my-adress .modal-body .add-adress {
-  box-shadow: rgba(149, 157, 165, 0.2) 0 0 9px 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 9px;
-  height: 60px;
-  font: 900 15px "avenir";
-  margin: 0 20px;
-  color: #f54748;
-  position: relative;
-}
-.modal-my-adress .modal-body .add-adress span {
-  position: absolute;
-  right: 15px;
 }
 .modal-my-adress .modal-body .saved-adress {
   max-height: 270px;
@@ -2501,13 +2522,6 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   margin-top: 18px;
   justify-content: space-between;
 }
-.modal-my-adress .modal-body .saved-adress .saved-adress-item .edit-adress {
-  font: 900 15px "avenir";
-  color: #ffffff;
-  border-radius: 10px;
-  border: solid 1px #ffffff;
-  padding: 4px 10px;
-}
 .modal-my-adress .modal-body .saved-adress .saved-adress-item h4 {
   font: 900 17px "avenir";
   color: #ffffff;
@@ -2518,62 +2532,6 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 }
 .modal-my-adress .modal-body .add-adress-form {
   padding: 30px;
-}
-.modal-my-adress .modal-body .add-adress-form .form-group {
-  margin-bottom: 14px;
-}
-.modal-my-adress .modal-body .add-adress-form .form-group label {
-  width: 100%;
-  margin-bottom: 8px;
-  display: block;
-  font: 900 14px "avenir";
-  color: #9a9a9a;
-}
-.modal-my-adress .modal-body .add-adress-form .form-group .icon-input {
-  display: flex;
-  height: 50px;
-  align-items: center;
-  border-radius: 9px;
-  background-color: #f8f8f8;
-  padding: 0 19px;
-}
-.modal-my-adress .modal-body .add-adress-form .form-group .icon-input.textarea {
-  height: 130px;
-  padding: 19px;
-}
-.modal-my-adress .modal-body .add-adress-form .form-group .icon-input input,
-.modal-my-adress .modal-body .add-adress-form .form-group .icon-input textarea {
-  padding-left: 14px;
-  width: 100%;
-  font: 500 14px "avenir";
-  color: #000000;
-}
-.modal-my-adress .modal-body .add-adress-form .form-group .icon-input input::-moz-placeholder, .modal-my-adress .modal-body .add-adress-form .form-group .icon-input textarea::-moz-placeholder {
-  color: #9a9a9a;
-}
-.modal-my-adress .modal-body .add-adress-form .form-group .icon-input input:-ms-input-placeholder, .modal-my-adress .modal-body .add-adress-form .form-group .icon-input textarea:-ms-input-placeholder {
-  color: #9a9a9a;
-}
-.modal-my-adress .modal-body .add-adress-form .form-group .icon-input input::placeholder,
-.modal-my-adress .modal-body .add-adress-form .form-group .icon-input textarea::placeholder {
-  color: #9a9a9a;
-}
-.modal-my-adress .modal-body .add-adress-form .form-group .icon-input textarea {
-  height: 100%;
-  padding: 0;
-}
-.modal-my-adress .modal-body .add-adress-form .form-group .icon-input span {
-  font-size: 16px;
-  color: #9a9a9a;
-}
-.modal-my-adress .modal-body .add-adress-form .save-adress-btn {
-  height: 50px;
-  background-color: #f54748;
-  width: 100%;
-  border-radius: 17px;
-  font: 900 16px "avenir";
-  color: #ffffff;
-  margin-top: 10px;
 }
 
 .notification-modal {
@@ -2727,8 +2685,6 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   background-color: #ffffff;
   overflow: auto;
   padding: 35px;
-  border-bottom-left-radius: 19px;
-  border-bottom-right-radius: 19px;
 }
 .modal-documentation .modal-body.documentation-detail {
   max-height: 350px;
@@ -2783,8 +2739,6 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   background-color: #ffffff;
   overflow: auto;
   padding: 15px;
-  border-bottom-left-radius: 19px;
-  border-bottom-right-radius: 19px;
 }
 .modal-ask-new-question .modal-body textarea {
   border: solid 1px #dddddd;
@@ -2807,18 +2761,6 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 }
 .modal-ask-new-question .modal-body textarea::placeholder {
   color: #f0f0f0;
-}
-.modal-ask-new-question .modal-body button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50px;
-  background-color: #f54748;
-  border-radius: 17px;
-  color: #ffffff;
-  font: 900 18px "avenir";
-  width: 100%;
-  margin-top: 20px;
 }
 
 .modal-login {
@@ -2881,64 +2823,6 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 .modal-login .modal-body .login-register-side .link-item.active::after {
   opacity: 1;
   background-color: #f54748;
-}
-.modal-login .modal-body .form-group {
-  width: 100%;
-  margin-bottom: 15px;
-}
-.modal-login .modal-body .form-group label {
-  width: 100%;
-  font: 900 14px "avenir";
-  color: #c1c1c1;
-}
-.modal-login .modal-body .form-group .icon-input {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  border-bottom: solid 1px #f0f0f0;
-  height: 30px;
-}
-.modal-login .modal-body .form-group .icon-input input {
-  width: 100%;
-  font: 800 14px "avenir";
-}
-.modal-login .modal-body .form-group .icon-bg-input {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  background-color: #f8f8f8;
-  border-radius: 9px;
-  height: 50px;
-  padding: 0 20px;
-}
-.modal-login .modal-body .form-group .icon-bg-input span {
-  color: #DDDDDD;
-}
-.modal-login .modal-body .form-group .icon-bg-input input {
-  width: 100%;
-  font: 500 14px "avenir";
-  padding-left: 10px;
-}
-.modal-login .modal-body .form-group .icon-bg-input input::-moz-placeholder {
-  color: #9a9a9a;
-}
-.modal-login .modal-body .form-group .icon-bg-input input:-ms-input-placeholder {
-  color: #9a9a9a;
-}
-.modal-login .modal-body .form-group .icon-bg-input input::placeholder {
-  color: #9a9a9a;
-}
-.modal-login .modal-body .login-btn {
-  width: 100%;
-  height: 50px;
-  background-color: #f54748;
-  border-radius: 10px;
-  color: #ffffff;
-  font: 900 16px "avenir";
-  transition: 0.6s;
-}
-.modal-login .modal-body .login-btn:hover {
-  background-color: #fd7777;
 }
 .modal-login .modal-body .forget-password {
   text-align: center;

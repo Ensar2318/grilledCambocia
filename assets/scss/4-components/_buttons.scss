@@ -28,6 +28,9 @@
     color: $white;
     background-color: $primary;
     position: relative;
+    &.w100{
+        width: 100%;
+    }
     .left-icon {
         position: absolute;
         left: 24px;
@@ -42,4 +45,49 @@
     height: 40px;
     font-size: 14px;
    }
+}
+
+.btn-inside-icon {
+    width: 100%;
+    height: 44px;
+    box-shadow: $box-shadow;
+    border-radius: 10px;
+    color: $black;
+    transition: $transition;
+    font: 900 14px $avenir;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    span {
+        position: absolute;
+        left: 10px;
+    }
+    &:hover {
+        background-color: $light;
+    }
+}
+
+.add-adress-btn {
+    box-shadow: $box-shadow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    height: 60px;
+    font: 900 15px $avenir;
+    margin: 0 20px;
+    color: $primary;
+    position: relative;
+    span {
+        position: absolute;
+        right: 15px;
+    }
+}
+.edit-adress-btn {
+    font: 900 15px $avenir;
+    color: $white;
+    border-radius: 10px;
+    border: solid 1px $white;
+    padding: 4px 10px;
 }
