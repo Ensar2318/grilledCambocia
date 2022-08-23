@@ -171,8 +171,8 @@ $(".icon-menus a").click(function(e) {
     }
 });
 // dropdownlı kısımları eventpropogation hale getirme işlemi
-$(".icon-menus .dropdown").click(function (e) { 
-    e.stopPropagation();   
+$(".icon-menus .dropdown").click(function(e) {
+    e.stopPropagation();
 });
 
 // Bodye tıklayınca closelama işlemleri
@@ -181,33 +181,50 @@ $("body").click(function(e) {
 });
 
 // Discount modal açılış 
-$(".discount-modal-btn").click(function (e) { 
+$(".discount-modal-btn").click(function(e) {
     e.preventDefault();
-    $("#discount-modal").css("display","flex");
+    $("#discount-modal").css("display", "flex");
 });
 // Discount modal açılış 
 
 
 // Settings modal açılış 
-$(".settings-modal-btn").click(function (e) { 
+$(".settings-modal-btn").click(function(e) {
     e.preventDefault();
-    $("#settings").css("display","flex");
+    $("#settings").css("display", "flex");
 });
 // Settings modal açılış 
 
 // Settings modal açılış 
-$(".store-modal-btn").click(function (e) { 
+$(".store-modal-btn").click(function(e) {
     e.preventDefault();
-    $("#store-modal").css("display","flex");
+    $("#store-modal").css("display", "flex");
 });
 // Settings modal açılış 
 
+// Settings modal yönlendirmesi
+$("#settings .link-item").click(function(e) {
+    e.preventDefault();
+    const dataHref = $(this).attr("data-href-modal");
+    $(this).parent().parent().parent().hide();
+    $(dataHref).css("display", "flex");
+});
+// Settings modal yönlendirmesi
+
+// Back-btn modal geri tuşu
+$(".modal-click").click(function (e) { 
+    e.preventDefault();
+    const dataHref = $(this).attr("data-href-modal");
+    $(".modal-wrap").hide();
+    $(dataHref).css("display", "flex");
+});
+// Back-btn modal geri tuşu
 
 
 // Modal kapatmak için gereken kod
-$(".modal-wrap .close-btn").click(function (e) { 
+$(".modal-wrap .close-btn").click(function(e) {
     e.preventDefault();
-    $(this).parent().parent().parent().css("display","none");
+    $(this).parent().parent().parent().css("display", "none");
 });
 
 

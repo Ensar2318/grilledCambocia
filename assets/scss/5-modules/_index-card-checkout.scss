@@ -5,7 +5,7 @@
     border-radius: 20px;
     position: sticky;
     top: 92px;
-    @media(max-height:500px){
+    @media (max-height: 500px) {
         overflow: auto;
         max-height: 450px;
     }
@@ -45,17 +45,17 @@
         position: relative;
         padding: 10px 25px;
         overflow: auto;
-        @media(max-height:700px){
+        @media (max-height: 700px) {
             height: 200px;
         }
-        @media(max-height:500px){
-            height: 250px;
+        @media (max-height: 500px) {
+            height: 30vh;
         }
         &::-webkit-scrollbar {
             background: none;
             width: 8px;
         }
-        &::-webkit-scrollbar-thumb{
+        &::-webkit-scrollbar-thumb {
             background: $gray-100;
             border-radius: 20px;
         }
@@ -70,7 +70,7 @@
             top: 50%;
             transform: translate(-50%, -50%);
             width: 100%;
-         
+
             .bag-circle {
                 width: 97px;
                 height: 97px;
@@ -101,11 +101,13 @@
                     h5 {
                         font: 900 15px $avenir;
                         color: $black;
+                        @include media-down("md") {
+                            font-size: 12px;
+                        }
                     }
                     small {
                         font: 500 11px $avenir;
                         color: $gray-100;
-                      
                     }
                 }
                 a {
@@ -113,11 +115,14 @@
                     color: $primary;
                     margin-right: 17px;
                     transition: $transition;
-                    &:hover{
+                    &:hover {
                         color: $primary-hover;
                     }
                     @include media-down("xxxl") {
                         margin-right: 4px;
+                    }
+                    @include media-down("md"){
+                    font-size: 12px;
                     }
                 }
                 span {
@@ -125,10 +130,11 @@
                     margin-top: 2px;
                     color: $primary;
                     cursor: pointer;
-                    @include media-down("lg"){
+                    @include media-down("lg") {
                         padding-left: 10px;
                         font-size: 22px;
                     }
+                    
                 }
             }
             .footer {
@@ -143,6 +149,9 @@
                 h3 {
                     font: 900 22px $avenir;
                     color: $black;
+                    @include media-down("md"){
+                    font-size: 20px;
+                    }
                 }
             }
         }
@@ -166,16 +175,29 @@
                 color: $black-zero;
             }
         }
+        @include media-down("md") {
+            .text-group {
+                .text {
+                    font-size: 14px;
+                }
+                .price {
+                    font-size: 12px;
+                }
+            }
+        }
     }
     .card-footer {
         padding: 20px 18px 18px 18px;
+        @include media-down("md") {
+            padding: 8px;
+        }
         p {
             text-align: center;
             font: 500 10px $avenir;
             color: $gray-200;
             margin-bottom: 32px;
-            @media(max-height:600px){
-              display: none;
+            @media (max-height: 600px) {
+                display: none;
             }
         }
     }

@@ -139,6 +139,9 @@
     width: 534px;
     overflow: hidden;
     max-height: 100%;
+    @media(max-height:400px){
+        overflow: auto;
+    }
     .modal-head {
         padding: 20px 18px;
         display: flex;
@@ -639,6 +642,9 @@
     width: 534px;
     overflow: hidden;
     max-height: 100%;
+    @media(max-height:400px){
+        overflow: auto;
+    }
 
     .modal-head {
         padding: 40px 18px;
@@ -867,7 +873,9 @@
     width: 734px;
     overflow: hidden;
     max-height: 100%;
-
+    @media(max-height:400px){
+        overflow: auto;
+    }
     .modal-head {
         padding: 30px 35px 10px 35px;
         display: flex;

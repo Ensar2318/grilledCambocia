@@ -1338,6 +1338,12 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 .checkout-btn.active:hover {
   background-color: #fd7777;
 }
+@media (max-width: 767px) {
+  .checkout-btn {
+    font-size: 12px;
+    height: 40px;
+  }
+}
 
 .btn-primary {
   height: 50px;
@@ -1865,7 +1871,7 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 }
 @media (max-height: 500px) {
   .card-checkout-wrap .card-content {
-    height: 250px;
+    height: 30vh;
   }
 }
 .card-checkout-wrap .card-content::-webkit-scrollbar {
@@ -1920,6 +1926,11 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   font: 900 15px "avenir";
   color: #1f272e;
 }
+@media (max-width: 767px) {
+  .card-checkout-wrap .card-content .card-item .title .text-head h5 {
+    font-size: 12px;
+  }
+}
 .card-checkout-wrap .card-content .card-item .title .text-head small {
   font: 500 11px "avenir";
   color: #c1c1c1;
@@ -1936,6 +1947,11 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 @media (max-width: 1599px) {
   .card-checkout-wrap .card-content .card-item .title a {
     margin-right: 4px;
+  }
+}
+@media (max-width: 767px) {
+  .card-checkout-wrap .card-content .card-item .title a {
+    font-size: 12px;
   }
 }
 .card-checkout-wrap .card-content .card-item .title span {
@@ -1964,6 +1980,11 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   font: 900 22px "avenir";
   color: #1f272e;
 }
+@media (max-width: 767px) {
+  .card-checkout-wrap .card-content .card-item .footer h3 {
+    font-size: 20px;
+  }
+}
 .card-checkout-wrap .card-price {
   border-bottom: solid 1px #f5f5f5;
   border-top: solid 1px #f5f5f5;
@@ -1984,8 +2005,21 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   font: 900 18px "avenir";
   color: #000000;
 }
+@media (max-width: 767px) {
+  .card-checkout-wrap .card-price .text-group .text {
+    font-size: 14px;
+  }
+  .card-checkout-wrap .card-price .text-group .price {
+    font-size: 12px;
+  }
+}
 .card-checkout-wrap .card-footer {
   padding: 20px 18px 18px 18px;
+}
+@media (max-width: 767px) {
+  .card-checkout-wrap .card-footer {
+    padding: 8px;
+  }
 }
 .card-checkout-wrap .card-footer p {
   text-align: center;
@@ -2227,6 +2261,11 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   width: 534px;
   overflow: hidden;
   max-height: 100%;
+}
+@media (max-height: 400px) {
+  .modal-card-settings {
+    overflow: auto;
+  }
 }
 .modal-card-settings .modal-head {
   padding: 20px 18px;
@@ -2729,6 +2768,11 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   overflow: hidden;
   max-height: 100%;
 }
+@media (max-height: 400px) {
+  .default-modal {
+    overflow: auto;
+  }
+}
 .default-modal .modal-head {
   padding: 40px 18px;
   display: flex;
@@ -2951,6 +2995,11 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   width: 734px;
   overflow: hidden;
   max-height: 100%;
+}
+@media (max-height: 400px) {
+  .restourant-comments {
+    overflow: auto;
+  }
 }
 .restourant-comments .modal-head {
   padding: 30px 35px 10px 35px;
