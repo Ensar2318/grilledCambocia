@@ -2129,19 +2129,10 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
           animation: modal-fadein normal 0.5s;
   transition: 0.5s;
   overflow: auto;
+  padding: 30px 10px;
 }
 .modal-wrap::-webkit-scrollbar {
   display: none;
-}
-@media (max-height: 800px) {
-  .modal-wrap {
-    padding: 30px 10px;
-  }
-}
-@media (max-width: 767px) {
-  .modal-wrap {
-    padding: 30px 10px;
-  }
 }
 
 .modal-head .close-btn {
@@ -2839,6 +2830,9 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 }
 .default-modal.documentation-detail {
   max-height: 350px;
+}
+.default-modal .document-detail-text {
+  height: 50vh;
 }
 .default-modal .documentation-wrap .documentation-item {
   height: 52px;
