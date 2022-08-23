@@ -8,20 +8,20 @@
     font: 900 16px $avenir;
     color: $gray-300;
     transition: $transition;
-    &.active{
+    &.active {
         background-color: $primary;
         color: $white;
-        &:hover{
+        &:hover {
             background-color: $primary-hover;
         }
     }
-    @include media-down("md"){
+    @include media-down("md") {
         font-size: 12px;
         height: 40px;
     }
 }
 
-.btn-primary{
+.btn-primary {
     height: 50px;
     display: flex;
     align-items: center;
@@ -32,7 +32,7 @@
     color: $white;
     background-color: $primary;
     position: relative;
-    &.w100{
+    &.w100 {
         width: 100%;
     }
     .left-icon {
@@ -45,12 +45,12 @@
     &:hover {
         background-color: $primary-hover;
     }
-   @include media-down("sm"){
-    height: 40px;
-    font-size: 14px;
-   }
+    @include media-down("sm") {
+        height: 40px;
+        font-size: 14px;
+    }
 }
-.btn-black{
+.btn-black {
     height: 50px;
     display: flex;
     align-items: center;
@@ -61,7 +61,7 @@
     color: $white;
     background-color: $black;
     position: relative;
-    &.w100{
+    &.w100 {
         width: 100%;
     }
     .left-icon {
@@ -74,10 +74,10 @@
     &:hover {
         background-color: $gray;
     }
-   @include media-down("sm"){
-    height: 40px;
-    font-size: 14px;
-   }
+    @include media-down("sm") {
+        height: 40px;
+        font-size: 14px;
+    }
 }
 
 .btn-inside-icon {
@@ -123,4 +123,8 @@
     border-radius: 10px;
     border: solid 1px $white;
     padding: 4px 10px;
+    @include media-down("sm") {
+        font-size: 12px;
+        padding: 4px;
+    }
 }

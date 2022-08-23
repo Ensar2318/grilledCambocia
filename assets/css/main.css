@@ -1454,6 +1454,12 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   border: solid 1px #ffffff;
   padding: 4px 10px;
 }
+@media (max-width: 575px) {
+  .edit-adress-btn {
+    font-size: 12px;
+    padding: 4px;
+  }
+}
 
 .fiat {
   display: flex;
@@ -2421,6 +2427,15 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   font: 900 14px "avenir";
   color: #ffffff;
 }
+@media (max-width: 575px) {
+  .modal-my-adress .modal-body .saved-adress .saved-adress-item p {
+    font-size: 10px;
+    text-align: center;
+  }
+  .modal-my-adress .modal-body .saved-adress .saved-adress-item h4 {
+    font-size: 12px;
+  }
+}
 
 .modal-my-cards {
   border-radius: 19px;
@@ -2508,6 +2523,12 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   border: solid 1px #ffffff;
   padding: 4px 10px;
 }
+@media (max-width: 575px) {
+  .modal-my-cards .saved-metods .saved-metod .edit-metod {
+    padding: 4px;
+    font-size: 12px;
+  }
+}
 .modal-my-cards .saved-metods .saved-metod h4 {
   font: 900 17px "avenir";
   color: #ffffff;
@@ -2516,6 +2537,14 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 .modal-my-cards .saved-metods .saved-metod p {
   font: 900 18px "avenir";
   color: #ffffff;
+}
+@media (max-width: 575px) {
+  .modal-my-cards .saved-metods .saved-metod p {
+    font-size: 14px;
+  }
+  .modal-my-cards .saved-metods .saved-metod h4 {
+    font-size: 14px;
+  }
 }
 
 .notification-modal {
