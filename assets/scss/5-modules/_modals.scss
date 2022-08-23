@@ -341,7 +341,7 @@
     border-radius: 19px;
     background-color: $white;
     width: 534px;
-    overflow: auto;
+    overflow: hidden;
     max-height: 100%;
 
     .modal-head {
@@ -364,6 +364,9 @@
 
     .modal-body {
         background-color: $white;
+        border-bottom-left-radius: 19px;
+        border-bottom-right-radius: 19px;
+
         .add-payment-metod {
             box-shadow: $box-shadow;
             display: flex;
