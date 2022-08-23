@@ -2106,6 +2106,7 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   border-radius: 19px;
   background-color: #ffffff;
   width: 534px;
+  overflow: hidden;
   max-height: 100%;
 }
 .modal-card-settings .modal-head {
