@@ -779,7 +779,7 @@
 
     <!-- =========== discount modal Start  =========== -->
     <div class="modal-wrap" id="discount-modal" style="display: none;">
-        <div class="modal-card">
+        <div class="modal-discount-card">
             <div class="modal-head bg-primary">
                 <h5 class="text-white">Rabattakionen</h5>
                 <div class="close-btn white"><span class="icon-plus"></span></div>
@@ -793,7 +793,7 @@
     <!-- discount modal END -->
 
     <!-- =========== Settings modal Start  =========== -->
-    <div class="modal-wrap" id="settings"style="display: none;">
+    <div class="modal-wrap" id="settings" style="display: none;">
         <div class="modal-card-settings">
             <div class="modal-head">
                 <h2>Orderio</h2>
@@ -853,11 +853,11 @@
     <!-- discount modal END -->
 
     <!-- =========== Store modal Start  =========== -->
-    <div class="modal-wrap" id="store-modal"  style="display: none;">
-        <div class="modal-card-store">
+    <div class="modal-wrap" id="store-modal" style="display: none;">
+        <div class="default-modal">
             <div class="modal-head">
-                <span class="icon-store icon"></span>
-                <p>Bewertungen</p>
+                <span class="icon-store small-icon text-primary"></span>
+                <p class="small-text">Bewertungen</p>
                 <div class="close-btn gray"><span class="icon-plus"></span></div>
             </div>
             <div class="modal-body">
@@ -968,7 +968,7 @@
 
     <!-- =========== payment methods modal Start  =========== -->
     <div class="modal-wrap" id="payment-methods-modal" style="display: none;">
-        <div class="modal-payment-methods">
+        <div class="modal-my-cards">
             <div class="modal-head">
                 <span class="icon-credit-card icon"></span>
                 <h5>Ödeme Yöntemlerim</h5>
@@ -1010,7 +1010,7 @@
 
     <!-- =========== add payment methods modal Start  =========== -->
     <div class="modal-wrap" id="add-payment-method-modal" style="display: none;">
-        <div class="modal-payment-methods">
+        <div class="default-modal">
             <div class="modal-head">
                 <span class="icon-credit-card icon"></span>
                 <h5>Ödeme Yöntemlerim</h5>
@@ -1018,7 +1018,7 @@
                 <div class="back-btn"><span class="icon-Arrow-icon-left"></span></div>
 
             </div>
-            <div class="modal-body">
+            <div class="modal-body p-4">
                 <form class="add-payment-form">
                     <div class="form-group">
                         <label>Karta İsim Ver</label>
@@ -1114,7 +1114,7 @@
 
     <!-- =========== add my adress modal Start  =========== -->
     <div class="modal-wrap" id="add-my-adress-modal" style="display: flex;">
-        <div class="modal-my-adress">
+        <div class="default-modal">
             <div class="modal-head">
                 <span class="icon-map-pin icon"></span>
                 <h5>Yeni Adres Ekle</h5>
@@ -1122,8 +1122,8 @@
                 <div class="back-btn"><span class="icon-Arrow-icon-left"></span></div>
 
             </div>
-            <div class="modal-body">
-                <form class="add-adress-form">
+            <div class="modal-body p-4">
+                <form>
                     <div class="form-group">
                         <label>Adres Başlığı</label>
                         <div class="icon-input">
@@ -1235,50 +1235,52 @@
 
     <!-- =========== My past orders modal Start  =========== -->
     <div class="modal-wrap" id="" style="display: none;">
-        <div class="modal-past-orders">
+        <div class="default-modal">
             <div class="modal-head">
-                <span class="icon-store icon"></span>
-                <p>Geçmiş Siparişlerim</p>
+                <span class="icon-store small-icon text-primary"></span>
+                <p class="small-text">Geçmiş Siparişlerim</p>
                 <div class="close-btn gray"><span class="icon-plus"></span></div>
                 <div class="back-btn"><span class="icon-Arrow-icon-left"></span></div>
 
             </div>
-            <div class="modal-body">
-                <div class="order-item">
-                    <span class="icon-headphone ficon"></span>
-                    <div class="d-flex flex-column">
-                        <h6>22 Tem 2020 19:16</h6>
-                        <h5>Kuzenimin Annesi</h5>
+            <div class="modal-body scroll">
+                <div class="order-wrap  p-4">
+                    <div class="order-item">
+                        <span class="icon-headphone ficon"></span>
+                        <div class="d-flex flex-column">
+                            <h6>22 Tem 2020 19:16</h6>
+                            <h5>Kuzenimin Annesi</h5>
+                        </div>
+                        <h3><span class="currency">€</span>32.96</h3>
+                        <span class="right icon-Arrow-icon-right"></span>
                     </div>
-                    <h3><span class="currency">€</span>32.96</h3>
-                    <span class="right icon-Arrow-icon-right"></span>
-                </div>
-                <div class="order-item">
-                    <span class="icon-headphone ficon"></span>
-                    <div class="d-flex flex-column">
-                        <h6>22 Tem 2020 19:16</h6>
-                        <h5>Kuzenimin Annesi</h5>
+                    <div class="order-item">
+                        <span class="icon-headphone ficon"></span>
+                        <div class="d-flex flex-column">
+                            <h6>22 Tem 2020 19:16</h6>
+                            <h5>Kuzenimin Annesi</h5>
+                        </div>
+                        <h3><span class="currency">€</span>32.96</h3>
+                        <span class="right icon-Arrow-icon-right"></span>
                     </div>
-                    <h3><span class="currency">€</span>32.96</h3>
-                    <span class="right icon-Arrow-icon-right"></span>
-                </div>
-                <div class="order-item">
-                    <span class="icon-headphone ficon"></span>
-                    <div class="d-flex flex-column">
-                        <h6>22 Tem 2020 19:16</h6>
-                        <h5>Kuzenimin Annesi</h5>
+                    <div class="order-item">
+                        <span class="icon-headphone ficon"></span>
+                        <div class="d-flex flex-column">
+                            <h6>22 Tem 2020 19:16</h6>
+                            <h5>Kuzenimin Annesi</h5>
+                        </div>
+                        <h3><span class="currency">€</span>32.96</h3>
+                        <span class="right icon-Arrow-icon-right"></span>
                     </div>
-                    <h3><span class="currency">€</span>32.96</h3>
-                    <span class="right icon-Arrow-icon-right"></span>
-                </div>
-                <div class="order-item">
-                    <span class="icon-headphone ficon"></span>
-                    <div class="d-flex flex-column">
-                        <h6>22 Tem 2020 19:16</h6>
-                        <h5>Kuzenimin Annesi</h5>
+                    <div class="order-item">
+                        <span class="icon-headphone ficon"></span>
+                        <div class="d-flex flex-column">
+                            <h6>22 Tem 2020 19:16</h6>
+                            <h5>Kuzenimin Annesi</h5>
+                        </div>
+                        <h3><span class="currency">€</span>32.96</h3>
+                        <span class="right icon-Arrow-icon-right"></span>
                     </div>
-                    <h3><span class="currency">€</span>32.96</h3>
-                    <span class="right icon-Arrow-icon-right"></span>
                 </div>
             </div>
         </div>
@@ -1287,35 +1289,37 @@
 
     <!-- =========== Documentation modal Start  =========== -->
     <div class="modal-wrap" id="" style="display: none;">
-        <div class="modal-documentation">
+        <div class="default-modal">
             <div class="modal-head">
-                <span class="icon-store icon"></span>
-                <p class="title">Dökümantasyon</p>
+                <span class="icon-store small-icon text-primary"></span>
+                <h5>Dökümantasyon</h5>
                 <div class="close-btn gray"><span class="icon-plus"></span></div>
                 <div class="back-btn"><span class="icon-Arrow-icon-left"></span></div>
 
             </div>
-            <div class="modal-body">
-                <div class="documentation-item">
-                    <p>Hakkımızda</p>
-                </div>
-                <div class="documentation-item">
-                    <p>Müşteri Kişisel Verilerin Korunması Politikası</p>
-                </div>
-                <div class="documentation-item">
-                    <p>Müşteri Kişisel Verileri Aydınlatma Metni</p>
-                </div>
-                <div class="documentation-item">
-                    <p>Tanımlama Teknolojileri Hakkında Bilgilendirme</p>
-                </div>
-                <div class="documentation-item">
-                    <p>Gizlilik Politikası</p>
-                </div>
-                <div class="documentation-item">
-                    <p>Kullanım Koşulları</p>
-                </div>
-                <div class="documentation-item">
-                    <p>S.S.S.</p>
+            <div class="modal-body p-4">
+                <div class="documentation-wrap">
+                    <div class="documentation-item">
+                        <p>Hakkımızda</p>
+                    </div>
+                    <div class="documentation-item">
+                        <p>Müşteri Kişisel Verilerin Korunması Politikası</p>
+                    </div>
+                    <div class="documentation-item">
+                        <p>Müşteri Kişisel Verileri Aydınlatma Metni</p>
+                    </div>
+                    <div class="documentation-item">
+                        <p>Tanımlama Teknolojileri Hakkında Bilgilendirme</p>
+                    </div>
+                    <div class="documentation-item">
+                        <p>Gizlilik Politikası</p>
+                    </div>
+                    <div class="documentation-item">
+                        <p>Kullanım Koşulları</p>
+                    </div>
+                    <div class="documentation-item">
+                        <p>S.S.S.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1340,7 +1344,7 @@
 
 
     <!-- =========== Login page modal Start  =========== -->
-    <div class="modal-wrap" id="" style="display: flex;">
+    <div class="modal-wrap" id="" style="display: none;">
         <div class="modal-login">
             <div class="modal-head">
                 <h2>Orderio</h2>
@@ -1450,12 +1454,262 @@
                     <img src="assets/img/menu-card-images/image-1.png" alt="">
                 </div>
                 <div class="product-info-card">
-                     
+
                 </div>
             </div>
         </div>
     </div>
     <!-- Edit Product moda l END -->
+
+    <!-- =========== update your information modal Start  =========== -->
+    <div class="modal-wrap" id="" style="display: none;">
+        <div class="default-modal">
+            <div class="modal-head">
+                <span class="icon-user icon"></span>
+                <h5>Bilgilerini Güncelle</h5>
+                <div class="close-btn gray"><span class="icon-plus"></span></div>
+                <div class="back-btn"><span class="icon-Arrow-icon-left"></span></div>
+
+            </div>
+            <div class="modal-body p-4">
+                <form class="add-payment-form">
+                    <div class="form-group">
+                        <label>Ad Soyad</label>
+                        <div class="icon-input">
+                            <span class="icon-apple"></span>
+                            <input type="text" placeholder="My Card">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Kart Numarası</label>
+                        <div class="icon-input">
+                            <span class="icon-credit-card"></span>
+                            <input type="text" placeholder="My Card">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Kart Üzerindeki İsim</label>
+                        <div class="icon-input">
+                            <span class="icon-user"></span>
+                            <input type="text" placeholder="Ad Soyad">
+                        </div>
+                    </div>
+
+                    <button class="btn-primary w-100">
+                        Kaydet
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- update your information modal END -->
+
+    <!-- =========== forget your password modal Start  =========== -->
+    <div class="modal-wrap" id="" style="display: none;">
+        <div class="default-modal">
+            <div class="modal-head">
+                <span class="icon-default-key icon"></span>
+                <h5>Neues Passwort erstellen</h5>
+                <p class="sub-title">Fast fertig! Sie können nun ein neues Passwort festlegen.</p>
+                <div class="close-btn gray"><span class="icon-plus"></span></div>
+                <div class="back-btn"><span class="icon-Arrow-icon-left"></span></div>
+
+            </div>
+            <div class="modal-body p-4">
+                <form class="add-payment-form">
+                    <div class="form-group">
+                        <label>Ad Soyad</label>
+                        <div class="icon-input">
+                            <span class="icon-apple"></span>
+                            <input type="text" placeholder="My Card">
+                            <span class="icon-shut-eye"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Kart Numarası</label>
+                        <div class="icon-input">
+                            <span class="icon-credit-card"></span>
+                            <input type="text" placeholder="My Card">
+                            <span class="icon-shut-eye"></span>
+                        </div>
+                    </div>
+                    <button class="btn-primary w-100">
+                        Kaydet
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- forget your password modal END -->
+
+    <!-- =========== forget your password only email modal Start  =========== -->
+    <div class="modal-wrap" id="" style="display: none;">
+        <div class="default-modal">
+            <div class="modal-head">
+                <span class="icon-default-key icon"></span>
+                <h5>Neues Passwort erstellen</h5>
+                <p class="sub-title">Fast fertig! Sie können nun ein neues Passwort festlegen.</p>
+                <div class="close-btn gray"><span class="icon-plus"></span></div>
+                <div class="back-btn"><span class="icon-Arrow-icon-left"></span></div>
+
+            </div>
+            <div class="modal-body p-4">
+                <form class="add-payment-form">
+                    <div class="form-group">
+                        <label>Kart Numarası</label>
+                        <div class="icon-input">
+                            <span class="icon-credit-card"></span>
+                            <input type="text" placeholder="My Card">
+
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <button class="btn-primary w-100 me-3">
+                            Kaydet
+                        </button>
+                        <button class="btn-black w-100 ms-4">
+                            Kaydet
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- forget your password only email modal END -->
+
+    <!-- =========== restourant comments modal Start  =========== -->
+    <div class="modal-wrap" id="" style="display: none;">
+        <div class="restourant-comments">
+            <div class="modal-head">
+                <h6 class="text-center">Restoran Yorumları</h5>
+                    <h5 class="mb-2 mt-5">Yorumlar</h5>
+                    <ol>
+                        <li class="active"><span class="icon-star-flat icon-star"></span> Tümü </li>
+                        <li><span class="icon-star-flat icon-star"></span> 5 </li>
+                        <li><span class="icon-star-flat icon-star"></span> 4 </li>
+                        <li><span class="icon-star-flat icon-star"></span> 3 </li>
+                        <li><span class="icon-star-flat icon-star"></span> 2 </li>
+                        <li><span class="icon-star-flat icon-star"></span> 1 </li>
+                    </ol>
+                    <div class="close-btn gray"><span class="icon-plus"></span></div>
+            </div>
+            <div class="modal-body ">
+                <div class="restourant-comment-wrap p-4">
+                    <div class="restourant-comment-item">
+                        <div class="user">
+                            <div class="profile-img">
+                                <img src="assets/img/restourant-comments/user.png" alt="">
+                            </div>
+                            <div>
+                                <span class="title">Amanda</span>
+                                <div class="stars">
+                                    <span class="icon-star-radio"></span>
+                                    <span class="icon-star-radio"></span>
+                                    <span class="icon-star-radio"></span>
+                                    <span class="icon-star-radio"></span>
+                                    <span class="icon-star-radio"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user-photos">
+                            <a href=""><img src="assets/img/restourant-comments/1.png" alt=""></a>
+                            <a href=""> <img src="assets/img/restourant-comments/2.png" alt=""></a>
+                            <a href=""> <img src="assets/img/restourant-comments/2.png" alt=""></a>
+                        </div>
+                        <p class="comment">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem
+                            Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown
+                            printer
+                            took a galley of type and scrambled it to make a type specimen book. It has survived not
+                            only
+                            five centuries, but also the leap into electronic typesetting, remaining essentially
+                            unchanged.
+                        </p>
+                    </div>
+                    <div class="restourant-comment-item">
+                        <div class="user">
+                            <div class="profile-img">
+                                <img src="assets/img/restourant-comments/user.png" alt="">
+                            </div>
+                            <div>
+                                <span class="title">Amanda</span>
+                                <div class="stars">
+                                    <span class="icon-star-radio"></span>
+                                    <span class="icon-star-radio"></span>
+                                    <span class="icon-star-radio"></span>
+                                    <span class="icon-star-radio"></span>
+                                    <span class="icon-star-radio"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user-photos">
+
+                        </div>
+                        <p class="comment">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem
+                            Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown
+                            printer
+                            took a galley of type and scrambled it to make a type specimen book. It has survived not
+                            only
+                            five centuries, but also the leap into electronic typesetting, remaining essentially
+                            unchanged.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- restourant comments modal END -->
+
+    <!-- =========== Map  modal Start  =========== -->
+    <div class="modal-wrap" id="" style="display: none;">
+        <div class="default-modal">
+            <div class="modal-head">
+                <span class="icon-store small-icon text-primary"></span>
+                <h6 class="small-text">Dökümantasyon</h6>
+                <div class="close-btn gray"><span class="icon-plus"></span></div>
+            </div>
+            <div class="modal-body">
+                <div class="map-wrap">
+                    <iframe class="map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12038.700835355508!2d28.9412191!3d41.0323612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caba0f9304d1a1%3A0x201a60c577ef83f8!2sPalace%20of%20the%20Porphyrogenitus!5e0!3m2!1sen!2str!4v1661252487297!5m2!1sen!2str"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Map  modal END -->
+
+    <!-- =========== product info modal Start  =========== -->
+    <div class="modal-wrap" id="" style="display: none;">
+        <div class="product-info-modal">
+            <div class="modal-head">
+
+                <h6>Rabattakionen</h6>
+                <div class="close-btn gray"><span class="icon-plus"></span></div>
+            </div>
+            <div class="modal-body p-3">
+                <div class="info-card">
+                    <p>Allergene</p>
+                    <p>Antioxidationsmittel, geschwarzt</p>
+                </div>
+                <div class="info-card">
+                    <p>Allergene</p>
+                    <p>Antioxidationsmittel, geschwarzt</p>
+                </div>
+                <div class="info-other-card">
+                    <p>
+                        Wenden Sie sich telefonisch (02361 849 45 74)
+                        an uns, wenn Allergien und Intoleranzen vorliegen
+                        und Sie Fragen zu bestimmten Speisen auf der
+                        Karte Haben.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- product info modal END -->
 
     <!-- =========== default modal Start  =========== -->
     <div class="modal-wrap" id="" style="display: none;">

@@ -46,6 +46,35 @@
     font-size: 14px;
    }
 }
+.btn-black{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 17px;
+    font: 900 16px $avenir;
+    transition: $transition;
+    color: $white;
+    background-color: $black;
+    position: relative;
+    &.w100{
+        width: 100%;
+    }
+    .left-icon {
+        position: absolute;
+        left: 24px;
+        top: 50%;
+        font-size: 20px;
+        transform: translateY(-50%);
+    }
+    &:hover {
+        background-color: $gray;
+    }
+   @include media-down("sm"){
+    height: 40px;
+    font-size: 14px;
+   }
+}
 
 .btn-inside-icon {
     width: 100%;

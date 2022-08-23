@@ -1,0 +1,56 @@
+.form-group {
+    margin-bottom: 14px;
+    label {
+        width: 100%;
+        margin-bottom: 8px;
+        display: block;
+        font: 900 14px $avenir;
+        color: $gray-400;
+    }
+    .icon-input {
+        display: flex;
+        height: 50px;
+        align-items: center;
+        border-radius: 9px;
+        background-color: $light-500;
+        padding: 0 19px;
+        &.textarea {
+            height: 130px;
+            padding: 19px;
+        }
+        input,
+        textarea {
+            padding-left: 14px;
+            width: 100%;
+            font: 500 14px $avenir;
+            color: $black-zero;
+            &::placeholder {
+                color: $gray-400;
+            }
+        }
+        textarea {
+            height: 100%;
+            padding: 0;
+        }
+        span {
+            font-size: 16px;
+            color: #DDDDDD;
+        }
+    }
+    .icon-input-line{
+        display: flex;
+        height: 35px;
+        align-items: center;
+        border-radius: 9px;
+      
+        border-bottom: solid 1px $light;
+        input{
+            width: 100%;
+            font: 500 14px $avenir;
+            color: $black-zero;
+            &::placeholder {
+                color: $gray-400;
+            }
+        }
+    }
+}
