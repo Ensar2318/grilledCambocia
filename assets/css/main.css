@@ -2222,7 +2222,7 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   right: 0;
   top: 0;
   bottom: 0;
-  display: flex;
+  display: none;
   align-items: center;
   z-index: 999;
   justify-content: center;
@@ -3166,6 +3166,11 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   max-height: 320px;
   overflow: auto;
 }
+@media (max-width: 575px) {
+  .default-modal .order-wrap {
+    max-height: 60vh;
+  }
+}
 .default-modal .order-wrap .order-item {
   height: 80px;
   border-radius: 18px;
@@ -3173,6 +3178,7 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   display: flex;
   align-items: center;
   padding: 0 20px;
+  cursor: pointer;
 }
 .default-modal .order-wrap .order-item:not(:last-child) {
   margin-bottom: 18px;
