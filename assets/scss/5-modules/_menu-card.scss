@@ -55,6 +55,9 @@
             align-items: center;
             justify-content: space-between;
             height: 140px;
+            &.modal-version{
+                height: 70px;
+            }
             h2 {
                 font: 900 22px $avenir;
                 color: $black;

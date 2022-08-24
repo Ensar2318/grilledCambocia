@@ -1,0 +1,72 @@
+.preferences-item-card {
+    border-radius: 9px;
+    box-shadow: $box-shadow;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    .title{
+        font: 900 14px $avenir;
+        color: $black;
+    }
+    .detail{
+        font: 800 12px $avenir;
+        color: $black;
+    }
+}
+
+.kampanya-card{
+  
+    background-color: #FEF3ED;
+    height: 77px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 11px;
+    .circle{
+        height: 18px;
+        width: 22px;
+        position: absolute;
+        background-color: $white;
+        border-radius: 18px;
+        border: solid 1px #FA8D32;
+        top: 34px;
+      
+      
+        &.left{
+            left: 0;
+            transform: translateX(-50%);
+        }
+        &.right{
+            right: 0;
+            transform: translateX(50%);
+        }
+    }
+    .head{
+        height: 44px;
+        padding: 0 22px;
+        display: flex;
+        align-items: center;
+        border-bottom: dashed 1px #FA8D32;
+        font: 900 20px $avenir;
+        color: #FA8D32;
+        border-top: solid 1px #FA8D32;
+        border-left: solid 1px #FA8D32;
+        border-right: solid 1px #FA8D32;
+        border-top-left-radius: 11px;
+        border-top-right-radius: 11px;
+     
+    }
+    .footer{
+        height: 33px;
+        padding: 0 22px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font: 500 15px $avenir;
+        color: #FA8D32;
+        border-bottom: solid 1px #FA8D32;
+        border-left: solid 1px #FA8D32;
+        border-right: solid 1px #FA8D32;
+        border-bottom-left-radius: 11px;
+        border-bottom-right-radius: 11px;
+    }
+}
