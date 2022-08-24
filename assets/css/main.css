@@ -980,6 +980,10 @@ body {
   }
 }
 
+.overflow-hidden {
+  overflow: hidden !important;
+}
+
 header .banner-image {
   width: 100%;
 }
@@ -1268,7 +1272,7 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   left: 0;
   right: 0;
   bottom: 0;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px -11px 24px 6px;
   z-index: 99;
   transition: 0.3s;
 }
@@ -1632,7 +1636,7 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 }
 .form-group .icon-input span {
   font-size: 16px;
-  color: #DDDDDD;
+  color: #dddddd;
 }
 .form-group .icon-input-line {
   display: flex;
@@ -2361,7 +2365,7 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 @media (max-width: 767px) {
   .modal-card-settings .modal-body {
     padding: 20px;
-    max-height: 100vh;
+    max-height: 80vh;
   }
 }
 .modal-card-settings .modal-body .link-item {
@@ -2459,8 +2463,7 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 }
 @media (max-width: 767px) {
   .modal-my-adress .modal-body .saved-adress {
-    max-height: 100vh;
-    height: 100vh;
+    max-height: 80vh;
   }
 }
 .modal-my-adress .modal-body .saved-adress .no-adress {
@@ -2580,8 +2583,7 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 }
 @media (max-width: 767px) {
   .modal-my-cards .saved-metods {
-    max-height: 100vh;
-    height: 100vh;
+    max-height: 80vh;
   }
 }
 .modal-my-cards .saved-metods::-webkit-scrollbar {
@@ -2643,7 +2645,7 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 }
 @media (max-width: 767px) {
   .notification-modal {
-    border-radius: 0px;
+    margin: 0 20px;
   }
 }
 .notification-modal .modal-head {
@@ -2690,6 +2692,7 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 @media (max-width: 767px) {
   .modal-ask-new-question {
     border-radius: 0px;
+    height: 100vh;
   }
 }
 .modal-ask-new-question .modal-head {
@@ -2702,6 +2705,11 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   border-top-left-radius: 19px;
   border-top-right-radius: 19px;
   background-color: #f4f4f4;
+}
+@media (max-width: 767px) {
+  .modal-ask-new-question .modal-head {
+    border-radius: 0px;
+  }
 }
 .modal-ask-new-question .modal-head .title {
   font: 900 18px "avenir";
@@ -2730,6 +2738,11 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
     height: 200px;
   }
 }
+@media (max-width: 767px) {
+  .modal-ask-new-question .modal-body textarea {
+    height: 50vh;
+  }
+}
 .modal-ask-new-question .modal-body textarea::-moz-placeholder {
   color: #f0f0f0;
 }
@@ -2750,6 +2763,7 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 @media (max-width: 767px) {
   .modal-login {
     border-radius: 0px;
+    height: 100vh;
   }
 }
 .modal-login .modal-head {
@@ -2980,11 +2994,12 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 }
 @media (max-width: 767px) {
   .default-modal .modal-body.body-overflow {
-    height: 100vh;
+    height: 80vh;
   }
 }
 .default-modal.map-container {
   width: 750px;
+  overflow: auto;
 }
 .default-modal.documentation-detail {
   max-height: 350px;
@@ -3153,6 +3168,167 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 .default-modal .map-wrap .map {
   width: 100%;
   min-height: 250px;
+}
+.default-modal .map-content .title {
+  font: 900 18px "avenir";
+}
+.default-modal .map-content .icon {
+  font-size: 20px;
+  color: #f54748;
+}
+.default-modal .map-content .map-content-card {
+  padding: 20px;
+  font: 500 13px "avenir";
+  background-color: #f7f7f7;
+  border-radius: 14px;
+  color: #1f272e;
+}
+.default-modal .map-content .map-content-card .credit-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.default-modal .map-content .map-content-card .credit-cards img {
+  margin: 0 5px 10px 5px;
+}
+.default-modal .map-content .map-content-card tr td {
+  padding-bottom: 8px;
+}
+.default-modal .map-content .map-content-card p {
+  padding-bottom: 6px;
+}
+.default-modal .map-content .map-content-card .mail-phone {
+  padding: 18px 0;
+}
+.default-modal .map-content .map-content-card .mail-phone p {
+  display: flex;
+  align-items: center;
+}
+.default-modal .map-content .map-content-card .mail-phone p span {
+  font-size: 22px;
+  color: #999999;
+  margin-right: 8px;
+}
+.default-modal .restourant-chat-wrap {
+  display: flex;
+  flex-direction: column;
+  max-height: 450px;
+  overflow: auto;
+}
+@media (max-height: 700px) {
+  .default-modal .restourant-chat-wrap {
+    max-height: 50vh;
+  }
+}
+@media (max-height: 500px) {
+  .default-modal .restourant-chat-wrap {
+    max-height: 30vh;
+  }
+}
+@media (max-width: 767px) {
+  .default-modal .restourant-chat-wrap {
+    max-height: 69vh;
+    height: 69vh;
+  }
+}
+.default-modal .restourant-chat-wrap .chat-wrap {
+  max-width: 50%;
+  margin-bottom: 10px;
+}
+.default-modal .restourant-chat-wrap .chat-wrap .name {
+  padding-left: 11px;
+  padding-bottom: 6px;
+  font: 800 13px "avenir";
+  color: #999999;
+}
+.default-modal .restourant-chat-wrap .chat-wrap .chat-box {
+  padding: 6px 11px;
+  border-radius: 15px;
+  font: 800 15px "avenir";
+}
+.default-modal .restourant-chat-wrap .chat-wrap:nth-child(odd) {
+  align-self: flex-start;
+}
+.default-modal .restourant-chat-wrap .chat-wrap:nth-child(odd) .chat-box {
+  background-color: #f5f5f5;
+  color: #1f272e;
+}
+.default-modal .restourant-chat-wrap .chat-wrap:nth-child(odd) .tick {
+  display: none;
+}
+.default-modal .restourant-chat-wrap .chat-wrap:nth-child(even) {
+  align-self: flex-end;
+}
+.default-modal .restourant-chat-wrap .chat-wrap:nth-child(even) .chat-box {
+  background-color: #f54748;
+  color: #ffffff;
+}
+.default-modal .restourant-chat-wrap .chat-wrap:nth-child(even) .tick {
+  align-self: flex-end;
+  margin-left: 6px;
+  min-width: 15px;
+  height: 15px;
+  display: flex;
+  border-radius: 14px;
+  border: solid 2px #f54748;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4px;
+}
+.default-modal .restourant-chat-wrap .chat-wrap:nth-child(even) .tick span {
+  font-size: 6px;
+  color: #f54748;
+}
+.default-modal .restourant-chat-wrap .chat-wrap:nth-child(even) .name {
+  display: none;
+}
+.default-modal .restourant-chat-send {
+  border-top: solid 1px #f0f0f0;
+  display: flex;
+}
+.default-modal .restourant-chat-send .chat-input {
+  background-color: #f5f5f5;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  padding: 0 10px 0 30px;
+  margin-left: 20px;
+}
+.default-modal .restourant-chat-send .chat-input input {
+  width: 100%;
+  font: 800 14px "avenir";
+  color: #1f272e;
+}
+.default-modal .restourant-chat-send .chat-input input::-moz-placeholder {
+  color: #B0B0B2;
+}
+.default-modal .restourant-chat-send .chat-input input:-ms-input-placeholder {
+  color: #B0B0B2;
+}
+.default-modal .restourant-chat-send .chat-input input::placeholder {
+  color: #B0B0B2;
+}
+.default-modal .restourant-chat-send .send-btn {
+  background-color: #f54748;
+  border-radius: 12px;
+  min-width: 39px;
+  min-height: 39px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+}
+.default-modal .restourant-chat-send .attachment-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999999;
+  cursor: pointer;
+}
+.default-modal .restourant-chat-send .attachment-btn span {
+  font-size: 30px;
 }
 
 .restourant-comments {

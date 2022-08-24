@@ -180,27 +180,15 @@ $("body").click(function(e) {
     $(".icon-menus .dropdown").removeClass("active");
 });
 
-// Discount modal açılış 
-$(".discount-modal-btn").click(function(e) {
+// Search bar click event
+$("#search").click(function(e) {
     e.preventDefault();
-    $("#discount-modal").css("display", "flex");
+    $(this).parent().toggleClass("active");
+    $(".navbarSwiper").toggleClass("d-none");
+
 });
-// Discount modal açılış 
 
 
-// Settings modal açılış 
-$(".settings-modal-btn").click(function(e) {
-    e.preventDefault();
-    $("#settings").css("display", "flex");
-});
-// Settings modal açılış 
-
-// Settings modal açılış 
-$(".store-modal-btn").click(function(e) {
-    e.preventDefault();
-    $("#store-modal").css("display", "flex");
-});
-// Settings modal açılış 
 
 // Settings modal yönlendirmesi
 $("#settings .link-item").click(function(e) {
@@ -211,14 +199,14 @@ $("#settings .link-item").click(function(e) {
 });
 // Settings modal yönlendirmesi
 
-// Back-btn modal geri tuşu
-$(".modal-click").click(function (e) { 
+// Genel modal yönlendirme tıklama işlemi
+$(".modal-click").click(function(e) {
     e.preventDefault();
     const dataHref = $(this).attr("data-href-modal");
     $(".modal-wrap").hide();
     $(dataHref).css("display", "flex");
 });
-// Back-btn modal geri tuşu
+// Genel modal yönlendirme tıklama işlemi
 
 
 // Modal kapatmak için gereken kod
@@ -228,15 +216,30 @@ $(".modal-wrap .close-btn").click(function(e) {
 });
 
 
-
-// Search bar click event
-$("#search").click(function (e) { 
-    e.preventDefault();
-    $(this).parent().toggleClass("active");
-    $(".navbarSwiper").toggleClass("d-none");
- 
+$("#send-message").click(function(e) {
+    const message = $("#write-message").val();
+    const messageItem = `<div class="chat-wrap">
+    <h5 class="name">Ahmet B.</h5>
+    <div class="d-flex">
+        <div class="chat-box">` + message + `</div>
+        <div class="tick">
+            <span class="icon-tick"></span>
+        </div>
+    </div>
+</div>
+<div class="chat-wrap">
+    <h5 class="name">Ahmet B.</h5>
+    <div class="d-flex">
+        <div class="chat-box">KFC'yi tercih ettiğiniz için
+            teşekkür ederiz. Sağlıklı günler.</div>
+        <div class="tick">
+            <span class="icon-tick"></span>
+        </div>
+    </div>
+</div>`
+    $(".restourant-chat-wrap").append(messageItem);
+    $(".restourant-chat-wrap").animate({ scrollTop: 1000 });
 });
-
 
 
 

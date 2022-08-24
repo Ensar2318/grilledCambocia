@@ -291,7 +291,7 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgb(149 157 165 / 20%) 0px -11px 24px 6px;
     z-index: 99;
     transition: 0.3s;
     @include media-down("lg") {

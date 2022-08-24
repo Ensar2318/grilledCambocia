@@ -16,8 +16,8 @@
         display: none;
     }
     padding: 30px 10px;
-    @include media-down("md"){
-     padding: 0;   
+    @include media-down("md") {
+        padding: 0;
     }
 }
 .modal-head .close-btn {
@@ -101,7 +101,7 @@
     background-color: $white;
     width: 534px;
     overflow: hidden;
-    @include media-down("md"){
+    @include media-down("md") {
         border-radius: 0px;
     }
     .modal-head {
@@ -142,7 +142,7 @@
     @media (max-height: 400px) {
         overflow: auto;
     }
-    @include media-down("md"){
+    @include media-down("md") {
         border-radius: 0px;
         height: 100vh;
     }
@@ -176,7 +176,7 @@
         }
         @include media-down("md") {
             padding: 20px;
-            max-height: 100vh;
+            max-height: 80vh;
         }
         .link-item {
             height: 52px;
@@ -226,7 +226,7 @@
     width: 534px;
     overflow: auto;
     max-height: 100%;
-    @include media-down("md"){
+    @include media-down("md") {
         border-radius: 0px;
         height: 100vh;
     }
@@ -265,9 +265,8 @@
                 max-height: 170px;
                 min-height: 170px;
             }
-            @include media-down("md"){
-                max-height: 100vh;
-                height: 100vh;
+            @include media-down("md") {
+                max-height: 80vh;
             }
             .no-adress {
                 text-align: center;
@@ -327,11 +326,11 @@
     width: 534px;
     overflow: auto;
     max-height: 100%;
-    @include media-down("md"){
+    @include media-down("md") {
         border-radius: 0px;
         height: 100vh;
     }
-    
+
     .modal-head {
         padding: 40px 18px;
         display: flex;
@@ -382,9 +381,8 @@
             max-height: 170px;
             min-height: 170px;
         }
-        @include media-down("md"){
-            max-height: 100vh;
-            height: 100vh;
+        @include media-down("md") {
+            max-height: 80vh;
         }
         &::-webkit-scrollbar {
             background: none;
@@ -441,8 +439,8 @@
     overflow: auto;
     max-height: 100%;
     padding: 22px;
-    @include media-down("md"){
-        border-radius: 0px;
+    @include media-down("md") {
+        margin: 0 20px;
     }
     .modal-head {
         display: flex;
@@ -488,8 +486,9 @@
     width: 534px;
     overflow: auto;
     max-height: 100%;
-    @include media-down("md"){
+    @include media-down("md") {
         border-radius: 0px;
+        height: 100vh;
     }
     .modal-head {
         padding: 40px 18px;
@@ -501,6 +500,9 @@
         border-top-left-radius: 19px;
         border-top-right-radius: 19px;
         background-color: $light-300;
+        @include media-down("md") {
+            border-radius: 0px;
+        }
         .title {
             font: 900 18px $avenir;
             color: $black;
@@ -528,6 +530,9 @@
             @media (max-height: 768px) {
                 height: 200px;
             }
+            @include media-down("md") {
+                height: 50vh;
+            }
             &::placeholder {
                 color: $light;
             }
@@ -541,12 +546,13 @@
     width: 534px;
     overflow: auto;
     max-height: 100%;
-    @include media-down("md"){
+    @include media-down("md") {
         border-radius: 0px;
+        height: 100vh;
     }
     .modal-head {
         padding: 40px 18px;
-      
+
         display: flex;
         flex-direction: column;
         position: relative;
@@ -615,7 +621,7 @@
     width: 375px;
     overflow: auto;
     max-height: 100%;
-    @include media-down("md"){
+    @include media-down("md") {
         border-radius: 0px;
     }
     .modal-head {
@@ -647,7 +653,7 @@
     width: 375px;
     overflow: auto;
     max-height: 100%;
-    @include media-down("md"){
+    @include media-down("md") {
         border-radius: 0px;
     }
     .modal-head {
@@ -696,12 +702,11 @@
     @media (max-height: 400px) {
         overflow: auto;
     }
-    @include media-down("md"){
+    @include media-down("md") {
         border-radius: 0px;
         height: 100vh;
         overflow: auto;
     }
- 
 
     .modal-head {
         padding: 40px 18px;
@@ -710,7 +715,7 @@
         position: relative;
         justify-content: center;
         align-items: center;
-        &.box-shadow{
+        &.box-shadow {
             box-shadow: $box-shadow;
         }
         h5 {
@@ -766,15 +771,15 @@
             @media (max-height: 800px) {
                 height: 60vh;
             }
-            @include media-down("md"){
-                height: 100vh;
+            @include media-down("md") {
+                height: 80vh;
             }
         }
-     
     }
-    
-    &.map-container{
+
+    &.map-container {
         width: 750px;
+        overflow: auto;
     }
     &.documentation-detail {
         max-height: 350px;
@@ -927,7 +932,7 @@
             }
             @include media-down("sm") {
                 h6 {
-                   font-size: 12px;
+                    font-size: 12px;
                 }
                 h5 {
                     font-size: 13px;
@@ -946,6 +951,161 @@
         .map {
             width: 100%;
             min-height: 250px;
+        }
+    }
+    .map-content {
+        .title {
+            font: 900 18px $avenir;
+        }
+        .icon {
+            font-size: 20px;
+            color: $primary;
+        }
+        .map-content-card {
+            padding: 20px;
+            font: 500 13px $avenir;
+            background-color: #f7f7f7;
+            border-radius: 14px;
+            color: $black;
+            .credit-cards {
+                display: flex;
+                flex-wrap: wrap;
+                img {
+                    margin: 0 5px 10px 5px;
+                }
+            }
+            tr {
+                td {
+                    padding-bottom: 8px;
+                }
+            }
+            p {
+                padding-bottom: 6px;
+            }
+            .mail-phone {
+                padding: 18px 0;
+                p {
+                    display: flex;
+                    align-items: center;
+                    span {
+                        font-size: 22px;
+                        color: $gray;
+                        margin-right: 8px;
+                    }
+                }
+            }
+        }
+    }
+    .restourant-chat-wrap {
+        display: flex;
+        flex-direction: column;
+        max-height: 450px;
+        overflow: auto;
+        @media(max-height:700px){
+            max-height: 50vh;
+        }
+        @media(max-height:500px){
+            max-height: 30vh;
+        }
+        @include media-down("md"){
+            max-height: 69vh;
+            height: 69vh;
+        }
+        .chat-wrap {
+            max-width: 50%;
+            margin-bottom: 10px;
+            .name {
+                padding-left: 11px;
+                padding-bottom: 6px;
+                font: 800 13px $avenir;
+                color: $gray;
+            }
+            .chat-box {
+                padding: 6px 11px;
+                border-radius: 15px;
+                font: 800 15px $avenir;
+            }
+            &:nth-child(odd) {
+                align-self: flex-start;
+                .chat-box {
+                    background-color: $light-400;
+                    color: $black;
+                }
+                .tick{
+                    display: none;
+                }
+            }
+            &:nth-child(even) {
+                align-self: flex-end;
+                .chat-box {
+                    background-color: $primary;
+                    color:  $white;
+                }
+                .tick{
+                    align-self: flex-end;
+                    margin-left: 6px;
+                    min-width: 15px;
+                    height: 15px;
+                    display: flex;
+                    border-radius: 14px;
+                    border: solid 2px $primary;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 4px;
+                    span{
+                        font-size: 6px;
+                        color: $primary;
+                    }
+                }
+                .name{
+                    display: none;
+                }
+            }
+        }
+    }
+    .restourant-chat-send{
+        border-top: solid 1px $light;
+        display: flex;
+        .chat-input {
+            background-color: $light-400;
+            height: 55px;
+            display: flex;
+            align-items: center;
+            border-radius: 15px;
+            padding: 0 10px 0 30px;
+            margin-left: 20px;
+           
+            input {
+                width: 100%;
+                font: 800 14px $avenir;
+                color: $black;
+                &::placeholder{
+                    color: #B0B0B2;
+                }
+            }
+        }
+        .send-btn {
+            background-color: $primary;
+            border-radius: 12px;
+            min-width: 39px;
+            min-height: 39px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $white;
+            font-size: 16px;
+            cursor: pointer;
+            
+        }
+        .attachment-btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $gray;
+            cursor: pointer;
+            span{
+                font-size: 30px;
+            }
         }
     }
 }

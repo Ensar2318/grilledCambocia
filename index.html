@@ -37,7 +37,7 @@
                                 <span class="icon-star-radio"></span>
                                 <span class="icon-star-radio"></span>
                             </div>
-                            <h6>(1 Bewertungen)</h6>
+                            <h6 class="modal-click" data-href-modal="#store-comments-modal">(1 Yorumlar)</h6>
                             <p>Ab einem Mindestbestellwert von 30€ gibt es ein</p>
                         </div>
                     </div>
@@ -106,10 +106,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <a class="store-modal-btn" href="javascript:;"> <span class="icon-store"></span></a>
-                            <a href="javascript:;"><span class="icon-headphone"></span></a>
-                            <a class="discount-modal-btn" href="javascript:;"> <span class="icon-megaphone"></span></a>
-                            <a class="settings-modal-btn" href="javascript:;"> <span class="icon-gear"></span></a>
+                            <a class="store-modal-btn modal-click" data-href-modal="#about-restourant-modal"
+                                href="javascript:;"> <span class="icon-store"></span></a>
+                            <a class="modal-click" data-href-modal="#restourant-chat-modal" href="javascript:;"><span class="icon-headphone"></span></a>
+                            <a class="modal-click" data-href-modal="#discount-modal" href="javascript:;"> <span class="icon-megaphone"></span></a>
+                            <a class="modal-click" data-href-modal="#settings" href="javascript:;"> <span class="icon-gear"></span></a>
                         </div>
                     </div>
                 </div>
@@ -856,11 +857,11 @@
     <!-- discount modal END -->
 
     <!-- =========== Store modal Start  =========== -->
-    <div class="modal-wrap" id="store-modal" style="display: none;">
+    <div class="modal-wrap" id="store-comments-modal" style="display: none;">
         <div class="default-modal">
             <div class="modal-head">
                 <span class="icon-store small-icon text-primary"></span>
-                <p class="small-text">Bewertungen</p>
+                <p class="small-text">Yorumlar</p>
                 <div class="close-btn gray"><span class="icon-plus"></span></div>
             </div>
             <div class="modal-body">
@@ -873,7 +874,7 @@
                                 <div class="stars"><span class="icon-star-radio"></span><span
                                         class="icon-star-radio"></span><span class="icon-star-radio"></span><span
                                         class="icon-star-radio"></span><span class="icon-star-radio"></span></div>
-                                <h5>1 Bewertungen</h5>
+                                <h5>1 Yorumlar</h5>
                             </div>
                         </div>
                     </div>
@@ -1728,36 +1729,151 @@
     </div>
     <!-- restourant comments modal END -->
 
-    <!-- =========== Map  modal Start  =========== -->
-    <div class="modal-wrap" id="" style="display: none;">
+    <!-- =========== restorant hakkında ve Map  modal Start  =========== -->
+    <div class="modal-wrap" id="about-restourant-modal" style="display: none;">
         <div class="default-modal map-container">
             <div class="modal-head box-shadow">
                 <span class="icon-store small-icon text-primary"></span>
-                <h6 class="small-text">Dökümantasyon</h6>
+                <h6 class="small-text">Restoran hakkında</h6>
                 <div class="close-btn gray"><span class="icon-plus"></span></div>
             </div>
-            <div class="modal-body ">
+            <div class="modal-body overflow-hidden">
                 <div class="map-wrap">
                     <iframe class="map"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12038.700835355508!2d28.9412191!3d41.0323612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caba0f9304d1a1%3A0x201a60c577ef83f8!2sPalace%20of%20the%20Porphyrogenitus!5e0!3m2!1sen!2str!4v1661252487297!5m2!1sen!2str"
                         style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class="row p-3">
+                <div class="row p-3 g-4">
                     <div class="col-lg-6">
-                        <div class="map-content">
-                            <div class="d-flex align-items-center">
-                                <span class="icon-clock me-2"></span>
+                        <div class="map-content h-100">
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="icon-clock me-2 icon"></span>
                                 <h4 class="title">Teslimat zamanları</h4>
                             </div>
-                            <div class="map-content-card">
-                                <table>
+                            <div class="map-content-card h-90">
+                                <table class="w-100">
                                     <tr>
                                         <td>Alfreds Futterkiste</td>
-                                        <td>Germany</td>
+                                        <td align="end">11:00 - 22:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dienstags</td>
+                                        <td align="end">Geschlossen</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mittwochs</td>
+                                        <td align="end">11:00 - 15:00 & 17:00 - 23:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mittwochs</td>
+                                        <td align="end">11:00 - 15:00 & 17:00 - 23:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mittwochs</td>
+                                        <td align="end">11:00 - 15:00 & 17:00 - 23:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mittwochs</td>
+                                        <td align="end">11:00 - 15:00 & 17:00 - 23:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mittwochs</td>
+                                        <td align="end">11:00 - 15:00 & 17:00 - 23:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mittwochs</td>
+                                        <td align="end">15:00 - 01:00</td>
                                     </tr>
                                 </table>
                             </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="map-content h-100">
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="icon-clock me-2 icon"></span>
+                                <h4 class="title">Liefergebiete</h4>
+                            </div>
+                            <div class="map-content-card h-90">
+                                <table class="w-100">
+                                    <tr>
+                                        <td><b>PLZ/Ort</b></td>
+                                        <td align="end"><b>MWB</b></td>
+                                        <td align="end"><b>Lieferkosten</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="20%">45657
+                                            Recklinghausen</td>
+                                        <td align="end">12,00€</td>
+                                        <td align="end">2,00 €</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="20%">45657
+                                            Recklinghausen</td>
+                                        <td align="end">12,00€</td>
+                                        <td align="end">2,00 €</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="20%">45657
+                                            Recklinghausen</td>
+                                        <td align="end">12,00€</td>
+                                        <td align="end">2,00 €</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="20%">45657
+                                            Recklinghausen</td>
+                                        <td align="end">12,00€</td>
+                                        <td align="end">2,00 €</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="20%">45657
+                                            Recklinghausen</td>
+                                        <td align="end">12,00€</td>
+                                        <td align="end">2,00 €</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="map-content">
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="icon-clock me-2 icon"></span>
+                                <h4 class="title">Impressum</h4>
+                            </div>
+                            <div class="map-content-card">
+                                <p>Pizzeria Italia</p>
+                                <p>Breite Str. 27</p>
+                                <p>45657 Recklinghausen</p>
+                                <p>Vertretungsberechtigt: Orderio Gmbh</p>
+                                <div class="mail-phone">
+                                    <p><span class="icon-mail"></span>demo@orderio.de</p>
+                                    <p><span class="icon-phone"></span>02361 849 45 74</p>
+                                </div>
+                                <p>Finanzamt: Recklinghausen</p>
+                                <p>Steuernummer: demo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="map-content">
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="icon-clock me-2 icon"></span>
+                                <h4 class="title">Bezahlmethoden</h4>
+                            </div>
+                            <div class="map-content-card">
+                                <div class="credit-cards">
+                                    <img src="assets/img/credit-cards/amex.png">
+                                    <img src="assets/img/credit-cards/amex.png">
+                                    <img src="assets/img/credit-cards/amex.png">
+                                    <img src="assets/img/credit-cards/amex.png">
+                                    <img src="assets/img/credit-cards/amex.png">
+                                    <img src="assets/img/credit-cards/amex.png">
+
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -1793,6 +1909,84 @@
         </div>
     </div>
     <!-- product info modal END -->
+
+    <!-- =========== restorant ile iletişim destek modal Start  =========== -->
+    <div class="modal-wrap" id="restourant-chat-modal" style="display: flex;">
+        <div class="default-modal">
+            <div class="modal-head">
+                <span class="icon-store icon"></span>
+                <h5>Restorant ile iletişim kur</h5>
+                <div class="close-btn gray"><span class="icon-plus"></span></div>
+            </div>
+            <div class="modal-body">
+             
+                    <div class="restourant-chat-wrap p-4">
+                        <div class="chat-wrap">
+                            <h5 class="name">Ahmet B.</h5>
+                            <div class="d-flex">
+                                <div class="chat-box">KFC'yi tercih ettiğiniz için
+                                    teşekkür ederiz. Sağlıklı günler.</div>
+                                <div class="tick">
+                                    <span class="icon-tick"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-wrap">
+                            <h5 class="name">Ahmet B.</h5>
+                            <div class="d-flex">
+                                <div class="chat-box">Teşekkürler iyi çalışmalar.</div>
+                                <div class="tick">
+                                    <span class="icon-tick"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-wrap">
+                            <h5 class="name">Ahmet B.</h5>
+                            <div class="d-flex">
+                                <div class="chat-box">KFC'yi tercih ettiğiniz için
+                                    teşekkür ederiz. Sağlıklı günler.</div>
+                                <div class="tick">
+                                    <span class="icon-tick"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-wrap">
+                            <h5 class="name">Ahmet B.</h5>
+                            <div class="d-flex">
+                                <div class="chat-box">İyi</div>
+                                <div class="tick">
+                                    <span class="icon-tick"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-wrap">
+                            <h5 class="name">Ahmet B.</h5>
+                            <div class="d-flex">
+                                <div class="chat-box">KFC'yi tercih ettiğiniz için
+                                    teşekkür ederiz. Sağlıklı günler.</div>
+                                <div class="tick">
+                                    <span class="icon-tick"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="restourant-chat-send p-4">
+                        <div class="attachment-btn">
+                            <span class="icon-apple"></span>
+                        </div>
+                        <div class="chat-input w-100">
+                            <input id="write-message" type="text" placeholder="Mesaj yazın...">
+                            <div class="send-btn" id="send-message">
+                                <span class="icon-Arrow-icon-right"></span>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- restorant ile iletişim destek modal END -->
 
     <!-- =========== default modal Start  =========== -->
     <div class="modal-wrap" id="" style="display: none;">

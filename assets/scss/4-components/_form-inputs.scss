@@ -34,17 +34,17 @@
         }
         span {
             font-size: 16px;
-            color: #DDDDDD;
+            color: #dddddd;
         }
     }
-    .icon-input-line{
+    .icon-input-line {
         display: flex;
         height: 35px;
         align-items: center;
         border-radius: 9px;
-      
+
         border-bottom: solid 1px $light;
-        input{
+        input {
             width: 100%;
             font: 500 14px $avenir;
             color: $black-zero;
@@ -54,3 +54,5 @@
         }
     }
 }
+
+
