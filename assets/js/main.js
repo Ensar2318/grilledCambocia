@@ -218,7 +218,7 @@ $(".modal-wrap .close-btn").click(function(e) {
 
 $("#send-message").click(function(e) {
     const message = $("#write-message").val();
-    const messageItem = `<div class="chat-wrap">
+    const messageItem = `<div class="chat-wrap current-user">
     <h5 class="name">Ahmet B.</h5>
     <div class="d-flex">
         <div class="chat-box">` + message + `</div>
@@ -227,16 +227,7 @@ $("#send-message").click(function(e) {
         </div>
     </div>
 </div>
-<div class="chat-wrap">
-    <h5 class="name">Ahmet B.</h5>
-    <div class="d-flex">
-        <div class="chat-box">KFC'yi tercih ettiğiniz için
-            teşekkür ederiz. Sağlıklı günler.</div>
-        <div class="tick">
-            <span class="icon-tick"></span>
-        </div>
-    </div>
-</div>`
+`
     $(".restourant-chat-wrap").append(messageItem);
     $(".restourant-chat-wrap").animate({ scrollTop: 1000 });
 });

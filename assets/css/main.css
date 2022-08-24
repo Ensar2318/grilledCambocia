@@ -3245,24 +3245,24 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   border-radius: 15px;
   font: 800 15px "avenir";
 }
-.default-modal .restourant-chat-wrap .chat-wrap:nth-child(odd) {
+.default-modal .restourant-chat-wrap .chat-wrap.other-user {
   align-self: flex-start;
 }
-.default-modal .restourant-chat-wrap .chat-wrap:nth-child(odd) .chat-box {
+.default-modal .restourant-chat-wrap .chat-wrap.other-user .chat-box {
   background-color: #f5f5f5;
   color: #1f272e;
 }
-.default-modal .restourant-chat-wrap .chat-wrap:nth-child(odd) .tick {
+.default-modal .restourant-chat-wrap .chat-wrap.other-user .tick {
   display: none;
 }
-.default-modal .restourant-chat-wrap .chat-wrap:nth-child(even) {
+.default-modal .restourant-chat-wrap .chat-wrap.current-user {
   align-self: flex-end;
 }
-.default-modal .restourant-chat-wrap .chat-wrap:nth-child(even) .chat-box {
+.default-modal .restourant-chat-wrap .chat-wrap.current-user .chat-box {
   background-color: #f54748;
   color: #ffffff;
 }
-.default-modal .restourant-chat-wrap .chat-wrap:nth-child(even) .tick {
+.default-modal .restourant-chat-wrap .chat-wrap.current-user .tick {
   align-self: flex-end;
   margin-left: 6px;
   min-width: 15px;
@@ -3274,11 +3274,11 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   justify-content: center;
   margin-bottom: 4px;
 }
-.default-modal .restourant-chat-wrap .chat-wrap:nth-child(even) .tick span {
+.default-modal .restourant-chat-wrap .chat-wrap.current-user .tick span {
   font-size: 6px;
   color: #f54748;
 }
-.default-modal .restourant-chat-wrap .chat-wrap:nth-child(even) .name {
+.default-modal .restourant-chat-wrap .chat-wrap.current-user .name {
   display: none;
 }
 .default-modal .restourant-chat-send {

@@ -1025,7 +1025,7 @@
                 border-radius: 15px;
                 font: 800 15px $avenir;
             }
-            &:nth-child(odd) {
+            &.other-user {
                 align-self: flex-start;
                 .chat-box {
                     background-color: $light-400;
@@ -1035,7 +1035,7 @@
                     display: none;
                 }
             }
-            &:nth-child(even) {
+            &.current-user {
                 align-self: flex-end;
                 .chat-box {
                     background-color: $primary;
