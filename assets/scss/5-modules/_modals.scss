@@ -1023,6 +1023,10 @@
             max-height: 69vh;
             height: 69vh;
         }
+        @include media-down("sm") {
+            max-height: 39vh;
+            height: 39vh;
+        }
         .chat-wrap {
             max-width: 50%;
             margin-bottom: 10px;

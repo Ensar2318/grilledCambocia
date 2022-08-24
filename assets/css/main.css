@@ -3291,6 +3291,12 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
     height: 69vh;
   }
 }
+@media (max-width: 575px) {
+  .default-modal .restourant-chat-wrap {
+    max-height: 39vh;
+    height: 39vh;
+  }
+}
 .default-modal .restourant-chat-wrap .chat-wrap {
   max-width: 50%;
   margin-bottom: 10px;
