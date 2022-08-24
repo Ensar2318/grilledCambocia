@@ -2697,7 +2697,7 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   max-height: 100%;
 }
 .modal-login .modal-head {
-  padding: 60px 18px;
+  padding: 40px 18px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -2710,7 +2710,7 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 }
 .modal-login .modal-body {
   background-color: #ffffff;
-  padding: 20px 30px;
+  padding: 0 30px 20px 30px;
 }
 .modal-login .modal-body .login-register-side {
   display: flex;

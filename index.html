@@ -839,7 +839,7 @@
                     <h6>Dökümantasyon</h6>
                     <span class="right icon-Arrow-icon-right"></span>
                 </div>
-                <a class="btn-primary" href="">
+                <a class="btn-primary modal-click" href="javascript:;" data-href-modal="#login-modal">
                     <span class="icon-exit left-icon"></span> Çıkış Yap</a>
             </div>
         </div>
@@ -1374,12 +1374,12 @@
         <div class="modal-login">
             <div class="modal-head">
                 <h2>Orderio</h2>
-                <div class="without-membership-btn">Ohne Mitgliedschaft fortfahren<span class="icon-Arrow-icon-right"></span></div>
+                <div class="without-membership-btn modal-click">Üye olmadan devam et<span class="icon-Arrow-icon-right"></span></div>
             </div>
             <div class="modal-body">
                 <ol class="login-register-side">
-                    <li class="link-item active">Anmeldung</li>
-                    <li class="link-item">Registrieren</li>
+                    <li class="link-item active">Giriş Yap</li>
+                    <li class="link-item modal-click" data-href-modal="#register-modal">Kayıt ol</li>
                 </ol>
                 <form>
                     <div class="form-group">
@@ -1396,13 +1396,13 @@
                             <span class="icon-shut-eye text-gray"></span>
                         </div>
                     </div>
-                    <button class="btn-primary w-100">Anmeldung</button>
+                    <button class="btn-primary w-100">Giriş Yap</button>
                 </form>
                 <a href="javascript:;" class="btn-inside-icon mt-3"><span class="icon-apple"></span>Apple ile giriş
                     yap</a>
                 <a href="javascript:;" class="btn-inside-icon mt-3"><span class="icon-apple"></span>Google ile giriş
                     yap</a>
-                <a class="forget-password" href="javascript:;">Passwort vergessen?</a>
+                <a class="forget-password modal-click" data-href-modal="#forget-your-password-email" href="javascript:;">Parolanızı mı unuttunuz?</a>
             </div>
         </div>
     </div>
@@ -1413,12 +1413,12 @@
         <div class="modal-login">
             <div class="modal-head">
                 <h2>Orderio</h2>
-                <div class="without-membership-btn">Ohne Mitgliedschaft fortfahren<span class="icon-Arrow-icon-right"></span></div>
+                <div class="without-membership-btn modal-click">Üye olmadan devam et<span class="icon-Arrow-icon-right"></span></div>
             </div>
             <div class="modal-body">
                 <ol class="login-register-side">
-                    <li class="link-item">Anmeldung</li>
-                    <li class="link-item active">Registrieren</li>
+                    <li class="link-item modal-click" data-href-modal="#login-modal">Giriş Yap</li>
+                    <li class="link-item active">Kayıt ol</li>
                 </ol>
                 <form>
                     <div class="form-group">
@@ -1458,9 +1458,9 @@
                         </div>
                     </div>
 
-                    <button class="btn-primary mt-2 w-100">Register</button>
+                    <button class="btn-primary mt-2 w-100">Kayıt ol</button>
                 </form>
-                <a class="forget-password" href="javascript:;">Passwort vergessen?</a>
+                <a class="forget-password modal-click" data-href-modal="#forget-your-password-email" href="javascript:;">Parolanızı mı unuttunuz?</a>
             </div>
         </div>
     </div>
@@ -1571,10 +1571,10 @@
         <div class="default-modal">
             <div class="modal-head">
                 <span class="icon-default-key icon"></span>
-                <h5>Neues Passwort erstellen</h5>
-                <p class="sub-title">Fast fertig! Sie können nun ein neues Passwort festlegen.</p>
+                <h5>Yeni şifre oluştur</h5>
+                <p class="sub-title">Neredeyse bitti! Artık yeni bir şifre belirleyebilirsiniz.</p>
                 <div class="close-btn gray"><span class="icon-plus"></span></div>
-                <div class="back-btn"><span class="icon-Arrow-icon-left"></span></div>
+                <div class="back-btn modal-click" data-href-modal="#settings"><span class="icon-Arrow-icon-left"></span></div>
 
             </div>
             <div class="modal-body p-4">
