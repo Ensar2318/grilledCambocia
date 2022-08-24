@@ -189,7 +189,6 @@ $("#search").click(function(e) {
 });
 
 
-
 // Settings modal yönlendirmesi
 $("#settings .link-item").click(function(e) {
     e.preventDefault();
@@ -205,6 +204,7 @@ $(".modal-click").click(function(e) {
     const dataHref = $(this).attr("data-href-modal");
     $(".modal-wrap").hide();
     $(dataHref).css("display", "flex");
+   
 });
 // Genel modal yönlendirme tıklama işlemi
 
@@ -213,11 +213,13 @@ $(".modal-click").click(function(e) {
 $(".modal-wrap .close-btn").click(function(e) {
     e.preventDefault();
     $(this).parent().parent().parent().css("display", "none");
+    
 });
 
 
 $("#send-message").click(function(e) {
     const message = $("#write-message").val();
+    $("#write-message").val("")
     const messageItem = `<div class="chat-wrap current-user">
     <h5 class="name">Ahmet B.</h5>
     <div class="d-flex">
@@ -231,6 +233,8 @@ $("#send-message").click(function(e) {
     $(".restourant-chat-wrap").append(messageItem);
     $(".restourant-chat-wrap").animate({ scrollTop: 1000 });
 });
+
+
 
 
 

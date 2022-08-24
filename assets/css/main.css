@@ -1659,7 +1659,7 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 .form-group .err-msg {
   color: #f54748;
   font: 500 12px "avenir";
-  display: flex;
+  display: none;
 }
 .form-group .icon-input {
   display: flex;
