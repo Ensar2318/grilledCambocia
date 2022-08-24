@@ -3011,7 +3011,7 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   font: 900 18px "avenir";
   color: #1f272e;
 }
-@media (max-height: 800px) {
+@media (max-width: 767px) {
   .default-modal .modal-head {
     padding: 20px 18px;
   }
@@ -3272,25 +3272,12 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 .default-modal .restourant-chat-wrap {
   display: flex;
   flex-direction: column;
-  max-height: 50vh;
   overflow: auto;
+  height: calc(100vh - 323px);
 }
-@media (max-width: 767px) {
+@media (max-width: 575px) {
   .default-modal .restourant-chat-wrap {
-    max-height: 60vh;
-    height: 60vh;
-  }
-}
-@media (max-height: 600px) {
-  .default-modal .restourant-chat-wrap {
-    max-height: 50vh;
-    height: 50vh;
-  }
-}
-@media (max-height: 400px) {
-  .default-modal .restourant-chat-wrap {
-    max-height: 40vh;
-    height: 40vh;
+    height: calc(100vh - 210px);
   }
 }
 .default-modal .restourant-chat-wrap .chat-wrap {
