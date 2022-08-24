@@ -2358,7 +2358,7 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
     max-height: 300px;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .modal-card-settings .modal-body {
     padding: 20px;
     max-height: 100vh;
