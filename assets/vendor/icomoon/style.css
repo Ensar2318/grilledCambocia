@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?32ubx9');
-  src:  url('fonts/icomoon.eot?32ubx9#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?32ubx9') format('truetype'),
-    url('fonts/icomoon.woff?32ubx9') format('woff'),
-    url('fonts/icomoon.svg?32ubx9#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?tv2kha');
+  src:  url('fonts/icomoon.eot?tv2kha#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?tv2kha') format('truetype'),
+    url('fonts/icomoon.woff?tv2kha') format('woff'),
+    url('fonts/icomoon.svg?tv2kha#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-send-icon:before {
+  content: "\e936";
+}
+.icon-attachment:before {
+  content: "\e937";
+}
+.icon-date:before {
+  content: "\e932";
+}
+.icon-input-credit:before {
+  content: "\e933";
+}
+.icon-pencil:before {
+  content: "\e934";
+}
+.icon-invoice:before {
+  content: "\e935";
+}
 .icon-bag-clock .path1:before {
   content: "\e900";
   color: rgb(245, 71, 72);

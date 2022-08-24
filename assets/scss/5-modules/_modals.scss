@@ -173,6 +173,9 @@
         @include media-down("sm") {
             height: calc(100vh - 67px);
         }
+        @media (min-height: 840px) {
+            height: auto;
+        }
         .link-item {
             height: 52px;
             background-color: $white;
@@ -769,17 +772,26 @@
         background-color: $white;
         &.body-overflow {
             overflow: auto;
-
             height: calc(100vh - 220px);
             @include media-down("sm") {
                 height: calc(100vh - 105px);
             }
+            @media (min-height: 700px) {
+                height: auto;
+            }
+        }
+        &.body-overflow-resto {
+            overflow: auto;
+            height: calc(100vh - 220px);
+            @include media-down("sm") {
+                height: calc(100vh - 105px);
+            }
+          
         }
     }
 
     &.map-container {
         width: 750px;
-     
     }
     &.documentation-detail {
         max-height: 350px;
@@ -1091,7 +1103,7 @@
             align-items: center;
             justify-content: center;
             color: $white;
-            font-size: 16px;
+            font-size: 24px;
             cursor: pointer;
         }
         .attachment-btn {
@@ -1110,7 +1122,9 @@
         height: calc(100vh - 317px);
         @include media-down("sm") {
             height: calc(100vh - 194px);
-
+        }
+        @media(min-height:800px){
+            height: auto;
         }
     }
     .cominication-footer {

@@ -7,9 +7,13 @@ header {
         .logo {
             margin-top: -189px;
         }
+
         .content {
             padding-top: 26px;
             margin-left: 18px;
+            .head-comment{
+                cursor: pointer;
+            }
             h5 {
                 font: 800 18px $avenir;
                 color: $black;

@@ -997,6 +997,9 @@ header .header-content .content {
   padding-top: 26px;
   margin-left: 18px;
 }
+header .header-content .content .head-comment {
+  cursor: pointer;
+}
 header .header-content .content h5 {
   font: 800 18px "avenir";
   color: #1f272e;
@@ -1679,8 +1682,12 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   padding: 0;
 }
 .form-group .icon-input span {
-  font-size: 16px;
+  font-size: 18px;
   color: #dddddd;
+}
+.form-group .icon-input svg {
+  min-width: 20px;
+  min-height: 20px;
 }
 .form-group .icon-input-line {
   display: flex;
@@ -2406,6 +2413,11 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
     height: calc(100vh - 67px);
   }
 }
+@media (min-height: 840px) {
+  .modal-card-settings .modal-body {
+    height: auto;
+  }
+}
 .modal-card-settings .modal-body .link-item {
   height: 52px;
   background-color: #ffffff;
@@ -3038,6 +3050,20 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
     height: calc(100vh - 105px);
   }
 }
+@media (min-height: 700px) {
+  .default-modal .modal-body.body-overflow {
+    height: auto;
+  }
+}
+.default-modal .modal-body.body-overflow-resto {
+  overflow: auto;
+  height: calc(100vh - 220px);
+}
+@media (max-width: 575px) {
+  .default-modal .modal-body.body-overflow-resto {
+    height: calc(100vh - 105px);
+  }
+}
 .default-modal.map-container {
   width: 750px;
 }
@@ -3353,7 +3379,7 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 24px;
   cursor: pointer;
 }
 .default-modal .restourant-chat-send .attachment-btn {
@@ -3373,6 +3399,11 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 @media (max-width: 575px) {
   .default-modal .Communication-preferences-wrap {
     height: calc(100vh - 194px);
+  }
+}
+@media (min-height: 800px) {
+  .default-modal .Communication-preferences-wrap {
+    height: auto;
   }
 }
 .default-modal .cominication-footer {
