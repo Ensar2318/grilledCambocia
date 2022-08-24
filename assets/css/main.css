@@ -1961,19 +1961,19 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   font: 900 18px "avenir";
 }
 .card-checkout-wrap .card-content {
-  height: 300px;
+  height: calc(80vh - 290px);
   position: relative;
   padding: 10px 25px;
   overflow: auto;
 }
 @media (max-height: 700px) {
   .card-checkout-wrap .card-content {
-    height: 200px;
+    height: calc(90vh - 290px);
   }
 }
 @media (max-height: 500px) {
   .card-checkout-wrap .card-content {
-    height: 30vh;
+    height: calc(100vh - 240px);
   }
 }
 .card-checkout-wrap .card-content::-webkit-scrollbar {

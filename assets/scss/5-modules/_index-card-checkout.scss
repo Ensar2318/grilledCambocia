@@ -41,15 +41,15 @@
         }
     }
     .card-content {
-        height: 300px;
+        height: calc(80vh - 290px);
         position: relative;
         padding: 10px 25px;
         overflow: auto;
         @media (max-height: 700px) {
-            height: 200px;
+            height: calc(90vh - 290px);
         }
         @media (max-height: 500px) {
-            height: 30vh;
+            height: calc(100vh - 240px);
         }
         &::-webkit-scrollbar {
             background: none;
