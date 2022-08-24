@@ -16,6 +16,9 @@
         display: none;
     }
     padding: 30px 10px;
+    @include media-down("md"){
+     padding: 0;   
+    }
 }
 .modal-head .close-btn {
     width: 38px;
@@ -98,7 +101,9 @@
     background-color: $white;
     width: 534px;
     overflow: hidden;
-
+    @include media-down("md"){
+        border-radius: 0px;
+    }
     .modal-head {
         padding: 12px 18px;
         display: flex;
@@ -137,6 +142,10 @@
     @media (max-height: 400px) {
         overflow: auto;
     }
+    @include media-down("md"){
+        border-radius: 0px;
+        height: 100vh;
+    }
     .modal-head {
         padding: 20px 18px;
         display: flex;
@@ -167,6 +176,7 @@
         }
         @include media-down("sm") {
             padding: 20px;
+            max-height: 100vh;
         }
         .link-item {
             height: 52px;
@@ -216,7 +226,10 @@
     width: 534px;
     overflow: auto;
     max-height: 100%;
-
+    @include media-down("md"){
+        border-radius: 0px;
+        height: 100vh;
+    }
     .modal-head {
         padding: 40px 18px;
         display: flex;
@@ -251,6 +264,10 @@
             @media (max-height: 500px) {
                 max-height: 170px;
                 min-height: 170px;
+            }
+            @include media-down("md"){
+                max-height: 100vh;
+                height: 100vh;
             }
             .no-adress {
                 text-align: center;
@@ -310,7 +327,11 @@
     width: 534px;
     overflow: auto;
     max-height: 100%;
-
+    @include media-down("md"){
+        border-radius: 0px;
+        height: 100vh;
+    }
+    
     .modal-head {
         padding: 40px 18px;
         display: flex;
@@ -361,7 +382,10 @@
             max-height: 170px;
             min-height: 170px;
         }
-
+        @include media-down("md"){
+            max-height: 100vh;
+            height: 100vh;
+        }
         &::-webkit-scrollbar {
             background: none;
             width: 8px;
@@ -417,7 +441,9 @@
     overflow: auto;
     max-height: 100%;
     padding: 22px;
-
+    @include media-down("md"){
+        border-radius: 0px;
+    }
     .modal-head {
         display: flex;
         flex-direction: column;
@@ -462,7 +488,9 @@
     width: 534px;
     overflow: auto;
     max-height: 100%;
-
+    @include media-down("md"){
+        border-radius: 0px;
+    }
     .modal-head {
         padding: 40px 18px;
         display: flex;
@@ -513,7 +541,9 @@
     width: 534px;
     overflow: auto;
     max-height: 100%;
-
+    @include media-down("md"){
+        border-radius: 0px;
+    }
     .modal-head {
         padding: 40px 18px;
       
@@ -585,7 +615,9 @@
     width: 375px;
     overflow: auto;
     max-height: 100%;
-
+    @include media-down("md"){
+        border-radius: 0px;
+    }
     .modal-head {
         padding: 10px 18px;
         display: flex;
@@ -615,7 +647,9 @@
     width: 375px;
     overflow: auto;
     max-height: 100%;
-
+    @include media-down("md"){
+        border-radius: 0px;
+    }
     .modal-head {
         padding: 10px 18px;
         display: flex;
@@ -662,6 +696,12 @@
     @media (max-height: 400px) {
         overflow: auto;
     }
+    @include media-down("md"){
+        border-radius: 0px;
+        height: 100vh;
+        overflow: auto;
+    }
+ 
 
     .modal-head {
         padding: 40px 18px;
@@ -670,7 +710,9 @@
         position: relative;
         justify-content: center;
         align-items: center;
-
+        &.box-shadow{
+            box-shadow: $box-shadow;
+        }
         h5 {
             font: 900 24px $avenir;
             color: $black;
@@ -724,9 +766,16 @@
             @media (max-height: 800px) {
                 height: 60vh;
             }
+            @include media-down("md"){
+                height: 100vh;
+            }
         }
+     
     }
-
+    
+    &.map-container{
+        width: 750px;
+    }
     &.documentation-detail {
         max-height: 350px;
     }
