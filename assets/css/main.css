@@ -3517,30 +3517,64 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   justify-content: space-between;
 }
 .default-modal .order-detail-wrap .order-road-map .round {
-  width: 30px;
-  height: 30px;
   border-radius: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
+.default-modal .order-detail-wrap .order-road-map .round img {
+  width: 28px;
+  height: 28px;
+}
 .default-modal .order-detail-wrap .order-road-map .round.success {
   background-color: #21d376;
+  width: 30px;
+  height: 30px;
 }
 .default-modal .order-detail-wrap .order-road-map .round.success span {
   color: #ffffff;
+  display: flex;
 }
-.default-modal .order-detail-wrap .order-road-map .round.success::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #21d376;
+.default-modal .order-detail-wrap .order-road-map .round.success img {
+  display: none;
+}
+.default-modal .order-detail-wrap .order-road-map .round.current {
+  background-color: #f54748;
+  width: 30px;
+  height: 30px;
+}
+.default-modal .order-detail-wrap .order-road-map .round.current span {
+  display: none;
+}
+.default-modal .order-detail-wrap .order-road-map .round.current img {
+  display: flex;
 }
 .default-modal .order-detail-wrap .order-road-map .round.waiting {
-  background-color: #f54748;
+  width: 21px;
+  height: 21px;
+  background-color: #d4d4d4;
+}
+.default-modal .order-detail-wrap .order-road-map .round.waiting img {
+  display: none;
+}
+.default-modal .order-detail-wrap .order-road-map .round.waiting span {
+  background-color: #ffffff;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 0px;
+  width: 7px;
+  height: 7px;
+}
+.default-modal .order-detail-wrap .order-road-map .line {
+  width: 60px;
+  height: 2px;
+}
+.default-modal .order-detail-wrap .order-road-map .line.success {
+  background-color: #21d376;
+}
+.default-modal .order-detail-wrap .order-road-map .line.current {
+  background-color: #d4d4d4;
 }
 .default-modal .order-detail-wrap .your-order-wrap {
   padding: 20px 40px;
