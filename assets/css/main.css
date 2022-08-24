@@ -2502,7 +2502,7 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 }
 @media (max-width: 767px) {
   .modal-my-adress .modal-body .saved-adress {
-    max-height: 80vh;
+    max-height: calc(100vh - 200px);
   }
 }
 .modal-my-adress .modal-body .saved-adress .no-adress {
@@ -2623,7 +2623,7 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 }
 @media (max-width: 767px) {
   .modal-my-cards .saved-metods {
-    max-height: 80vh;
+    max-height: calc(100vh - 200px);
   }
 }
 .modal-my-cards .saved-metods::-webkit-scrollbar {
@@ -3031,26 +3031,21 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 }
 .default-modal .modal-body.body-overflow {
   overflow: auto;
+  height: calc(100vh - 220px);
 }
-@media (max-height: 800px) {
+@media (max-width: 575px) {
   .default-modal .modal-body.body-overflow {
-    height: 60vh;
-  }
-}
-@media (max-width: 767px) {
-  .default-modal .modal-body.body-overflow {
-    height: 80vh;
+    height: calc(100vh - 105px);
   }
 }
 .default-modal.map-container {
   width: 750px;
-  overflow: auto;
 }
 .default-modal.documentation-detail {
   max-height: 350px;
 }
 .default-modal .document-detail-text {
-  height: 50vh;
+  height: calc(100vh - 165px);
 }
 .default-modal .documentation-wrap .documentation-item {
   height: 52px;
@@ -3112,8 +3107,13 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 }
 .default-modal .store-comments {
   padding: 15px;
-  max-height: 360px;
+  height: calc(100vh - 348px);
   overflow: auto;
+}
+@media (max-width: 575px) {
+  .default-modal .store-comments {
+    height: calc(100vh - 237px);
+  }
 }
 .default-modal .store-comments::-webkit-scrollbar {
   background: none;
@@ -3122,11 +3122,6 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 .default-modal .store-comments::-webkit-scrollbar-thumb {
   background: #c1c1c1;
   border-radius: 20px;
-}
-@media (max-height: 600px) {
-  .default-modal .store-comments {
-    max-height: 250px;
-  }
 }
 .default-modal .store-comments .comment-items {
   background-color: #f5f5f5;
@@ -3158,7 +3153,8 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 }
 @media (max-width: 575px) {
   .default-modal .order-wrap {
-    max-height: 60vh;
+    max-height: calc(100vh - 82px);
+    height: calc(100vh - 82px);
   }
 }
 .default-modal .order-wrap .order-item {
@@ -3372,16 +3368,11 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 }
 .default-modal .Communication-preferences-wrap {
   overflow: auto;
-  max-height: 50vh;
-}
-@media (max-height: 400px) {
-  .default-modal .Communication-preferences-wrap {
-    max-height: 35vh;
-  }
+  height: calc(100vh - 317px);
 }
 @media (max-width: 575px) {
   .default-modal .Communication-preferences-wrap {
-    max-height: 60vh;
+    height: calc(100vh - 194px);
   }
 }
 .default-modal .cominication-footer {
@@ -3393,11 +3384,16 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 }
 .default-modal .order-detail-wrap {
   overflow: auto;
-  max-height: 70vh;
+  max-height: calc(100vh - 300px);
 }
 @media (max-height: 800px) {
   .default-modal .order-detail-wrap {
     max-height: 50vh;
+  }
+}
+@media (max-width: 575px) {
+  .default-modal .order-detail-wrap {
+    max-height: calc(100vh - 110px);
   }
 }
 .default-modal .order-detail-wrap .order-date-wrap {
@@ -3494,27 +3490,27 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 .default-modal .order-detail-wrap .kampanya {
   padding: 20px 40px;
 }
-.default-modal .order-detail-wrap .order-detail-wrap {
+.default-modal .order-detail-wrap .order-price-detail-wrap {
   padding: 20px 40px;
 }
-.default-modal .order-detail-wrap .order-detail-wrap .order-detail-card {
+.default-modal .order-detail-wrap .order-price-detail-wrap .order-detail-card {
   box-shadow: rgba(149, 157, 165, 0.2) 0 0 9px 4px;
   padding: 20px;
   border-radius: 23px;
 }
-.default-modal .order-detail-wrap .order-detail-wrap .order-detail-card h3 {
+.default-modal .order-detail-wrap .order-price-detail-wrap .order-detail-card h3 {
   font: 500 14px "avenir";
 }
-.default-modal .order-detail-wrap .order-detail-wrap .order-detail-card h4 {
+.default-modal .order-detail-wrap .order-price-detail-wrap .order-detail-card h4 {
   font: 900 16px "avenir";
 }
-.default-modal .order-detail-wrap .order-detail-wrap .order-detail-card h2 {
+.default-modal .order-detail-wrap .order-price-detail-wrap .order-detail-card h2 {
   font: 900 15px "avenir";
 }
-.default-modal .order-detail-wrap .order-detail-wrap .order-detail-card h1 {
+.default-modal .order-detail-wrap .order-price-detail-wrap .order-detail-card h1 {
   font: 900 20px "avenir";
 }
-.default-modal .order-detail-wrap .order-detail-wrap .order-detail-card .total-price {
+.default-modal .order-detail-wrap .order-price-detail-wrap .order-detail-card .total-price {
   padding-top: 10px;
   border-top: solid 1px #f0f0f0;
   justify-content: space-between;

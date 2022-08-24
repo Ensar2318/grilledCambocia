@@ -262,7 +262,7 @@
                 min-height: 170px;
             }
             @include media-down("md") {
-                max-height: 80vh;
+                max-height: calc(100vh - 200px);
             }
             .no-adress {
                 text-align: center;
@@ -379,7 +379,7 @@
             min-height: 170px;
         }
         @include media-down("md") {
-            max-height: 80vh;
+            max-height: calc(100vh - 200px);
         }
         &::-webkit-scrollbar {
             background: none;
@@ -770,24 +770,22 @@
         &.body-overflow {
             overflow: auto;
 
-            @media (max-height: 800px) {
-                height: 60vh;
-            }
-            @include media-down("md") {
-                height: 80vh;
+            height: calc(100vh - 220px);
+            @include media-down("sm") {
+                height: calc(100vh - 105px);
             }
         }
     }
 
     &.map-container {
         width: 750px;
-        overflow: auto;
+     
     }
     &.documentation-detail {
         max-height: 350px;
     }
     .document-detail-text {
-        height: 50vh;
+        height: calc(100vh - 165px);
     }
 
     .documentation-wrap {
@@ -851,8 +849,11 @@
 
     .store-comments {
         padding: 15px;
-        max-height: 360px;
+        height: calc(100vh - 348px);
         overflow: auto;
+        @include media-down("sm") {
+            height: calc(100vh - 237px);
+        }
         &::-webkit-scrollbar {
             background: none;
             width: 8px;
@@ -860,9 +861,6 @@
         &::-webkit-scrollbar-thumb {
             background: $gray-100;
             border-radius: 20px;
-        }
-        @media (max-height: 600px) {
-            max-height: 250px;
         }
 
         .comment-items {
@@ -894,7 +892,8 @@
         max-height: 320px;
         overflow: auto;
         @include media-down("sm") {
-            max-height: 60vh;
+            max-height: calc(100vh - 82px);
+            height: calc(100vh - 82px);
         }
         .order-item {
             height: 80px;
@@ -1108,12 +1107,10 @@
     }
     .Communication-preferences-wrap {
         overflow: auto;
-        max-height: 50vh;
-        @media (max-height: 400px) {
-            max-height: 35vh;
-        }
+        height: calc(100vh - 317px);
         @include media-down("sm") {
-            max-height: 60vh;
+            height: calc(100vh - 194px);
+
         }
     }
     .cominication-footer {
@@ -1125,9 +1122,12 @@
     }
     .order-detail-wrap {
         overflow: auto;
-        max-height: 70vh;
+        max-height: calc(100vh - 300px);
         @media (max-height: 800px) {
             max-height: 50vh;
+        }
+        @include media-down("sm") {
+            max-height: calc(100vh - 110px);
         }
         .order-date-wrap {
             padding: 20px 40px;
@@ -1227,7 +1227,7 @@
         .kampanya {
             padding: 20px 40px;
         }
-        .order-detail-wrap {
+        .order-price-detail-wrap {
             padding: 20px 40px;
             .order-detail-card {
                 box-shadow: $box-shadow;
