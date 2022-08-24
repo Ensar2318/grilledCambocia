@@ -3272,29 +3272,25 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 .default-modal .restourant-chat-wrap {
   display: flex;
   flex-direction: column;
-  max-height: 450px;
+  max-height: 50vh;
   overflow: auto;
-}
-@media (max-height: 700px) {
-  .default-modal .restourant-chat-wrap {
-    max-height: 50vh;
-  }
-}
-@media (max-height: 500px) {
-  .default-modal .restourant-chat-wrap {
-    max-height: 30vh;
-  }
 }
 @media (max-width: 767px) {
   .default-modal .restourant-chat-wrap {
-    max-height: 69vh;
-    height: 69vh;
+    max-height: 60vh;
+    height: 60vh;
   }
 }
-@media (max-width: 575px) {
+@media (max-height: 600px) {
   .default-modal .restourant-chat-wrap {
-    max-height: 39vh;
-    height: 39vh;
+    max-height: 50vh;
+    height: 50vh;
+  }
+}
+@media (max-height: 400px) {
+  .default-modal .restourant-chat-wrap {
+    max-height: 40vh;
+    height: 40vh;
   }
 }
 .default-modal .restourant-chat-wrap .chat-wrap {
