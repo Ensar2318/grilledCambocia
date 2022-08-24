@@ -139,9 +139,7 @@
     width: 534px;
     overflow: hidden;
     max-height: 100%;
-    @media (max-height: 400px) {
-        overflow: auto;
-    }
+
     @include media-down("sm") {
         border-radius: 0px;
         height: 100%;
@@ -167,17 +165,13 @@
     .modal-body {
         background-color: $white;
         padding: 20px 100px;
-
         overflow: auto;
-        @media (max-height: 800px) {
-            max-height: 400px;
-        }
-        @media (max-height: 550px) {
-            max-height: 300px;
-        }
+        height: calc(100vh - 163px);
         @include media-down("md") {
             padding: 20px;
-            max-height: 80vh;
+        }
+        @include media-down("sm") {
+            height: calc(100vh - 67px);
         }
         .link-item {
             height: 52px;
@@ -1013,7 +1007,7 @@
         flex-direction: column;
         overflow: auto;
         height: calc(100vh - 323px);
-        @include media-down("sm"){
+        @include media-down("sm") {
             height: calc(100vh - 210px);
         }
         .chat-wrap {

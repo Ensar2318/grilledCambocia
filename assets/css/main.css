@@ -2365,11 +2365,6 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   overflow: hidden;
   max-height: 100%;
 }
-@media (max-height: 400px) {
-  .modal-card-settings {
-    overflow: auto;
-  }
-}
 @media (max-width: 575px) {
   .modal-card-settings {
     border-radius: 0px;
@@ -2399,21 +2394,16 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   background-color: #ffffff;
   padding: 20px 100px;
   overflow: auto;
-}
-@media (max-height: 800px) {
-  .modal-card-settings .modal-body {
-    max-height: 400px;
-  }
-}
-@media (max-height: 550px) {
-  .modal-card-settings .modal-body {
-    max-height: 300px;
-  }
+  height: calc(100vh - 163px);
 }
 @media (max-width: 767px) {
   .modal-card-settings .modal-body {
     padding: 20px;
-    max-height: 80vh;
+  }
+}
+@media (max-width: 575px) {
+  .modal-card-settings .modal-body {
+    height: calc(100vh - 67px);
   }
 }
 .modal-card-settings .modal-body .link-item {
