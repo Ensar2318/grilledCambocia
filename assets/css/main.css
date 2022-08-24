@@ -1432,6 +1432,11 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 .btn-inside-icon span {
   position: absolute;
   left: 10px;
+  font-size: 20px;
+}
+.btn-inside-icon svg {
+  position: absolute;
+  left: 10px;
 }
 .btn-inside-icon:hover {
   background-color: #f0f0f0;
@@ -1641,12 +1646,20 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 .form-group {
   margin-bottom: 14px;
 }
+.form-group .form-title {
+  display: flex;
+  justify-content: space-between;
+}
 .form-group label {
-  width: 100%;
   margin-bottom: 8px;
   display: block;
   font: 900 14px "avenir";
   color: #9a9a9a;
+}
+.form-group .err-msg {
+  color: #f54748;
+  font: 500 12px "avenir";
+  display: flex;
 }
 .form-group .icon-input {
   display: flex;
@@ -1655,6 +1668,9 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   border-radius: 9px;
   background-color: #f8f8f8;
   padding: 0 19px;
+}
+.form-group .icon-input.err {
+  border: solid 2px #f54748;
 }
 .form-group .icon-input.textarea {
   height: 130px;

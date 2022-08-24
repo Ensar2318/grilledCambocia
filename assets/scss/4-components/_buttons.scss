@@ -95,6 +95,11 @@
     span {
         position: absolute;
         left: 10px;
+        font-size: 20px;
+    }
+    svg{
+        position: absolute;
+        left: 10px;
     }
     &:hover {
         background-color: $light;

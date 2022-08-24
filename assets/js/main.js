@@ -234,7 +234,6 @@ $("#send-message").click(function(e) {
 
 
 
-
 //#####Swiper Örneği######
 
 // var announcementSwiper = new Swiper(".announcementSwiper", {

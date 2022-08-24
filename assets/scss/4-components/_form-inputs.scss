@@ -1,11 +1,19 @@
 .form-group {
     margin-bottom: 14px;
+    .form-title{
+        display: flex;
+        justify-content: space-between;
+    }
     label {
-        width: 100%;
         margin-bottom: 8px;
         display: block;
         font: 900 14px $avenir;
         color: $gray-400;
+    }
+    .err-msg{
+        color: $primary;
+        font: 500 12px $avenir;
+        display: flex;
     }
     .icon-input {
         display: flex;
@@ -14,10 +22,14 @@
         border-radius: 9px;
         background-color: $light-500;
         padding: 0 19px;
+        &.err{
+            border: solid 2px $primary;
+        }
         &.textarea {
             height: 130px;
             padding: 19px;
         }
+     
         input,
         textarea {
             padding-left: 14px;
