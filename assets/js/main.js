@@ -195,6 +195,7 @@ $("#settings .link-item").click(function(e) {
     const dataHref = $(this).attr("data-href-modal");
     $(this).parent().parent().parent().hide();
     $(dataHref).css("display", "flex");
+    $("body").css("overflow","hidden");
 });
 // Settings modal yönlendirmesi
 
@@ -204,15 +205,17 @@ $(".modal-click").click(function(e) {
     const dataHref = $(this).attr("data-href-modal");
     $(".modal-wrap").hide();
     $(dataHref).css("display", "flex");
+    $("body").css("overflow","hidden");
    
 });
 // Genel modal yönlendirme tıklama işlemi
 
 
 // Modal kapatmak için gereken kod
-$(".modal-wrap .close-btn").click(function(e) {
+$(".close-modal").click(function(e) {
     e.preventDefault();
-    $(this).parent().parent().parent().css("display", "none");
+    $(".modal-wrap").hide();
+    $("body").css("overflow","");
     
 });
 

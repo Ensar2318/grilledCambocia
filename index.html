@@ -777,7 +777,7 @@
         <div class="modal-discount-card">
             <div class="modal-head bg-primary">
                 <h5 class="text-white">Rabattakionen</h5>
-                <div class="close-btn white"><span class="icon-plus"></span></div>
+                <div class="close-btn white close-modal"><span class="icon-plus"></span></div>
             </div>
             <div class="modal-body-discount">
                 <h5><span class="icon-Arrow-icon-right"></span>10% Rabatt</h5>
@@ -792,7 +792,7 @@
         <div class="modal-card-settings">
             <div class="modal-head">
                 <h2>Orderio</h2>
-                <div class="close-btn gray"><span class="icon-plus"></span></div>
+                <div class="close-btn gray close-modal"><span class="icon-plus"></span></div>
             </div>
             <div class="modal-body">
                 <div class="link-item" data-href-modal="#my-adress-modal">
@@ -853,7 +853,7 @@
             <div class="modal-head">
                 <span class="icon-store small-icon text-primary"></span>
                 <p class="small-text">Yorumlar</p>
-                <div class="close-btn gray"><span class="icon-plus"></span></div>
+                <div class="close-btn gray close-modal"><span class="icon-plus"></span></div>
             </div>
             <div class="modal-body">
                 <div class="store-head">
@@ -965,7 +965,7 @@
             <div class="modal-head">
                 <span class="icon-credit-card icon"></span>
                 <h5>Ödeme Yöntemlerim</h5>
-                <div class="close-btn gray"><span class="icon-plus"></span></div>
+                <div class="close-btn gray close-modal"><span class="icon-plus"></span></div>
                 <div class="back-btn modal-click" data-href-modal="#settings"><span class="icon-Arrow-icon-left"></span>
                 </div>
 
@@ -1008,7 +1008,7 @@
             <div class="modal-head">
                 <span class="icon-credit-card icon"></span>
                 <h5>Ödeme Yöntemlerim</h5>
-                <div class="close-btn gray"><span class="icon-plus"></span></div>
+                <div class="close-btn gray close-modal"><span class="icon-plus"></span></div>
                 <div class="back-btn modal-click" data-href-modal="#payment-methods-modal"><span class="icon-Arrow-icon-left"></span></div>
 
             </div>
@@ -1064,7 +1064,7 @@
                             </div>
                         </div>
                     </div>
-                    <button class="btn-primary w-100">
+                    <button class="btn-primary w-100 modal-click" data-href-modal="#success-card">
                         Kartı Kaydet
                     </button>
                 </form>
@@ -1080,7 +1080,7 @@
             <div class="modal-head">
                 <span class="icon-map-pin icon"></span>
                 <h5>Adreslerim</h5>
-                <div class="close-btn gray"><span class="icon-plus"></span></div>
+                <div class="close-btn gray close-modal"><span class="icon-plus"></span></div>
                 <div class="back-btn modal-click" data-href-modal="#settings"><span class="icon-Arrow-icon-left"></span>
                 </div>
 
@@ -1124,7 +1124,7 @@
             <div class="modal-head">
                 <span class="icon-map-pin icon"></span>
                 <h5>Yeni Adres Ekle</h5>
-                <div class="close-btn gray"><span class="icon-plus"></span></div>
+                <div class="close-btn gray close-modal"><span class="icon-plus"></span></div>
                 <div class="back-btn modal-click" data-href-modal="#my-adress-modal"><span class="icon-Arrow-icon-left"></span></div>
 
             </div>
@@ -1169,7 +1169,7 @@
                             <textarea></textarea>
                         </div>
                     </div>
-                    <button class="btn-primary w-100">
+                    <button class="btn-primary w-100 modal-click" data-href-modal="#success-adress">
                         Adresimi Kaydet
                     </button>
                 </form>
@@ -1187,7 +1187,7 @@
             </div>
             <div class="modal-body">
                 <img class="notification-image" src="assets/img/icon-img/map-success.svg">
-                <a class="btn-primary" href="javascript:;">Tamam</a>
+                <a class="btn-primary close-modal" href="javascript:;">Tamam</a>
             </div>
         </div>
     </div>
@@ -1203,11 +1203,27 @@
             </div>
             <div class="modal-body">
                 <img class="notification-image" src="assets/img/icon-img/succes.png">
-                <a class="btn-primary" href="javascript:;">Tamam</a>
+                <a class="btn-primary close-modal" href="javascript:;">Tamam</a>
             </div>
         </div>
     </div>
     <!-- Success messages send notification modal END -->
+
+ <!-- =========== Success messages send notification  modal Start  =========== -->
+ <div class="modal-wrap" id="success-password-change">
+    <div class="notification-modal">
+        <div class="modal-head">
+            <h5>Harika!</h5>
+            <small>Yeni şifreniz başarıyla değiştirildi.
+                Tekrar giriş yapabilirsiniz.</small>
+        </div>
+        <div class="modal-body">
+            <img class="notification-image" src="assets/img/icon-img/succes.png">
+            <a class="btn-primary close-modal" href="javascript:;">Tamam</a>
+        </div>
+    </div>
+</div>
+<!-- Success messages send notification modal END -->
 
     <!-- =========== Success credit card add notification  modal Start  =========== -->
     <div class="modal-wrap" id="success-card">
@@ -1218,7 +1234,7 @@
             </div>
             <div class="modal-body">
                 <img class="notification-image" src="assets/img/icon-img/credit-success.svg">
-                <a class="btn-primary" href="javascript:;">Tamam</a>
+                <a class="btn-primary close-modal" href="javascript:;">Tamam</a>
             </div>
         </div>
     </div>
@@ -1233,7 +1249,7 @@
             </div>
             <div class="modal-body">
                 <img class="notification-image" src="assets/img/icon-img/succes-paper.svg">
-                <a class="btn-primary modal-click" href="javascript:;">Tamam</a>
+                <a class="btn-primary close-modal" href="">Tamam</a>
             </div>
         </div>
     </div>
@@ -1245,7 +1261,7 @@
             <div class="modal-head">
                 <span class="icon-store small-icon text-primary"></span>
                 <p class="small-text">Geçmiş Siparişlerim</p>
-                <div class="close-btn gray"><span class="icon-plus"></span></div>
+                <div class="close-btn gray close-modal"><span class="icon-plus"></span></div>
                 <div class="back-btn modal-click" data-href-modal="#settings"><span class="icon-Arrow-icon-left"></span>
                 </div>
 
@@ -1300,7 +1316,7 @@
             <div class="modal-head">
                 <span class="icon-invoice small-icon text-primary"></span>
                 <h5>Dökümantasyon</h5>
-                <div class="close-btn gray"><span class="icon-plus"></span></div>
+                <div class="close-btn close-modal gray"><span class="icon-plus"></span></div>
                 <div class="back-btn modal-click" data-href-modal="#settings"><span class="icon-Arrow-icon-left"></span>
                 </div>
 
@@ -1341,7 +1357,7 @@
                 <span class="icon-invoice small-icon text-primary"></span>
                 <h5>dökümasyon detayı</h5>
                 <p class="sub-title">1 Verantwortliche Stelle, Geltungsbereich</p>
-                <div class="close-btn gray"><span class="icon-plus"></span></div>
+                <div class="close-btn close-modal gray"><span class="icon-plus"></span></div>
                 <div class="back-btn modal-click" data-href-modal="#documentation-modal"><span class="icon-Arrow-icon-left"></span></div>
 
             </div>
@@ -1374,7 +1390,7 @@
             <div class="modal-head">
                 <span class="icon-store icon"></span>
                 <p class="title">Yeni Bir Soru Sor</p>
-                <div class="close-btn gray-200"><span class="icon-plus"></span></div>
+                <div class="close-btn close-modal gray-200"><span class="icon-plus"></span></div>
             </div>
             <div class="modal-body">
                 <textarea placeholder="Mesajınız"></textarea>
@@ -1390,7 +1406,7 @@
         <div class="modal-login">
             <div class="modal-head">
                 <h2>Orderio</h2>
-                <div class="without-membership-btn modal-click">Üye olmadan devam et<span class="icon-Arrow-icon-right"></span></div>
+                <div class="without-membership-btn  close-modal">Üye olmadan devam et<span class="icon-Arrow-icon-right"></span></div>
             </div>
             <div class="modal-body">
                 <ol class="login-register-side">
@@ -1429,7 +1445,7 @@
         <div class="modal-login">
             <div class="modal-head">
                 <h2>Orderio</h2>
-                <div class="without-membership-btn modal-click">Üye olmadan devam et<span class="icon-Arrow-icon-right"></span></div>
+                <div class="without-membership-btn  close-modal">Üye olmadan devam et<span class="icon-Arrow-icon-right"></span></div>
             </div>
             <div class="modal-body">
                 <ol class="login-register-side">
@@ -1488,7 +1504,7 @@
             <div class="modal-head">
                 <span class="icon-user icon"></span>
                 <h5>Bilgilerini Güncelle</h5>
-                <div class="close-btn gray"><span class="icon-plus"></span></div>
+                <div class="close-btn close-modal gray"><span class="icon-plus"></span></div>
                 <div class="back-btn modal-click" data-href-modal="#settings"><span class="icon-Arrow-icon-left"></span>
                 </div>
 
@@ -1532,7 +1548,7 @@
                             <span class="icon-shut-eye input-show-text"></span>
                         </div>
                     </div>
-                    <button class="btn-primary w-100">
+                    <button class="btn-primary w-100 modal-click" data-href-modal="#success-password-change">
                         Kaydet
                     </button>
                 </form>
@@ -1548,7 +1564,7 @@
                 <span class="icon-default-key icon"></span>
                 <h5>Yeni Şifre Oluştur</h5>
                 <p class="sub-title">Neredeyse bitti! Artık yeni bir şifre belirleyebilirsiniz.</p>
-                <div class="close-btn gray"><span class="icon-plus"></span></div>
+                <div class="close-btn gray close-modal"><span class="icon-plus"></span></div>
                 <div class="back-btn modal-click" data-href-modal="#settings"><span class="icon-Arrow-icon-left"></span>
                 </div>
 
@@ -1571,7 +1587,7 @@
                             <span class="icon-shut-eye input-show-text"></span>
                         </div>
                     </div>
-                    <button class="btn-primary w-100">
+                    <button class="btn-primary w-100 modal-click" data-href-modal="#success-password-change">
                         Kaydet
                     </button>
                 </form>
@@ -1587,7 +1603,7 @@
                 <span class="icon-default-key icon"></span>
                 <h5>Yeni şifre oluştur</h5>
                 <p class="sub-title">Neredeyse bitti! Artık yeni bir şifre belirleyebilirsiniz.</p>
-                <div class="close-btn gray"><span class="icon-plus"></span></div>
+                <div class="close-btn gray close-modal"><span class="icon-plus"></span></div>
                 <div class="back-btn modal-click" data-href-modal="#settings"><span class="icon-Arrow-icon-left"></span>
                 </div>
 
@@ -1603,11 +1619,11 @@
                         </div>
                     </div>
                     <div class="d-flex">
-                        <button class="btn-primary w-100 me-3">
+                        <button class="btn-primary w-100 me-3 modal-click" data-href-modal="#success-password-change">
                             Kaydet
                         </button>
-                        <button class="btn-black w-100 ms-4">
-                            Kaydet
+                        <button class="btn-black w-100 ms-4 close-modal">
+                            Kapat
                         </button>
                     </div>
                 </form>
@@ -1630,7 +1646,7 @@
                         <li><span class="icon-star-flat icon-star"></span> 2 </li>
                         <li><span class="icon-star-flat icon-star"></span> 1 </li>
                     </ol>
-                    <div class="close-btn gray"><span class="icon-plus"></span></div>
+                    <div class="close-btn gray close-modal"><span class="icon-plus"></span></div>
             </div>
             <div class="modal-body">
                 <div class="restourant-comment-wrap p-4">
@@ -1694,7 +1710,7 @@
             <div class="modal-head box-shadow">
                 <span class="icon-store small-icon text-primary"></span>
                 <h6 class="small-text">Restoran hakkında</h6>
-                <div class="close-btn gray"><span class="icon-plus"></span></div>
+                <div class="close-btn gray close-modal"><span class="icon-plus"></span></div>
             </div>
             <div class="modal-body body-overflow-resto">
                 <div class="map-wrap">
@@ -1846,7 +1862,7 @@
             <div class="modal-head">
 
                 <h6>Rabattakionen</h6>
-                <div class="close-btn gray"><span class="icon-plus"></span></div>
+                <div class="close-btn gray close-modal"><span class="icon-plus"></span></div>
             </div>
             <div class="modal-body p-3">
                 <div class="info-card">
@@ -1874,7 +1890,7 @@
             <div class="modal-head">
                 <span class="icon-store icon"></span>
                 <h5>Restorant ile iletişim kur</h5>
-                <div class="close-btn gray"><span class="icon-plus"></span></div>
+                <div class="close-btn gray close-modal"><span class="icon-plus"></span></div>
             </div>
             <div class="modal-body ">
 
@@ -1938,7 +1954,7 @@
         <div class="edit-product-modal">
             <div class="modal-head">
                 <h6>Ürünü Düzenle</h6>
-                <div class="close-btn gray"><span class="icon-plus"></span></div>
+                <div class="close-btn gray close-modal"><span class="icon-plus"></span></div>
             </div>
             <div class="modal-body p-0">
                 <div class="product-img">
@@ -2011,7 +2027,7 @@
                 <span class="icon-megaphone-big icon"></span>
                 <h5>İletişim Tercihleri</h5>
 
-                <div class="close-btn gray"><span class="icon-plus"></span></div>
+                <div class="close-btn gray close-modal"><span class="icon-plus"></span></div>
                 <div class="back-btn modal-click" data-href-modal="#settings"><span class="icon-Arrow-icon-left"></span>
                 </div>
             </div>
@@ -2074,7 +2090,7 @@
             <div class="modal-head">
                 <span class="icon-invoice icon"></span>
                 <h5>Siparis Detayı</h5>
-                <div class="close-btn gray"><span class="icon-plus"></span></div>
+                <div class="close-btn gray close-modal"><span class="icon-plus"></span></div>
                 <div class="back-btn modal-click" data-href-modal="#my-past-orders"><span class="icon-Arrow-icon-left"></span>
                 </div>
             </div>
