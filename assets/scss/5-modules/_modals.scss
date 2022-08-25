@@ -1147,11 +1147,12 @@
             border-bottom: solid 1px $light;
         }
         .order-road-map {
-            padding: 20px 40px;
+            padding: 45px 40px 20px 40px;
             border-bottom: solid 1px $light;
             display: flex;
             align-items: center;
             justify-content: space-between;
+        
             .round {
                 border-radius: 30px;
                 display: flex;
@@ -1162,10 +1163,21 @@
                     width: 28px;
                     height: 28px;
                 }
+                .title{
+                    font: 900 11px $avenir;
+                    color: $black;
+                    position: absolute;
+                    
+                    width: 70px;
+                    text-align: center;
+                }
                 &.success {
                     background-color: #21d376;
-                    width: 30px;
+                    min-width: 30px;
                     height: 30px;
+                    .title{
+                        top: -25px;
+                    }
                     span {
                         color: $white;
                         display: flex;
@@ -1176,8 +1188,11 @@
                 }
                 &.current {
                     background-color: #f54748;
-                    width: 30px;
+                    min-width: 30px;
                     height: 30px;
+                    .title{
+                        top: -25px;
+                    }
                     span {
                         display: none;
                     }
@@ -1186,9 +1201,12 @@
                     }
                 }
                 &.waiting {
-                    width: 21px;
+                    min-width: 21px;
                     height: 21px;
                     background-color: #d4d4d4;
+                    .title{
+                        top: -30px;
+                    }
                     img{
                         display: none;
                     }
@@ -1203,13 +1221,16 @@
                 }
             }
             .line {
-                width: 60px;
+                width: 14%;
                 height: 2px;
                 &.success {
                     background-color: #21d376;
                 }
                 &.current {
                     background-color: #d4d4d4;
+                }
+                @include media-down("sm"){
+                    width: 12%;
                 }
             }
         }

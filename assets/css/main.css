@@ -1517,6 +1517,12 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   border-radius: 50%;
 }
 
+.input-show-text {
+  cursor: pointer;
+  display: flex;
+  font-size: 18px;
+}
+
 .fiat {
   display: flex;
   align-items: center;
@@ -3510,7 +3516,7 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   border-bottom: solid 1px #f0f0f0;
 }
 .default-modal .order-detail-wrap .order-road-map {
-  padding: 20px 40px;
+  padding: 45px 40px 20px 40px;
   border-bottom: solid 1px #f0f0f0;
   display: flex;
   align-items: center;
@@ -3527,10 +3533,20 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   width: 28px;
   height: 28px;
 }
+.default-modal .order-detail-wrap .order-road-map .round .title {
+  font: 900 11px "avenir";
+  color: #1f272e;
+  position: absolute;
+  width: 70px;
+  text-align: center;
+}
 .default-modal .order-detail-wrap .order-road-map .round.success {
   background-color: #21d376;
-  width: 30px;
+  min-width: 30px;
   height: 30px;
+}
+.default-modal .order-detail-wrap .order-road-map .round.success .title {
+  top: -25px;
 }
 .default-modal .order-detail-wrap .order-road-map .round.success span {
   color: #ffffff;
@@ -3541,8 +3557,11 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 }
 .default-modal .order-detail-wrap .order-road-map .round.current {
   background-color: #f54748;
-  width: 30px;
+  min-width: 30px;
   height: 30px;
+}
+.default-modal .order-detail-wrap .order-road-map .round.current .title {
+  top: -25px;
 }
 .default-modal .order-detail-wrap .order-road-map .round.current span {
   display: none;
@@ -3551,9 +3570,12 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   display: flex;
 }
 .default-modal .order-detail-wrap .order-road-map .round.waiting {
-  width: 21px;
+  min-width: 21px;
   height: 21px;
   background-color: #d4d4d4;
+}
+.default-modal .order-detail-wrap .order-road-map .round.waiting .title {
+  top: -30px;
 }
 .default-modal .order-detail-wrap .order-road-map .round.waiting img {
   display: none;
@@ -3567,7 +3589,7 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   height: 7px;
 }
 .default-modal .order-detail-wrap .order-road-map .line {
-  width: 60px;
+  width: 14%;
   height: 2px;
 }
 .default-modal .order-detail-wrap .order-road-map .line.success {
@@ -3575,6 +3597,11 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
 }
 .default-modal .order-detail-wrap .order-road-map .line.current {
   background-color: #d4d4d4;
+}
+@media (max-width: 575px) {
+  .default-modal .order-detail-wrap .order-road-map .line {
+    width: 12%;
+  }
 }
 .default-modal .order-detail-wrap .your-order-wrap {
   padding: 20px 40px;

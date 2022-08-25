@@ -235,6 +235,16 @@ $("#send-message").click(function(e) {
 });
 
 
+$(".input-show-text").click(function (e) { 
+    e.preventDefault();
+    const type =  $(this).prev().attr("type");
+   
+    if(type=="text"){
+        $(this).prev().attr("type","password");
+    }else{
+        $(this).prev().attr("type","text");
+    }
+});
 
 
 
