@@ -3258,13 +3258,18 @@ header .header-content .icon-menus .dropdown .dropdown-content .dropdown-card .m
   font: 500 12px "avenir";
 }
 .default-modal .order-wrap {
-  max-height: 320px;
+  max-height: 450px;
   overflow: auto;
 }
 @media (max-width: 575px) {
   .default-modal .order-wrap {
     max-height: calc(100vh - 82px);
     height: calc(100vh - 82px);
+  }
+}
+@media (max-height: 800px) {
+  .default-modal .order-wrap {
+    height: calc(100vh - 200px);
   }
 }
 .default-modal .order-wrap .order-item {

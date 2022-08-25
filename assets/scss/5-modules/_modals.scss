@@ -900,11 +900,14 @@
         }
     }
     .order-wrap {
-        max-height: 320px;
+        max-height: 450px;
         overflow: auto;
         @include media-down("sm") {
             max-height: calc(100vh - 82px);
             height: calc(100vh - 82px);
+        }
+        @media (max-height:800px){
+            height: calc(100vh - 200px);
         }
         .order-item {
             height: 80px;
