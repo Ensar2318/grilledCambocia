@@ -1,7 +1,11 @@
 .banner-wrap {
     height: 220px;
     margin-bottom: 20px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
     &:not(:first-child) {
+
         margin-top: 40px;
     }
 }
